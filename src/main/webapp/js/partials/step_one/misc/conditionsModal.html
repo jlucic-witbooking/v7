@@ -1,0 +1,64 @@
+<div class="modal-header">
+	<h3 class="modal-title" translate>trans.step2.conditions</h3>
+</div>
+
+<div class="modal-body">
+	<div ng-repeat="condition in conditions" class="conditionsModal">
+		<div class="content">
+	        <span class="condition"
+	              style="text-decoration: none; font-weight: bold{{condition.color!=''?';color:#'+condition.color:''}}">
+	            {{ condition.name | uppercase }}
+	        </span>
+			<br><br>
+
+			<div ng-if="condition.cancellation">
+				<div class="textCond" ng-bind-html="condition.cancellation"></div>
+			</div>
+
+			<div ng-if="condition.entry || condition.exit">
+					<span class="titleCond" translate>trans.step1.inventoryline.condition.timetable</span>
+					<table>
+						<tbody>
+						<tr>
+							<td ng-if="condition.entry" style="padding-right:10px;vertical-align: top"><span class="title" translate>trans.step1.inventoryline.condition.entry</span>:&nbsp;<p ng-bind-html="condition.entry"></p></td>
+							<td ng-if="condition.exit" style="vertical-align: top"><span class="title" translate>trans.step1.inventoryline.condition.exit</span>:&nbsp;<p ng-bind-html="condition.exit"></p></td>
+						</tr>
+						</tbody>
+					</table>
+			</div>
+
+			<div ng-if="condition.children">
+				<span class="titleCond" translate>trans.step1.inventoryline.condition.children</span>
+				<div class="textCond" ng-bind-html="condition.children"></div>
+			</div>
+
+			<div ng-if="condition.pets">
+				<span class="titleCond" translate>trans.step1.inventoryline.condition.pets</span>
+
+				<div class="textCond" ng-bind-html="condition.pets"></div>
+			</div>
+
+			<div ng-if="condition.groups">
+				<span class="titleCond" translate>trans.step1.inventoryline.condition.groups</span>
+
+				<div class="textCond" ng-bind-html="condition.groups"></div>
+			</div>
+
+			<div ng-if="condition.additionalInfo">
+                <div alert class="messages  alert-info"
+                     ng-click="toggleAdditionalInfo()" type=" 'info' ">
+                    <span class="moreInfo" ng-if="isAdditionalInfoVisible" class="pointer " > [-]&nbsp;<span class="titleCond" translate>trans.step2.info</span></span>
+                    <span class="moreInfo" ng-if="!isAdditionalInfoVisible" class="pointer "> [+]&nbsp;<span class="titleCond" translate>trans.step2.info</span></span>
+                </div>
+                <br/>
+                <br/>
+                <div class="textCond" ng-if="isAdditionalInfoVisible" ng-bind-html="condition.additionalInfo"></div>
+			</div>
+		</div>
+	</div>
+	<div class="clearer"></div>
+</div>
+
+<div class="modal-footer">
+	<button class="btn btn-danger" ng-click="closeInfo()" translate>trans.step2.close</button>
+</div>

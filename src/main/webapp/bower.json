@@ -1,0 +1,21 @@
+{
+  "name": "angularjs-seed",
+  "description": "A starter project for AngularJS",
+  "dependencies": {
+    "angular-ui-router": "0.2.8-bowratic-tedium",
+    "bootstrap": "~3.1.1",
+    "angular-translate": "~2.0.1",
+    "angular-translate-loader-url": "~2.1.0",
+    "bootstrap-datepicker": "~1.3.0",
+    "angular-dynamic-locale": "~0.1.9",
+    "iframe-resizer": "~2.8.5",
+    "jquery-ui": "~1.10.4",
+    "jquery": "1.11.1",
+    "spin.js": "~2.0.1",
+    "angular-cache-buster": "~0.4.3",
+    "angular-md5": "~0.1.7",
+    "angular": "~1.4.5",
+    "angular-bootstrap": "~0.13.3",
+    "angular-animate": "~1.4.5"
+  }
+}

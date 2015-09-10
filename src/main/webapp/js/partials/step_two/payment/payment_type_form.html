@@ -1,0 +1,77 @@
+<div class="inputsForm">
+    <div ng-if="type==constants.payment.type.creditCard">
+	        <div class="textTopPaymentMethod" translate>trans.step2.ccCardText</div><br />
+		    <div class="form-group">
+	            <input type="text" name="ccholder" class="form-control" ng-class="{ 'input-error' : form.submitted && form.ccholder.$error.required }" id="reservationsName" placeholder="* {{'trans.step2.cCHolder'|translate}}"  ng-model="paymentData.creditCardData.ccholder" required>
+	        </div>
+	        <div class="row">
+	            <select name="cckind" class="form-control" ng-options="c.name for c in creditCards track by c.id"  id="reservationsCckind"  ng-model="paymentData.creditCardData.cckind"
+	                    ng-change="changePattern(paymentData.creditCardData.cckind)">
+	            </select>
+	            <div class="creditcards {{paymentData.creditCardData.cckind.id}}"></div>
+	        </div>
+	        <div class="form-group">
+	            <input type="text" name="numbercard" class="form-control" ng-class="{ 'input-error' : form.submitted && (form.numbercard.$error.required || form.numbercard.$error.pattern ) }"
+	                   id="reservationsNumberCard" placeholder="* {{'trans.step2.cCNumber'|translate}}" ng-model="paymentData.creditCardData.ccnumber" ng-pattern="ccPattern" required>
+	        </div>
+	        <div class="form-group" ng-if="bookingFormCcv">
+	            <input type="text" name="ccvcard" class="form-control" ng-class="{ 'input-error' : form.submitted && form.ccvcard.$error.required }" id="reservationsCcvCard" placeholder="* CCV/CCV2" ng-model="paymentData.creditCardData.ccsecuritycode" required>
+	            <button popover-placement="right"
+						popover-template='constants.assetsDir+"partials/step_two/misc/popover_ccv.html"'
+						popover-placement="bottom"
+	                    popover-append-to-body="true"
+	                    class="btn btn-xs">
+	                info
+	            </button>
+	        </div>
+
+	        <label class="validTo">*<span translate>trans.step2.validUntil</span></label>
+	        <div class="form-group">
+	            <select name="ccvalidtomonth"
+	                    ng-options="item.Value as item.Name for item  in months"
+	                    class="form-control"  ng-class="{ 'input-error' : form.submitted && form.ccvalidtomonth.$error.required }" id="reservationsCcvalidMoth" ng-model="paymentData.creditCardData.ccvalidtomonth" required>
+	                <option value="">-{{'trans.step2.month'|translate}}-</option>
+	            </select>
+	            <select name="ccvalidtoyear"
+	                    ng-options="item.Value as item.Name for item in years"
+	                    class="form-control"  ng-class="{ 'input-error' : form.submitted && form.ccvalidtoyear.$error.required }" id="reservationsCcvalidYear" ng-model="paymentData.creditCardData.ccvalidtoyear" required>
+	                <option value="">-{{'trans.step2.year'|translate}}-</option>
+	            </select>
+	        </div>
+	</div>
+
+	<div ng-if="type==constants.payment.type.transfer" >
+        <div class="textTopPaymentMethod">{{transferData.message}}</div><br />
+	    <div ng-if="witbookerParams.representation.transferAvailabilityHold>0">
+	        <span translate>trans.step2.bankTransferDescription1</span>
+	        <span translate>{{witbookerParams.representation.transferAvailabilityHold}}</span>
+	        <span translate>trans.step1.inventoryline.unavailable.value.hours</span>.
+	        <br/>
+	        <span translate>trans.step2.bankTransferDescription2</span>.<span translate>trans.step2.bankTransferDescription1NoHold</span>
+	    </div>
+	    <div ng-if="witbookerParams.representation.transferAvailabilityHold<=0">
+	        <span translate>trans.step2.bankTransferDescription1NoHold</span>
+	    </div>
+	</div>
+
+	<div ng-if="type==constants.payment.type.tctoken||type==constants.payment.type.tpvtoken">
+		<div class="textTopPaymentMethod" translate>trans.step2.tctokenText</div>
+
+	</div>
+
+
+
+
+
+	<div ng-if="type==constants.payment.type.paypal_ec">
+
+		<div class="textTopPaymentMethod" translate>trans.step2.paypalText</div>
+
+	</div>
+
+
+
+	<div ng-if="type==constants.payment.type.pointOfSale">
+	    <span translate>trans.step2.pointOfSaleDescription</span>&nbsp;<span ng-repeat="card in creditCards">{{card.name}}{{$last ? '.' : ', '}}</span>
+	</div>
+</div>

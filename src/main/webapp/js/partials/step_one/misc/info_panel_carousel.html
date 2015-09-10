@@ -1,0 +1,15 @@
+<div style="height: 100%;">
+    <div carousel interval="myInterval">
+        <div slide ng-repeat="slide in slides" active="slide.active">
+            <span class="sprite closeW" ng-click="slide.close(slide.elementType,constants.panel.type.carousel,$event)">&nbsp;</span>
+            <div class="pic">
+                <img class="carouselImg" ng-src="{{slide.image}}" style="margin: auto" fallback-src>
+
+                <div class="carousel-caption" ng-show="slide.title || slide.text">
+                    <h4>{{slide.title}}</h4>
+                    <p>{{slide.text}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

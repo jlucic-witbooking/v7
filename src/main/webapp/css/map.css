@@ -1,0 +1,32 @@
+.mainMapContainer {
+  border: 1px solid #c4c4c4;
+  position: relative;
+  margin: 0px;
+  overflow: visible;
+  width: inherit;
+}
+.mainMapContainer h3 {
+  font-size: 15px;
+  line-height: 15px;
+}
+.mainMapContainer .header {
+  display: none;
+}
+.mainMapContainer:before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+.mainMap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#map_canvas {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}

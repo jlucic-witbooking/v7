@@ -1,0 +1,35 @@
+.menuConfiguracion {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.menuConfiguracion .menuOpciones .dropdown-toggle .caret {
+  margin-top: -5px;
+}
+.menuConfiguracion .menuPasos {
+  float: left;
+  list-style: none;
+  color: #a5a5a5;
+  margin: 7px 0 0 0!important;
+  padding: 0px !important;
+}
+.menuConfiguracion .menuPasos .menuSelected {
+  color: #0b0171;
+  font-weight: bold;
+}
+.menuConfiguracion .menuPasos .menuNumeros {
+  font-size: 16px!important;
+  font-weight: normal!important;
+}
+.menuConfiguracion .menuPasos .menuDatos,
+.menuConfiguracion .menuPasos .menuConfirm {
+  cursor: default;
+}
+.menuConfiguracion .menuPasos li {
+  display: inline;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 2px;
+}
+.menuConfiguracion .menuSelected {
+  color: #0e77bb !important;
+}

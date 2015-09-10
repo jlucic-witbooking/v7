@@ -1,0 +1,25 @@
+<div class="modal-header">
+	<h3 class="modal-title" ng-bind-html="info.name"></h3>
+</div>
+
+<div class="modal-body">
+	<div ng-if="info.media.length>0">
+		<img ng-src='{{info.image}}' class="infoImage img-rounded" fallback-src>
+	</div>
+	<div class="{{info.rate>0?'infoText':'infoTextWithoutImg'}}">
+		<div ng-bind-html="info.description"></div>
+		<div ng-if="info.rate>0">
+			<strong>
+                <span>{{(info.rate) | currencyConverter : establishment | integerDigits  }}</span>
+                <span class="separator">,</span>
+                <span>{{(info.rate) | currencyConverter : establishment | fractionalDigits  |  number:2 | limitTo:-2}}</span>
+                <span>&nbsp;{{info.specification}}&nbsp;{{currency}}</span>
+            </strong>
+		</div>
+	</div>
+	<div class="clearer"></div>
+</div>
+
+<div class="modal-footer">
+	<button class="btn btn-danger" ng-click="closeInfo()" translate>trans.step2.close</button>
+</div>

@@ -1,0 +1,25 @@
+<div ng-if="type==constants.payment.type.creditCard">
+    <div class="alert alert-info messagesTwo">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <p> <span translate>trans.step2.creditCardHeader1</span>.&nbsp;</p>
+    </div>
+    <div class="mensajeverdeTC">
+        <p> <span translate>trans.step2.creditCardHeader2</span>
+            <a href="http://micho.local/v6/select/hoteldemo.com.v6/es/reservationsv6/generalconditions" target="_blank" id="legalterms3">
+                <span translate>trans.step2.serviceConditions2</span>
+            </a>
+        </p>
+    </div>
+</div>
+
+
+<div ng-if="type==constants.payment.type.transfer">
+
+</div>
+
+
+<div ng-if="type==constants.payment.type.pointOfSale">
+    <span translate>trans.step2.pointOfSaleHeader1</span>
+    <span>100.00%</span>
+    <span translate>trans.step2.pointOfSaleHeader2</span>
+</div>

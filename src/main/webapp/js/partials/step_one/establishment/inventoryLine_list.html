@@ -1,0 +1,3 @@
+<div ng-repeat="inventoryLine in accommodation.inventoryLine | orderBy:['configuration.name' ,'mealPlan.order' ,'condition.order'] ">
+    <div witbooking-inventory-line show-extra-desc="showExtraDesc"  line="inventoryLine" witbooker-params="witbookerParams" representation="representation"  establishment="establishment" accommodation="accommodation" > </div>
+</div>

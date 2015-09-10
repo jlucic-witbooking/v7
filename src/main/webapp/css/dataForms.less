@@ -1,0 +1,189 @@
+.noOp{
+  color:black;
+}
+
+#customerDataForm, #paymentDataForm {
+  font-size: 12px;
+  min-width: 280px;
+  width: 49%;
+  float: left;
+  margin: 10px 0 0 0;
+  padding: 0;
+  border: 1px solid #D2D2D2;
+  margin-bottom: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  .headerDataForm{
+    background-color: #343333;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    height: 32px;
+    padding-bottom: 4px;
+    padding-top: 7px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .radioPayment{
+    margin: 10px;
+    input[type="radio"]{
+      margin-right: 5px;
+      vertical-align: text-bottom;
+    }
+    &.justOne{
+      display: none;
+    }
+  }
+
+  .inputsForm{
+    margin: 10px;
+
+    select, .form-group{
+      margin-bottom: 10px !important;
+    }
+
+    #reservationsCcvalidMoth, #reservationsCcvalidYear{
+      display: inline;
+      width: 85px;
+    }
+    .acceptConditions{
+      border-top: 1px dotted #c3c3c3;
+      border-bottom: 1px dotted #c3c3c3;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      .checkbox{
+        margin: 0px 10px;
+      }
+    }
+
+    .checkFieldsRed{
+      padding: 10px;
+    }
+
+    .paymentDetails{
+      font-size: 14px;
+      color: #606060;
+      line-height: 19px;
+      text-align: right;
+      vertical-align: middle;
+      padding: 10px;
+      border-bottom: 1px dotted #c3c3c3;
+    }
+
+    .paymentDetails.defaultCurrency{
+      opacity: 0.6;
+    }
+
+    .paymentDetails .message{
+      font-size: 10px;
+    }
+
+    textarea{
+      font-size: 12px;
+      resize: none;
+    }
+
+    #finalBookingBtns{
+      margin-top: 10px;
+      .confirm{
+        float: right;
+        .btn{
+          font-size: 14px;
+          text-transform: lowercase;
+          background-color: #1a4012 !important;
+          background-repeat: repeat-x;
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#398f28", endColorstr="#193f11");
+          background-image: -khtml-gradient(linear, left top, left bottom, from(#398f28), to(#193f11));
+          background-image: -moz-linear-gradient(top, #398f28, #193f11);
+          background-image: -ms-linear-gradient(top, #398f28, #193f11);
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #398f28), color-stop(100%, #193f11));
+          background-image: -webkit-linear-gradient(top, #398f28, #193f11);
+          background-image: -o-linear-gradient(top, #398f28, #193f11);
+          background-image: linear-gradient(#398f28, #193f11);
+          border-color: #193f11;
+          color: #fff !important;
+          text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+          -webkit-font-smoothing: antialiased;
+        }
+      }
+      .addBooking{
+        float: left;
+        .help-block{
+          display: inline;
+        }
+      }
+    }
+    .validTo{
+      font-weight: normal !important;
+    }
+    #reservationsCckind{
+      width: 60%;
+      display: inline-block !important;
+    }
+    #reservationsNumberCard{
+      width: 77%;
+    }
+    #reservationsCcvCard{
+      width: 35%;
+      display: inline-block !important;
+    }
+  }
+
+  .mensajeverdeTC {
+    color: #525252;
+    padding: 8px 10px 8px 14px !important;
+  }
+
+}
+
+.sipayLogo{
+  background: url(https://s3.eu-central-1.amazonaws.com/witbooking.static/img/sipayLogoMask.png) no-repeat 0 0;
+  width: 95px;
+  height: 27px;
+  margin: 0 0 26px 130px;
+}
+
+
+body.PPFrame { overflow: hidden; }#PPFrame { z-index: 20002; top: 0; left: 0; }#PPFrame .mask { z-index: 20001; position: absolute; top: 0; left: 0; background-color: black; background-image: radial-gradient(circle farthest-corner, #000000, #4A4A4A); opacity: 0.80; filter: alpha(opacity=80); }#PPFrame .ppmodal { font-family: "HelveticaNeue", "HelveticaNeue-Light", "Helvetica Neue Light", helvetica, arial, sans-serif; font-size: 14px; text-align: center; color:#fff; z-index: 20003; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; width: 350px; top: 50%; left: 50%; position: fixed; margin-left: -165px; margin-top: -80px; }#PPFrame .loading .spinner { height:30px; width:30px; position:absolute; left:48%; top:50%; margin:-15px auto auto -15px; opacity:1; filter: alpha(opacity=100); background-color: rgba(255, 255, 255, 0.701961); -webkit-animation: rotation .7s infinite linear; -moz-animation: rotation .7s infinite linear; -o-animation: rotation .7s infinite linear; animation: rotation .7s infinite linear; border-left:8px solid rgba(0,0,0,.20); border-right:8px solid rgba(0,0,0,.20); border-bottom:8px solid rgba(0,0,0,.20); border-top:8px solid rgba(33,128,192,1); border-radius:100%; } @-webkit-keyframes rotation { from {-webkit-transform: rotate(0deg);} to {-webkit-transform: rotate(359deg);}} @-moz-keyframes rotation { from {-moz-transform: rotate(0deg);} to {-moz-transform: rotate(359deg);} } @-o-keyframes rotation { from {-o-transform: rotate(0deg);} to {-o-transform: rotate(359deg);} } @keyframes rotation { from {transform: rotate(0deg);} to {transform: rotate(359deg);}}#PPFrame .loading.noanimation .spinner {height: 48px; width: 48px; border:none; background: url(https://www.paypalobjects.com/webstatic/checkout/hermes/icon_loader_med.gif) no-repeat center center;}#PPFrame .ppmodal.loading { min-height: 160px; }#PPFrame .ppmodal .pplogo {background: url(https://www.paypalobjects.com/webstatic/checkout/hermes/mb_sprite.png) no-repeat 0 0; width: 94px; height: 25px; margin:0 0 26px 130px}#PPFrame .ppmodal .closeButton {position:fixed; top:10px; right:10px; display:inline-block; background: url(https://www.paypalobjects.com/webstatic/checkout/hermes/mb_sprite.png) no-repeat 0 -67px; width: 14px; height: 14px; text-indent: -999em; cursor: pointer; }#PPFrame .ppmodal .closeButton:hover {background: url(https://www.paypalobjects.com/webstatic/checkout/hermes/mb_sprite.png) no-repeat -50px -67px; width: 14px; height: 14px;}#PPFrame .ppmodal .text { font-size: 14px; }#PPFrame .ppmodal a.button {display:block; cursor:pointer; margin-top:20px; color: #0088cc;}#PPFrame .ppmodal a.ppbutton {display:block; cursor:pointer; margin-top:20px; color: #0088cc;}@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: ~"2/1"), only screen and (min-device-pixel-ratio: 2)  { #PPFrame .ppmodal .pplogo {background: url(https://www.paypalobjects.com/webstatic/checkout/hermes/mb_sprite_2x.png) no-repeat 0 0; background-size: 100px 75px;}}
+
+#customerDataForm{
+  margin-right: 2%;
+}
+
+
+@media only screen and (max-width :650px){
+  #customerDataForm, #paymentDataForm {
+    width: 100% !important;
+  }
+}
+
+.creditcards{
+  display: inline-block;
+  background: url('../img/creditcardsprite.png') no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+  &.ccv { background-position: -5px -0px; width: 219px; height: 111px; margin: 0px 0px -10px 5px;}
+  &.American_Express { background-position: -5px -116px; width: 50px; height: 31px; margin: 0px 0px -10px 5px;}
+  &.Carte_Bleu { background-position: -60px -116px; width: 50px; height: 31px; margin: 0px 0px -10px 5px;}
+  &.Diners { background-position: -115px -116px; width: 50px; height: 31px; margin: 0px 0px -10px 5px;}
+  &.JCB { background-position: -5px -152px; width: 50px; height: 31px; margin: 0px 0px -10px 5px;}
+  &.Mastercard { background-position: -60px -152px; width: 50px; height: 31px; margin: 0px 0px -10px 5px;}
+  &.Visa { background-position: -115px -152px; width: 50px; height: 31px; margin: 0px 0px -10px 5px;}
+}
+
+.input-error{
+  color: #8A1F11;
+  border: 1px solid #FBC2C4;
+  background: #FBE3E4;
+}
+
+

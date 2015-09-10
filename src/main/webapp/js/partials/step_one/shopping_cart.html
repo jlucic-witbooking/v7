@@ -1,0 +1,226 @@
+<div class="cartContainer"  >
+<div class="addBook" ng-show="size==constants.cart.largeSize" ng-click="goToStepOne()">«&nbsp;<span translate>trans.step2.addAnotherBooking</span></div>
+<div class="tabcart reservas holding right selected" title="{{'trans.step1.cart.title'|translate}}" style="display: block;">
+        <div class="cartQuantity">
+            <span class="reservasCarrito">{{cart.reservations.length}}</span><span class="sprite carrito"></span>
+        </div>
+    </div>
+
+    <div class="borderTab"></div>
+    <div ng-if="size!=constants.cart.largeSize" ng-repeat="reservation in cart.reservations" class="reservationsList">
+        <div class="bookList"  ng-if="size!=constants.cart.largeSize" >
+            <div class="data">
+                <span class="name">{{reservation.quantity}}</span>
+                <span class="por">x</span>
+                <span class="name " ng-bind-html="reservation.accommodation.name">&nbsp;</span>
+                <span class="config block">
+                    <span>{{ reservation.startDate | date : "dd MMM" | uppercase}}</span>
+                    <span>&nbsp;>></span>
+                    <span>&nbsp;</span>
+                    <span>{{ reservation.endDate | date : "dd MMM" | uppercase}}</span>
+                    <span>&nbsp;>>&nbsp;</span>
+                    <span>{{(reservation.endDate-reservation.startDate)/(1000*60*60*24) | number:0 }}</span>
+                    <span translate>trans.step1.inventoryline.nights</span>
+                </span>
+            </div>
+            <div class="actions">
+                <span class="rate">
+                    <span class="amount">
+                        <span class="integer">{{(reservation.rate+reservation.serviceRate) | currencyConverter : establishment | integerDigits}}</span>
+                        <span class="separator">,</span>
+                        <span class="decimal">{{(reservation.rate+reservation.serviceRate) | currencyConverter : establishment | fractionalDigits| number:2 | limitTo:-2}}</span>
+                    </span>
+                </span>
+
+                <span id="editbookingbutton_0" class="sprite close boton-eliminar" title="{{'trans.step2.deleteBooking'|translate}}"  ng-click="removeReservation($index)">&nbsp;</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="bookings_list" class="" ng-if="size==constants.cart.largeSize">
+        <div ng-repeat="reservation in cart.reservations">
+        <div class="reserva-carrito-paso2">
+        <table class="table table-reserva-carrito-paso2 es-carrito" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr class="fila-1">
+            <td>
+                <div class="celda1-paso2 datos-alojamiento">
+                    <span class="nombrehabitacion dp-bloque bookList">
+                        <span class="multiplicador">
+                        </span>
+                        <span class="quantity">{{reservation.quantity}}</span>
+                        <span class="por">x</span>
+                        <span class="nombre-linea-1" ng-bind-html="reservation.accommodation.name">&nbsp;</span>
+                        <span class="noches">
+                            <span>&nbsp;/&nbsp;</span>
+                            <span>{{(reservation.endDate-reservation.startDate)/(1000*60*60*24) | number:0  }} </span>
+                            <span translate>trans.step1.inventoryline.nights</span>
+                        </span>
+                        <span class="nombre-linea-2">{{ reservation.inventoryLine.configuration.name }}</span>
+
+                        <div class="entrada">
+                            <span class="arrival dp-bloque" translate>trans.step2.entry</span>:
+                            <span>{{  reservation.startDate| date : "dd MMM yy, EEE" | uppercase}}</span>
+                        </div>
+
+                        <div class="salida">
+                            <span class="departure dp-bloque" translate>trans.step2.exit</span>:
+                            <span>{{ reservation.endDate| date : "dd MMM yy, EEE" | uppercase}}</span>
+                        </div>
+                    </span>
+                </div>
+                <div class="celda2-paso2 datos-rct">
+                    <div class="regimen" >
+                        <span translate>trans.step2.mealPlan</span>:
+                        <span >{{ reservation.inventoryLine.mealPlan.name}}</span>
+                    </div>
+                    <div class="condic" >
+                        <span translate>trans.step2.conditions</span>:
+                        <span >{{ reservation.inventoryLine.condition.name}}</span>
+                    </div>
+                    <div class="personas" >
+                        <span translate>trans.step2.totalPersons</span>:
+                        <span >{{reservation.inventoryLine.capacity * reservation.quantity}}</span>
+                    </div>
+                </div>
+                <div class="clearer"></div>
+            </td>
+            <td class="celda3-paso2">
+                <i class="sprite close boton-eliminar" title="{{'trans.step2.deleteBooking'|translate}}"  ng-click="removeReservation($index)"> </i>
+            </td>
+        </tr>
+
+        <tr class="fila-2">
+            <td class="celda1-paso2" colspan="4">
+                <div id="selectorextras__0_5" class="selectorextras selectorextras-0">
+                    <div class="ficha-config-v6 es-ficha es-ficha-disponible ">
+                        <div class="ficha-config-der">
+                            <table class="config-detalles">
+                                <tbody>
+                                <tr class="linea-precio-sin-descuento cuerpoContenedor {status-clase}">
+                                    <td colspan="3" class="col1">
+                                        <table class="table-no-bordered">
+                                            <tbody>
+                                            <tr><td><span class="alojamientotxt" translate>trans.step2.accommodation</span></td></tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+	                                <td class="col3 totalSinDescuento">
+		                                <span>{{((reservation.originalRate>0?reservation.originalRate:reservation.rate)  | currencyConverter : establishment | integerDigits )}}</span><span class="separator">,</span><span>{{((reservation.originalRate>0?reservation.originalRate:reservation.rate)) | currencyConverter : establishment | fractionalDigits  |  number:2 | limitTo:-2}}</span>
+	                                </td>
+                                </tr>
+
+                                <tr ng-repeat="(discountTicker,amount) in reservation.inventoryLine.discounts" ng-if="discountTicker!='rackRate'" ng-init="discount = establishment.discounts[discountTicker]"
+                                    class="linea-promo cuerpoContenedor unicoCuerpoContenedor promo-seleccionada">
+
+                                    <td colspan="3" class="col2 extraname extranopaddingbottom">
+                                        <table class="table-no-bordered">
+                                            <tbody>
+                                            <tr>
+                                                <td><span class="extranametxt promocionesTexto" ng-bind-html="discount.name"></span></td>
+	                                            <td>
+	                                                <span class="questioncontainer witbooker-tooltip-top">
+									                    <span class="infoTooltip glyphicon glyphicon-info-sign" ng-click="openInfo(discount)"></span>&nbsp;&nbsp;
+									                </span>
+		                                            <span class="enteros" >-{{((amount*reservation.quantity/reservation.originalRate)*100) | number:2}}%</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td class="col3 extravalue">
+                                        <span class="integer">-{{amount*reservation.quantity | currencyConverter : establishment | integerDigits }}</span>
+                                        <span class="separator">,</span>
+                                        <span class="decimal">{{amount*reservation.quantity | currencyConverter : establishment | fractionalDigits | number:2 | limitTo:-2}}</span>
+                                    </td>
+                                </tr>
+
+
+                                <tr  class="linea-precio-sin-descuento cuerpoContenedor show-more-extras " ng-show="reservation.inventoryLine.services.length>0"  ng-click="extrasFolded=!extrasFolded">
+                                    <td colspan="3" class="col1">
+                                        <table class="table-no-bordered">
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span class="sprite arrowExtras {{extrasFolded?'open':''}}"></span>
+                                                    <span class="show-more-extras-txt" translate>trans.step2.extras</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td class="col3 extravalue totalSinDescuento">
+                                        <span class="extrasPlegar importe-valor" ng-if="reservation.serviceRate>=0" >
+	                                        <span class="integer">{{(reservation.serviceRate) | currencyConverter : establishment | integerDigits }}</span>
+                                            <span class="separator">,</span>
+                                            <span class="decimal">{{(reservation.serviceRate) | currencyConverter : establishment | fractionalDigits | number:2 | limitTo:-2}}</span>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr ng-show="extrasFolded" ng-repeat="serviceObject in reservation.inventoryLine.services  | orderBy:'order' " ng-init="service = services[serviceObject.ticker]"
+                                    ng-if="services.hasOwnProperty(serviceObject.ticker)"
+                                    class="linea-extra cuerpoContenedor primerCuerpoContenedor"
+                                    witbooking-service service="services[serviceObject.ticker]" inventory-line="reservation.inventoryLine" reservation="reservation" establishment="establishment" >
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+
+        <tr class="fila-3">
+            <td colspan="4">
+                <div class="contenidoTotal">
+                <span class="total dp-bloque">
+                <span class="importe-valor">
+                    <span class="integer">{{(reservation.rate + reservation.serviceRate) |  currencyConverter : establishment | integerDigits}}</span>
+                    <span class="separator">,</span>
+                    <span class="decimal">{{(reservation.rate + reservation.serviceRate) | currencyConverter : establishment | fractionalDigits | number:2 | limitTo:-2}}</span>
+                </span>
+                </span>
+                </div>
+                <div class="clearer"></div>
+            </td>
+        </tr>
+
+
+        </tbody>
+        </table>
+        </div>
+    </div>
+    </div>
+
+    <div class="borderTab"></div>
+    <div ng-show="cart.reservations.length>0" class="tabcart totalReservas reservas right selected " title="{{'trans.step1.cart.title'|translate}}" style="display: block;">
+        <div class="cartQuantity ">
+            <div class="totalAmountTxtContainer ">
+                <div class="totalTxt" translate>trans.step2.totalBooking</div>
+                <div class="taxTxt" translate>trans.step2.withTaxes</div>
+            </div>
+            <div class="totalAmountContainer ">
+                <span class="rate">
+                    <span class="amount">
+                        <span class="integer">{{(cart.total) | currencyConverter : establishment | integerDigits}}</span>
+                        <span class="separator">,</span>
+                        <span class="decimal">{{(cart.total) | currencyConverter : establishment | fractionalDigits  | number:2 | limitTo:-2}}</span>
+                    </span>
+                </span>
+                <span class="currency">
+                    {{witbookerParams.representation.currency}}
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div ng-show="cart.reservations.length>0"  class="clearer"></div>
+
+    <div ng-if="size!=constants.cart.largeSize" ng-show="cart.reservations.length>0"
+         class="btnCarritoReservar btn btn-success " ng-click="goToStepTwo()" title="{{'trans.step1.cart.title'|translate}}"><span style="float: left">{{'trans.step1.cart.title'|translate}}&nbsp;<span class="forwardIcon">»</span></span>
+    </div>
+</div>
+

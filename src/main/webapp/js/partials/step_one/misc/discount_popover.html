@@ -1,0 +1,15 @@
+<div class="popoverContainer discountPopover">
+
+
+<span class='nombreDescuentoTooltip'>
+ <div ng-repeat="(discount,amount) in inventoryLine.discounts" >
+     <span class='tickTooltip'>✓</span>
+     &nbsp;
+     <span class='tickTooltip'></span>
+    <span ng-bind-html="establishment.discounts[discount].name"></span>
+ </div>
+
+</span>
+
+
+</div>

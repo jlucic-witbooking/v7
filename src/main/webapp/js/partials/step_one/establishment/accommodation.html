@@ -1,0 +1,74 @@
+<!-- This template represents the hotel accordion header or Hotel Info -->
+<div class="row accordeonElem accommodationRow"
+     id="{{accommodation.accommodation.ticker}}"
+     ng-class="{panelChildActive:hoverChild, panelChildOpen:accommodation.isOpen}" ng-mouseenter="hoverChild=true"
+     ng-mouseleave="hoverChild=false"
+     ng-click="accommodation.accommodation.visualState.showPanel=false">
+    <div class="hotelInfo">
+        <div class="accommodationImageContainer"
+             ng-click="showExtraDesc(accommodation.accommodation,constants.panel.type.carousel,$event)"
+             ng-class="{hoverImage: hoverHotelImage}" ng-mouseenter="hoverHotelImage=true"
+             ng-mouseleave="hoverHotelImage=false">
+            <img class="accommodationImage"
+                 ng-src='{{util.generateImgUrl(establishment,accommodation.accommodation,"accommodation",accommodation.accommodation.media[0].path,{width:125,height:77}) }}'
+                 fallback-src>
+            <span class="icon-zoom-cont">&nbsp;</span>
+        </div>
+        <div class="hotelDesc">
+            <div>
+                <p ng-bind-html="accommodation.accommodation.name" class="accommodationName"></p>
+                <!--TODO: CREATE FILTER TO PARSE DATE MORE HUMANLY -->
+                <p class="bookedDate">{{ witbookerParams.regularParams.startDate| date : "dd MMM" | uppercase}} - {{
+                    witbookerParams.regularParams.endDate| date : "dd MMM" | uppercase}}</p>
+            </div>
+            <div class="icons">
+                <div>
+                    <span class="sprite pictures"
+                          ng-class="{selectedIcon:(accommodation.accommodation.visualState.showPanel && accommodation.accommodation.visualState.panelType==constants.panel.type.carousel)}"
+                          ng-click="showExtraDesc(accommodation.accommodation,constants.panel.type.carousel,$event)">&nbsp;</span>
+                    <span class="sprite infoNew"
+                          ng-class="{selectedIcon:(accommodation.accommodation.visualState.showPanel && accommodation.accommodation.visualState.panelType==constants.panel.type.description)}"
+                          ng-click="showExtraDesc(accommodation.accommodation,constants.panel.type.description,$event)">&nbsp;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reservationInfo" ng-if="accommodation.accommodation.cheapestRate">
+        <div class="hotelPrice" ng-if="!isCollapsed">
+            <span class="priceContainer">
+                <p class="fromText" translate>trans.step1.hotel.priceFrom</p>
+                <p class="amountContainer">
+                    <span class="integer">{{(accommodation.accommodation.cheapestRate) | currencyConverter : establishment | integerDigits  }}</span>
+                    <span class="decimalSeparator">,</span>
+                    <span class="decimal">{{(accommodation.accommodation.cheapestRate) | currencyConverter : establishment | fractionalDigits   | number:2 | limitTo:-2}}</span>
+                </p>
+                <p class="priceOptionsContainer">
+                    <span class="currency">{{witbookerParams.representation.currency}}</span>
+                    <span class="perNightText">&nbsp;/<span translate>trans.step1.hotel.night</span></span>
+                </p>
+                <span class="reservationLink" style="text-decoration: underline;"
+                      translate>trans.step1.hotel.bookOnline</span>
+            </span>
+        </div>
+        <div class="hotelArr">
+            <i class="sprite arrowRoom" ng-class="{ 'open': accommodation.isOpen }">&nbsp;</i>
+        </div>
+    </div>
+    <!--TODO: CREATE CHECK "RESTRINGUIDA" or shold out -->
+    <div class="errorContainer" ng-if="!accommodation.accommodation.cheapestRate">
+        <div class="inventoryError">
+
+            <span class="locked" ng-if="errorType!=constants.filters.restricted">
+                    <span translate>trans.closed</span>
+            <br>
+            </span>
+            <span class="alternateAction" ng-if="errorType==constants.filters.closed" translate>trans.changeDates</span>
+            <span class="alternateAction" ng-if="errorType==constants.filters.restricted" translate>trans.step1.inventoryline.viewoptions</span>
+        </div>
+        <div class="hotelArr">
+            <i class="sprite arrowRoom" ng-class="{ 'open': accommodation.isOpen }">&nbsp;</i>
+        </div>
+    </div>
+
+</div>

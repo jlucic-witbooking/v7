@@ -1,0 +1,70 @@
+util.print: Use console.log instead
+.dummy {
+  color: black;
+}
+.popover-content {
+  padding: 1px;
+}
+.popoverContainer {
+  padding: 9px 14px;
+}
+.discountPopover {
+  background-color: #ad0303 !important;
+}
+.reservationPopover {
+  background: black;
+}
+.popover {
+  font-size: 12px;
+  width: auto  !important;
+  background-color: black !important;
+  text-align: left !important;
+  z-index: 9999999;
+  max-width: none;
+}
+.popover .popover-title {
+  display: none !important;
+}
+.right .arrow {
+  border-right-color: black !important;
+}
+.bottom .arrow {
+  border-bottom-color: black !important;
+}
+.tituloDescuento {
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nombreTooltip {
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.condicionesTooltip {
+  display: block;
+  color: white;
+  font-weight: bold;
+}
+.fechaTooltip {
+  display: block;
+  color: #ffd201;
+}
+.xTooltip {
+  color: #ffd201;
+}
+.tickTooltip {
+  font-size: 18px;
+  font-weight: bold;
+}
+.nocheTooltip,
+.nombreDescuentoTooltip {
+  display: block;
+  color: #d7d7d7;
+  font-weight: bold;
+}
+.popover.bottom > .arrow:after {
+  border-bottom-color: transparent;
+}

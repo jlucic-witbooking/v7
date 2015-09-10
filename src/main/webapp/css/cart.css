@@ -1,0 +1,453 @@
+.cartContainer .amount .integer {
+  font-size: 16px!important;
+}
+.cartContainer .amount .decimal {
+  font-size: 13px!important;
+}
+.cartContainer .amount .separator {
+  margin-right: -3px;
+  margin-left: -4px;
+  font-size: 12px;
+}
+.cartContainer .currency {
+  font-size: 12px;
+}
+.cartContainer .btnCarritoReservar {
+  float: right;
+  font-size: 14px;
+  padding: 7px 7px 7px 10px;
+  margin-bottom: 10px;
+  white-space: inherit !important;
+  text-transform: lowercase;
+  background-color: #1a4012!important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#398f28", endColorstr="#193f11");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#398f28), to(#193f11));
+  background-image: -moz-linear-gradient(top, #398f28, #193f11);
+  background-image: -ms-linear-gradient(top, #398f28, #193f11);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #398f28), color-stop(100%, #193f11));
+  background-image: -webkit-linear-gradient(top, #398f28, #193f11);
+  background-image: -o-linear-gradient(top, #398f28, #193f11);
+  background-image: linear-gradient(#398f28, #193f11);
+  border-color: #193f11;
+  color: #fff!important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+  -webkit-font-smoothing: antialiased;
+}
+.cartContainer .btnCarritoReservar .forwardIcon {
+  font-size: 30px;
+  font-weight: bold;
+  float: right;
+  line-height: 17px;
+}
+.tabcart {
+  float: right;
+  background-color: #2d2d2d;
+  border-color: #2d2d2d;
+  color: white;
+  width: auto;
+  min-width: 65px;
+  line-height: 16px;
+  text-align: right;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  height: 30px;
+}
+.cartQuantity {
+  line-height: 18px;
+  text-align: right;
+  margin-right: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffcc01;
+}
+.borderTab {
+  border: 1px solid #2d2d2d;
+  height: 3px;
+  background-color: #2d2d2d;
+  clear: both;
+}
+.bookList {
+  background-color: #585657;
+  color: white;
+  border-radius: 4px;
+  margin: 3px 0 3px 0;
+  padding: 6px 6px 4px 0;
+}
+.bookList .por {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+.bookList .data {
+  float: left;
+  margin-left: 5px;
+}
+.bookList .name {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffcc01;
+  line-height: 12px;
+}
+.bookList .quantity {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffcc01;
+  line-height: 12px;
+}
+.bookList .block {
+  display: block;
+}
+.bookList .actions {
+  float: right;
+  width: 20%;
+  text-align: right;
+  margin: 6px 6px 0 0;
+  font-weight: bold;
+}
+.bookList .rate {
+  margin-right: 6px;
+}
+.bookList .close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  filter: alpha(opacity=40);
+  opacity: .5;
+}
+.totalReservas {
+  width: auto;
+  min-width: 120px;
+  height: auto;
+  background-color: white;
+  text-align: left;
+  font-weight: bold;
+  border-radius: 0 0 4px 4px;
+  margin-bottom: 3px;
+  background-color: #2d2d2d;
+  border-color: #2d2d2d;
+  color: white;
+  padding: 0 5px 0 10px;
+}
+.totalReservas .totalAmountTxtContainer {
+  color: white;
+  float: left;
+  text-align: left;
+  margin-right: 65px;
+}
+.totalReservas .totalTxt {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.totalReservas .taxTxt {
+  font-size: 12px;
+  font-weight: normal;
+}
+.totalReservas .totalAmountContainer {
+  float: right;
+  line-height: 24px !important;
+}
+.clearer,
+.cartContainer:after,
+.bookList:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+#bookings_list {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.reserva-carrito-paso2:first-child {
+  margin-top: 3px;
+}
+.table-reserva-carrito-paso2 {
+  background-color: #f1f0f0;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 3px !important;
+}
+.table-reserva-carrito-paso2 .fila-1 {
+  background-color: #585657;
+}
+.table-reserva-carrito-paso2 .fila-1 td {
+  border-top: 0px !important;
+}
+.reserva-carrito-paso2 .datos-alojamiento {
+  float: left;
+}
+.table-reserva-carrito-paso2 tr.fila-1 .multiplicador {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fdcc03 !important;
+}
+.table-reserva-carrito-paso2 tr.fila-1 .nombre-linea-1,
+.noches {
+  font-size: 18px;
+  font-weight: bold;
+}
+/*REVISAR*/
+.table-reserva-carrito-paso2 tr.fila-1 .nombre-linea-2,
+.table-reserva-carrito-paso2 tr.fila-1 .salida,
+.table-reserva-carrito-paso2 tr.fila-1 .entrada {
+  display: block;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.table-reserva-carrito-paso2 tr.fila-1 .entrada {
+  display: block;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.table-reserva-carrito-paso2 tr.fila-1 .nombre-linea-2,
+.table-reserva-carrito-paso2 tr.fila-1 .salida,
+.table-reserva-carrito-paso2 tr.fila-1 .entrada {
+  display: block;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.table-reserva-carrito-paso2 tr.fila-1 .regimen,
+.table-reserva-carrito-paso2 tr.fila-1 .condic,
+.table-reserva-carrito-paso2 tr.fila-1 .personas {
+  display: block;
+  font-size: 14px;
+}
+/*REVISAR*/
+.reserva-carrito-paso2 .datos-rct {
+  float: right;
+  margin-top: 28px;
+}
+.table-reserva-carrito-paso2 tr.fila-1 .celda3-paso2 {
+  text-align: right;
+}
+.table-reserva-carrito-paso2 .fila-1 td {
+  border-top: 0px !important;
+}
+.table-reserva-carrito-paso2 tr.fila-2 td.celda1-paso2 {
+  border-top: 0;
+  padding: 0;
+  font-size: 12px;
+}
+.table-reserva-carrito-paso2 .selectorextras {
+  border: 3px solid #585657;
+}
+.ficha-config-v6 .ficha-config-der {
+  width: 100%;
+}
+.reserva-carrito-paso2 .config-detalles {
+  font-weight: normal;
+}
+.config-detalles {
+  border: 0;
+  margin: 0;
+}
+.es-ficha .config-detalles {
+  margin: 0;
+  padding: 0;
+}
+.ficha-config-v6 .config-detalles {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  width: 100%;
+}
+.config-detalles tr,
+.config-detalles th,
+.config-detalles td {
+  background-color: #f1f0f0;
+  border: 0px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.reserva-carrito-paso2 .fila-2 .celda1-paso2 td,
+.reserva-carrito-paso2 .fila-2 .celda1-paso2 td {
+  background-color: #fff;
+}
+.config-detalles .table-no-bordered {
+  border: 0;
+  margin: 0;
+}
+.config-detalles .col0 {
+  background-color: #dbdbdb;
+  border-right: 1px solid #ddd;
+  color: #8d8d8d;
+  padding: 0px !important;
+}
+.es-ficha .config-detalles .linea-precio-sin-descuento,
+.linea-extra.cuerpoContenedor {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.es-ficha .config-detalles .linea-precio-sin-descuento .alojamientotxt,
+.es-ficha .config-detalles .linea-precio-sin-descuento .alojamientopr {
+  font-weight: bold;
+}
+.es-ficha .config-detalles th,
+.es-ficha .config-detalles td {
+  border-left: 0;
+  border-right: 0;
+  padding: 2px;
+  vertical-align: center;
+}
+.es-ficha .config-detalles .linea-precio-sin-descuento .alojamientotxt {
+  margin-left: 20px;
+}
+.reserva-carrito-paso2 .fila-2 .celda1-paso2 td,
+.reserva-carrito-paso2 .fila-2 .celda1-paso2 span {
+  color: #666;
+}
+.table-reserva-carrito-paso2 tr.fila-2 td.celda1-paso2 .col3 {
+  padding-right: 10px;
+  text-align: right;
+}
+.reserva-carrito-paso2 .fila-2 .celda1-paso2 td,
+.reserva-carrito-paso2 .fila-2 .celda1-paso2 span {
+  color: #666;
+}
+.reserva-carrito-paso2 .fila-2 .celda1-paso2 td,
+.reserva-carrito-paso2 .fila-2 .celda1-paso2 span {
+  color: #666;
+}
+.config-detalles .col1 {
+  text-align: center;
+  width: 20px;
+}
+.config-detalles .col1 {
+  line-height: 17px;
+  padding: 9px 5px;
+  white-space: nowrap;
+}
+.config-detalles tr,
+.config-detalles th,
+.config-detalles td {
+  background-color: #f1f0f0;
+  border: 0px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.table-reserva-carrito-paso2 .fila-3 {
+  background-color: #585657;
+}
+.table-reserva-carrito-paso2 tr.fila-3 td {
+  text-align: left;
+  border-top: 0;
+}
+.table-reserva-carrito-paso2 tr.fila-3 td * {
+  font-weight: bold;
+}
+.table-reserva-carrito-paso2 tr.fila-3 .contenidoTotal {
+  float: right;
+}
+.table-reserva-carrito-paso2 tr.fila-3 .contenidoTotal .total {
+  display: block;
+  font-size: 14px;
+  text-align: right;
+}
+.table-reserva-carrito-paso2 tr.fila-3 .contenidoTotal .total .enteros {
+  font-size: 14px;
+}
+.table-reserva-carrito-paso2 tr.fila-3 .contenidoTotal .total .decimales {
+  font-size: 12px !important;
+}
+.reserva-carrito-paso2 .fila-2 tr.linea-extra td {
+  background-color: #EEEAEB;
+}
+.es-ficha .config-detalles .linea-extra .col2 {
+  width: 76%;
+}
+.es-ficha .config-detalles .linea-extra .col1 {
+  width: 7%;
+}
+.sprite.arrowExtras {
+  padding: 0;
+  background-position: -24px -19px;
+  width: 16px;
+  height: 17px;
+  opacity: .5;
+}
+.sprite.arrowExtras.open {
+  background-position: -42px -19px;
+}
+.reserva-carrito-paso2 .fila-2 .celda1-paso2 .extra-seleccionado td,
+.reserva-carrito-paso2 .fila-2 .celda1-paso2 .extra-seleccionado span,
+.reserva-carrito-paso2 .fila-2 .celda1-paso2 .promo-seleccionada td,
+.reserva-carrito-paso2 .fila-2 .celda1-paso2 .promo-seleccionada span {
+  background-color: #e3fbe3;
+  color: #196c12;
+}
+.table-reserva-carrito-paso2 tr.fila-2 td.celda1-paso2 .col3 {
+  padding-right: 10px;
+  text-align: right;
+}
+.sprite.arrowExtras.open {
+  margin-left: 0px;
+}
+.show-more-extras-txt {
+  font-weight: bold;
+}
+.show-more-extras {
+  cursor: pointer;
+}
+.promocionesTexto {
+  margin-left: 20px;
+  display: block;
+}
+.infoTooltip {
+  color: #000000 !important;
+  cursor: pointer;
+}
+.serviceImage,
+.serviceImage div,
+.serviceImage img {
+  width: 62px !important;
+  cursor: pointer;
+}
+.serviceSelected {
+  background-color: #e3fbe3 !important;
+  color: #196c12 !important;
+}
+.serviceSelected span,
+.serviceSelected td {
+  background-color: #e3fbe3 !important;
+  color: #196c12 !important;
+}
+.serviceSelected .infoTooltip {
+  color: black !important;
+}
+.infoImage {
+  float: left;
+  padding-right: 15px;
+}
+.infoText {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 12px;
+  float: left;
+  padding-top: 11px;
+  width: 240px;
+}
+.infoTextWithoutImg {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 12px;
+}
+.addBook {
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  float: left;
+  color: #0e77bb !important;
+}
+.importe-valor,
+.extravalue,
+.precioUnitario {
+  font-size: 0;
+}
+.cartContainer .integer {
+  font-size: 12px !important;
+}
+.cartContainer .decimal {
+  font-size: 12px !important;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "angularjs-seed",
+  "description": "A starter project for AngularJS",
+  "repository": "https://github.com/angular/angular-seed",
+  "devDependencies": {
+    "grunt-contrib-compress": "^0.13.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "karma": "~0.10",
+    "karma-jasmine": "~0.1",
+    "karma-junit-reporter": "~0.1",
+    "phantomjs": "~1.9",
+    "protractor": "~0.17.0"
+  },
+  "dependencies": {
+    "angular-md5": "^0.1.7",
+    "grunt-aws-s3": "^0.12.1",
+    "grunt-contrib-uglify": "^0.9.1",
+    "karma": "~0.10",
+    "karma-jasmine": "~0.1",
+    "karma-junit-reporter": "~0.1",
+    "phantomjs": "~1.9",
+    "protractor": "~0.17.0"
+  }
+}

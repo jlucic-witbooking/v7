@@ -1,0 +1,14 @@
+<div class="alert availabilityMessages" ng-class="{'alert-success':!establishment.allFiltered,'alert-danger':establishment.allFiltered}">
+    <span class="sprite" ng-class="{'ok':!establishment.allFiltered,'error':establishment.allFiltered}"></span>
+    <span class="textDispo">
+        <span class="pull-left" ng-show="!establishment.allFiltered && !establishment.allRestricted">&nbsp;<span translate>trans.step1.availabilitymessage</span>:</span>
+        <span class="pull-left" ng-show="establishment.allRestricted">&nbsp;<span translate>trans.step1.availabilitymessage</span>:</span>
+        <span class="pull-left" ng-show="establishment.allFiltered">&nbsp;<span translate>trans.step1.unavailabilitymessage</span>:</span>
+        <span class="pull-left firstDate"><span class="str strmonth">&nbsp;{{witbookerParams.regularParams.startDate | date : 'd MMM'}}</span>&nbsp;{{witbookerParams.regularParams.startDate | date : 'yyyy'}}&nbsp;</span>
+        <span class="pull-left">-</span>
+        <span class="pull-left"><span class="str strmonth">&nbsp;{{witbookerParams.regularParams.endDate | date : 'd MMM'}}</span>&nbsp;{{witbookerParams.regularParams.endDate | date : 'yyyy'}}&nbsp;</span>
+        <span class="pull-left textNights">(<span class="str">{{(witbookerParams.regularParams.endDate-witbookerParams.regularParams.startDate)/(1000*60*60*24)  | number:0 }} <span translate>trans.step1.inventoryline.nights</span></span>)</span>
+    </span>
+
+    <div class="clearer"></div>
+</div>

@@ -1,0 +1,25 @@
+<div accordion ng-if="isChain">
+    <div accordion-group>
+        <div accordion-heading>
+            <div ng-include="'partials/step_one/establishment/hotel.html'"></div>
+        </div>
+        <div ng-repeat="childEstablishment in establishment.establishments"
+             ng-include="'partials/step_one/result_list.html'"
+             ng-controller='establishmentCtrl'>
+
+        </div>
+    </div>
+</div>
+
+
+<div accordion ng-if="!isChain">
+    <div accordion-group>
+        <div accordion-heading>
+            <div ng-include="'partials/step_one/establishment/hotel.html'" ng-controller='establishmentCtrl'></div>
+        </div>
+
+        <div class="accommodation_list" ng-include="constants.assetsDir+'partials/step_one/establishment/accommodation_list.html'" ></div>
+
+    </div>
+</div>
+

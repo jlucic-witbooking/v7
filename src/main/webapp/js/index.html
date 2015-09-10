@@ -1,0 +1,102 @@
+<!doctype html>
+<html  class="ng-app:witbooker"  id="ng-app" lang="en"  ng-app="witbooker" xmlns:ng="http://angularjs.org"  xmlns:witbooking="ignored" xmlns:alert="ignored" xmlns:accordion="ignored">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My AngularJS App</title>
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/sprite.css"/>
+    <link rel="stylesheet" href="css/booking_form.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/promotion.css"/>
+    <link rel="stylesheet" href="css/messages.css"/>
+    <link rel="stylesheet" href="css/cart.css"/>
+    <link rel="stylesheet" href="css/stepBar.css"/>
+    <link rel="stylesheet" href="css/localization.css"/>
+    <link rel="stylesheet" href="css/witCarousel.css"/>
+    <link rel="stylesheet" href="css/map.css"/>
+    <link rel="stylesheet" href="css/chart.css"/>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20130526/json2.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <script>
+        document.createElement('ng-include');
+        document.createElement('ng-pluralize');
+        document.createElement('ng-view');
+
+        document.createElement('witbooking-app-version');
+        document.createElement('witbooking-front-endMessages');
+        document.createElement('witbooking-promotions');
+        document.createElement('witbooking-promotions-collapsed');
+        document.createElement('witbooking-establishment');
+        document.createElement('witbooking-accommodation');
+        document.createElement('witbooking-inventory-line');
+        document.createElement('witbooking-booking-form');
+        document.createElement('witbooking-carousel');
+        document.createElement('witbooking-info-panel-static');
+
+        document.createElement('alert');
+        document.createElement('accordion');
+
+        // Optionally these for CSS
+        document.createElement('ng:include');
+        document.createElement('ng:pluralize');
+        document.createElement('ng:view');
+    </script>
+    <![endif]-->
+
+</head>
+<body>
+
+<ul class="menu">
+    <li><a ui-sref="stepOne">Step 1</a></li>
+    <li><a ui-sref="step2">Step 2</a></li>
+</ul>
+eeee
+
+<div class="main">
+    <div class="row" >
+        <div id="app" ui-view class="col-md-12"></div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-route.js"></script>
+<script src="lib/angular/angular-resource.js"></script>
+<script src="lib/angular/angular-sanitize.js"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script>
+    google.load("visualization", "1", {packages:["corechart"]});
+</script>
+<script src="lib/extra/witchart.js"></script>
+
+<script src="components/angular-translate/angular-translate.js"></script>
+<script src="app.js"></script>
+<script src="services.js"></script>
+<script src="controllers.js"></script>
+<script src="filters.js"></script>
+<script src="directives.js"></script>
+<script src="components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="components/angular-ui-router/release/angular-ui-router.js"></script>
+</body>
+</html>

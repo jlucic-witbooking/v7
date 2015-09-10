@@ -1,0 +1,11 @@
+<div class="modal-body">
+    <div ng-repeat="message in messages"
+         ng-show="message.show"
+         close="closeAlert($index)">
+        <span ng-bind-html="message.descriptionHtml"></span>
+    </div>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">OK</button>
+</div>

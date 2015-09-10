@@ -1,0 +1,249 @@
+.icons {
+  box-sizing: inherit !important;
+  -webkit-box-sizing: inherit !important;
+  -moz-box-sizing: inherit !important;
+}
+.icons span {
+  background-color: grey;
+  padding: 5px;
+  margin-right: 2px;
+  border-radius: 2px;
+}
+.icons span:hover {
+  background-color: #343333;
+  cursor: pointer;
+}
+.icons .selectedIcon {
+  background-color: #343333 !important;
+}
+.icons .hab {
+  margin-top: 21px !important;
+}
+.arrowImg {
+  background: url(../img/flechaArribaParent.png);
+  height: 50px;
+}
+.sprite,
+.sprite:before,
+.sprite:after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.sprite {
+  line-height: 5px;
+  box-sizing: content-box;
+  display: inline-block;
+  background: url(../img/sprite.png) no-repeat top left;
+  padding: 5px;
+}
+.sprite.all {
+  background-position: 0 10px;
+  width: 16px;
+  height: 10px;
+}
+.sprite.breakfast {
+  background-position: -26px 2px;
+  width: 0px;
+  height: 2px;
+}
+.sprite.calendar {
+  background-position: -37px 3px;
+  width: 2px;
+  height: 1px;
+  cursor: pointer;
+}
+.sprite.infoMobile {
+  background-position: -4px -75px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.sprite.calendarMobile {
+  background-position: -50px -75px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.sprite.infoNew {
+  background-position: -49px 5px;
+  width: 20px;
+  height: 20px;
+}
+.sprite.infoNewList {
+  background-position: -54px 3px;
+  width: 10px;
+  height: 20px;
+  opacity: 0.5;
+}
+.sprite.infoGrey {
+  background-position: -75px 5px;
+  width: 10px;
+  height: 12px;
+}
+.sprite.info_red {
+  background-position: -96px 0;
+  width: 12px;
+  height: 12px;
+}
+.sprite.maps {
+  background-position: -108px 5px;
+  width: 20px;
+  height: 20px;
+}
+.sprite.map_black {
+  cursor: pointer;
+  background-position: -138px 5px;
+  width: 5px;
+  height: 15px;
+  opacity: 0.5;
+}
+.sprite.list {
+  cursor: pointer;
+  background-position: -3px -19px;
+  width: 10px;
+  height: 8px;
+}
+.sprite.mp {
+  background-position: -153px 10px;
+  width: 6px;
+  height: 10px;
+}
+.sprite.closeW {
+  cursor: pointer;
+  background-position: -170px 0;
+  width: 11px;
+  height: 11px;
+}
+.sprite.pc {
+  background-position: -196px 10px;
+  width: 10px;
+  height: 10px;
+}
+.sprite.pictures {
+  background-position: -213px 5px;
+  width: 20px;
+  height: 20px;
+}
+.sprite.shade {
+  background-position: -243px 0;
+  width: 3px;
+  height: 42px;
+}
+.sprite.shade_habitacion {
+  background-position: -251px 0;
+  width: 3px;
+}
+.sprite.arrowPromotion {
+  padding: 0;
+  background-position: -147px -25px;
+  width: 16px;
+  height: 17px;
+  opacity: .5;
+}
+.open.sprite.arrowPromotion {
+  background-position: -127px -25px;
+  opacity: .5;
+}
+.sprite.arrowPromotionMobile {
+  padding: 0;
+  background-position: -82px -25px;
+  width: 17px;
+  height: 17px;
+  opacity: .5;
+}
+.open .sprite.arrowPromotionMobile {
+  background-position: -62px -25px;
+  padding: 0;
+  width: 17px;
+  height: 17px;
+  opacity: .5;
+}
+.sprite.bookCart {
+  background-position: -112px -44px;
+  width: 12px;
+  height: 10px;
+  margin-bottom: -5px !important;
+}
+.sprite.discounts {
+  background-position: -137px -41px;
+  width: 20px;
+  height: 20px;
+}
+.panelPromotionActive .sprite.arrowPromotion,
+.panelPromotionActive .open.sprite.arrowPromotion {
+  opacity: 1;
+}
+.sprite.arrowHotel {
+  opacity: .5;
+}
+.sprite.arrowRoom {
+  opacity: .5;
+}
+.panelActive .sprite.arrowHotel {
+  opacity: 1;
+}
+.panelChildActive .sprite.arrowRoom {
+  opacity: 1;
+}
+.sprite.arrowHotel {
+  background-position: -194px -25px;
+  width: 13px;
+  height: 12px;
+}
+.sprite.arrowHotel.open {
+  background-position: -169px -25px;
+  width: 13px;
+  height: 12px;
+}
+.sprite.arrowRoom {
+  background-position: -197px -49px;
+  width: 7px;
+  height: 8px;
+}
+.sprite.arrowRoom.open {
+  background-position: -172px -49px;
+  width: 7px;
+  height: 8px;
+}
+.sprite.opac {
+  opacity: 0.5;
+}
+.sprite.specials {
+  background-position: -100px -25px;
+  width: 10px;
+  height: 1px;
+}
+.sprite.carrito {
+  background-position: -80px -39px;
+  width: 20px;
+  height: 15px;
+}
+.sprite.close {
+  background-position: -60px -45px;
+  width: 12px;
+  height: 10px;
+  opacity: 1;
+}
+.sprite.listPortal {
+  background-position: -4px -20px;
+  width: 2px;
+  height: 10px;
+}
+.sprite.mapPortal {
+  background-position: -138px 3px;
+  width: 0;
+  height: 10px;
+}
+.sprite.ok {
+  background-position: 0px -43px;
+  width: 15px;
+  height: 14px;
+  float: left;
+}
+.sprite.error {
+  background-position: -29px -43px;
+  width: 15px;
+  height: 14px;
+  float: left;
+}

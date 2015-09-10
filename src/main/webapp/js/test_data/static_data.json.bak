@@ -1,0 +1,941 @@
+{"establishment": {
+    "locale": "spa",
+    "inventoryLinesGrouped": [
+        {
+            "accommodation": {
+                "id": "2",
+                "ticker": "stand",
+                "name": "Estándar",
+                "description": "\u003cp\u003eLas habitaciones Est\u0026aacute;ndar doble, totalmente restauradas, est\u0026aacute;n completamente equipadas con una cama de matrimonio grande y c\u0026oacute;moda, un ba\u0026ntilde;o privado con una espaciosa ducha, aire acondicionado, tel\u0026eacute;fono.\u003c/p\u003e",
+                "media": [
+                    {
+                        "path": "0000.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0001.jpg",
+                        "name": "",
+                        "description": ""
+                    }
+                ],
+                "cheapestRate": 139.77684
+            },
+            "inventoryLine": [
+                {
+                    "ticker": "stand_2a_SA_cg",
+                    "condition": {
+                        "ticker": "cg",
+                        "name": "Cancelación gratuita",
+                        "earlyCharge": 0,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "2a",
+                        "name": "2 adultos",
+                        "guests": {
+                            "key": 2
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 405.0,
+                    "averageRate": 202.5
+                },
+                {
+                    "ticker": "stand_1a_SA_nr",
+                    "condition": {
+                        "ticker": "nr",
+                        "name": "No reembolsable",
+                        "earlyCharge": 100,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "1a",
+                        "name": "1 adulto",
+                        "guests": {
+                            "key": 1
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 279.55368,
+                    "averageRate": 139.77684
+                },
+                {
+                    "ticker": "stand_1a_SA_cg",
+                    "condition": {
+                        "ticker": "cg",
+                        "name": "Cancelación gratuita",
+                        "earlyCharge": 0,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "1a",
+                        "name": "1 adulto",
+                        "guests": {
+                            "key": 1
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 324.0,
+                    "averageRate": 162.0
+                },
+                {
+                    "ticker": "stand_2a_SA_nr",
+                    "condition": {
+                        "ticker": "nr",
+                        "name": "No reembolsable",
+                        "earlyCharge": 100,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "2a",
+                        "name": "2 adultos",
+                        "guests": {
+                            "key": 2
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 349.44208,
+                    "averageRate": 174.72104
+                },
+                {
+                    "ticker": "stand_2a_HD_cg",
+                    "condition": {
+                        "ticker": "cg",
+                        "name": "Cancelación gratuita",
+                        "earlyCharge": 0,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "2a",
+                        "name": "2 adultos",
+                        "guests": {
+                            "key": 2
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "HD",
+                        "name": "Con desayuno"
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 465.0,
+                    "averageRate": 232.5
+                },
+                {
+                    "ticker": "stand_2a_HD_nr",
+                    "condition": {
+                        "ticker": "nr",
+                        "name": "No reembolsable",
+                        "earlyCharge": 100,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "2a",
+                        "name": "2 adultos",
+                        "guests": {
+                            "key": 2
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "HD",
+                        "name": "Con desayuno"
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 401.2113,
+                    "averageRate": 200.60565
+                },
+                {
+                    "ticker": "stand_2a2n1b_SA_cg",
+                    "condition": {
+                        "ticker": "cg",
+                        "name": "Cancelación gratuita",
+                        "earlyCharge": 0,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "2a2n1b",
+                        "name": "2 adultos + 2 niños + 1 bebé",
+                        "guests": {
+                            "key": 2
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 810.0,
+                    "averageRate": 405.0
+                },
+                {
+                    "ticker": "stand_2a2n1b_SA_nr",
+                    "condition": {
+                        "ticker": "nr",
+                        "name": "No reembolsable",
+                        "earlyCharge": 100,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "2a2n1b",
+                        "name": "2 adultos + 2 niños + 1 bebé",
+                        "guests": {
+                            "key": 2
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 698.88416,
+                    "averageRate": 349.44208
+                },
+                {
+                    "ticker": "stand_2a1n1b_SA_nr",
+                    "condition": {
+                        "ticker": "nr",
+                        "name": "No reembolsable",
+                        "earlyCharge": 100,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "2a1n1b",
+                        "name": "2 adultos + 1 niño + 1 bebé",
+                        "guests": {
+                            "key": 2
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 698.88416,
+                    "averageRate": 349.44208
+                },
+                {
+                    "ticker": "stand_2a1n1b_SA_cg",
+                    "condition": {
+                        "ticker": "cg",
+                        "name": "Cancelación gratuita",
+                        "earlyCharge": 0,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "2a1n1b",
+                        "name": "2 adultos + 1 niño + 1 bebé",
+                        "guests": {
+                            "key": 2
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 810.0,
+                    "averageRate": 405.0
+                }
+            ]
+        },
+        {
+            "accommodation": {
+                "id": "3",
+                "ticker": "jnr",
+                "name": "Junior Suite",
+                "description": "\u003cp\u003eLas habitaciones Junior Suite doble, totalmente restauradas, est\u0026aacute;n completamente equipadas con dos camas grandes y c\u0026oacute;modas, un ba\u0026ntilde;o privado con una espaciosa ducha, aire acondicionado, tel\u0026eacute;fono.\u003c/p\u003e",
+                "media": [
+                    {
+                        "path": "0000.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0001.jpg",
+                        "name": "",
+                        "description": ""
+                    }
+                ],
+                "cheapestRate": 174.1818
+            },
+            "inventoryLine": [
+                {
+                    "ticker": "jnrsuite_2a_SA_nr",
+                    "condition": {
+                        "ticker": "nr",
+                        "name": "No reembolsable",
+                        "earlyCharge": 100,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "2a",
+                        "name": "2 adultos",
+                        "guests": {
+                            "key": 2
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 409.8395,
+                    "averageRate": 204.91975
+                },
+                {
+                    "ticker": "jnrsuite_1a_SA_cg",
+                    "condition": {
+                        "ticker": "cg",
+                        "name": "Cancelación gratuita",
+                        "earlyCharge": 0,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "1a",
+                        "name": "1 adulto",
+                        "guests": {
+                            "key": 1
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 403.75,
+                    "averageRate": 201.875
+                },
+                {
+                    "ticker": "jnrsuite",
+                    "condition": {
+                        "ticker": "cg",
+                        "name": "Cancelación gratuita",
+                        "earlyCharge": 0,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "2a",
+                        "name": "2 adultos",
+                        "guests": {
+                            "key": 2
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 475.0,
+                    "averageRate": 237.5
+                },
+                {
+                    "ticker": "jnrsuite_1a_SA_nr",
+                    "condition": {
+                        "ticker": "nr",
+                        "name": "No reembolsable",
+                        "earlyCharge": 100,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "1a",
+                        "name": "1 adulto",
+                        "guests": {
+                            "key": 1
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 348.3636,
+                    "averageRate": 174.1818
+                },
+                {
+                    "ticker": "jnrsuite_2a_HD_cg",
+                    "condition": {
+                        "ticker": "cg",
+                        "name": "Cancelación gratuita",
+                        "earlyCharge": 0,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "2a",
+                        "name": "2 adultos",
+                        "guests": {
+                            "key": 2
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "HD",
+                        "name": "Con desayuno"
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 535.0,
+                    "averageRate": 267.5
+                },
+                {
+                    "ticker": "jnrsuite_2a_HD_nr",
+                    "condition": {
+                        "ticker": "nr",
+                        "name": "No reembolsable",
+                        "earlyCharge": 100,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "2a",
+                        "name": "2 adultos",
+                        "guests": {
+                            "key": 2
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "HD",
+                        "name": "Con desayuno"
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 461.6087,
+                    "averageRate": 230.80435
+                }
+            ]
+        },
+        {
+            "accommodation": {
+                "id": "1",
+                "ticker": "tpl",
+                "name": "Triple",
+                "description": "Las habitaciones Triples, totalmente restauradas, est\u0026aacute;n equipadas con tres camas individuales, un ba\u0026ntilde;o privado con una espaciosa ducha, aire acondicionado, tel\u0026eacute;fono.",
+                "media": [
+                    {
+                        "path": "0001.jpg",
+                        "name": ""
+                    },
+                    {
+                        "path": "0002.jpg",
+                        "name": "",
+                        "description": ""
+                    }
+                ],
+                "cheapestRate": 207.18466
+            },
+            "inventoryLine": [
+                {
+                    "ticker": "tpl",
+                    "condition": {
+                        "ticker": "cg",
+                        "name": "Cancelación gratuita",
+                        "earlyCharge": 0,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "3a",
+                        "name": "3 adultos",
+                        "guests": {
+                            "key": 3
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 565.0,
+                    "averageRate": 282.5
+                },
+                {
+                    "ticker": "tpl_2a1n_SA_cg",
+                    "condition": {
+                        "ticker": "cg",
+                        "name": "Cancelación gratuita",
+                        "earlyCharge": 0,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "2a1n",
+                        "name": "2 adultos + 1 niño",
+                        "guests": {
+                            "key": 1
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 480.25,
+                    "averageRate": 240.125
+                },
+                {
+                    "ticker": "tpl_2a1n_SA_nr",
+                    "condition": {
+                        "ticker": "nr",
+                        "name": "No reembolsable",
+                        "earlyCharge": 100,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "2a1n",
+                        "name": "2 adultos + 1 niño",
+                        "guests": {
+                            "key": 1
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 414.36932,
+                    "averageRate": 207.18466
+                },
+                {
+                    "ticker": "tpl_3a_SA_nr",
+                    "condition": {
+                        "ticker": "nr",
+                        "name": "No reembolsable",
+                        "earlyCharge": 100,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "3a",
+                        "name": "3 adultos",
+                        "guests": {
+                            "key": 3
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 487.4933,
+                    "averageRate": 243.74664
+                },
+                {
+                    "ticker": "tpl_3a_HD_nr",
+                    "condition": {
+                        "ticker": "nr",
+                        "name": "No reembolsable",
+                        "earlyCharge": 100,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "3a",
+                        "name": "3 adultos",
+                        "guests": {
+                            "key": 3
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "HD",
+                        "name": "Con desayuno"
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 565.1471,
+                    "averageRate": 282.57355
+                },
+                {
+                    "ticker": "tpl_3a_HD_cg",
+                    "condition": {
+                        "ticker": "cg",
+                        "name": "Cancelación gratuita",
+                        "earlyCharge": 0,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "3a",
+                        "name": "3 adultos",
+                        "guests": {
+                            "key": 3
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "HD",
+                        "name": "Con desayuno"
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 655.0,
+                    "averageRate": 327.5
+                },
+                {
+                    "ticker": "tpl_4a_HD_nr",
+                    "condition": {
+                        "ticker": "nr",
+                        "name": "No reembolsable",
+                        "earlyCharge": 100,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "4a",
+                        "name": "4 adultos",
+                        "guests": {
+                            "key": 4
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "HD",
+                        "name": "Con desayuno"
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 609.36664,
+                    "averageRate": 304.68332
+                }
+            ]
+        },
+        {
+            "accommodation": {
+                "id": "13",
+                "ticker": "Roman",
+                "name": "Pack Romántico",
+                "description": "\u003cp\u003eSi no te conformas con regalar rosas o bombones para expresar tus sentimientos, te proponemos algo mucho m\u0026aacute;s original para sorprender a tu pareja. 2 noches en Estandar Doble Champagne en la habitaci\u0026oacute;n P\u0026eacute;talos de rosa en la cama Cesta de frutas ex\u0026oacute;ticas 2 sesiones de masaje de 1h Late check out (14h)\u003c/p\u003e",
+                "media": [
+                    {
+                        "path": "0000.jpg",
+                        "name": ""
+                    }
+                ],
+                "cheapestRate": 277.5
+            },
+            "inventoryLine": [
+                {
+                    "ticker": "p_rom2a2d",
+                    "condition": {
+                        "ticker": "cg",
+                        "name": "Cancelación gratuita",
+                        "earlyCharge": 0,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "2a",
+                        "name": "2 adultos",
+                        "guests": {
+                            "key": 2
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 555.0,
+                    "averageRate": 277.5
+                },
+                {
+                    "ticker": "p_rom2a3d",
+                    "condition": {
+                        "ticker": "cg",
+                        "name": "Cancelación gratuita",
+                        "earlyCharge": 0,
+                        "minimumCharge": 0,
+                        "description": "\u003cp\u003eArray\u003c/p\u003e"
+                    },
+                    "configuration": {
+                        "ticker": "2a",
+                        "name": "2 adultos",
+                        "guests": {
+                            "key": 2
+                        }
+                    },
+                    "mealPlan": {
+                        "ticker": "SA",
+                        "name": "Sólo alojamiento "
+                    },
+                    "errorMessage": [
+                        {
+                            "message": "Failed at maxNotice",
+                            "failedFilter": "maxNotice"
+                        }
+                    ],
+                    "totalRate": 555.0,
+                    "averageRate": 277.5
+                }
+            ]
+        }
+    ],
+    "discounts": [
+        {
+            "ticker": "p2",
+            "name": "Long stay 4 noches",
+            "description": "\u003cp\u003eDescuento del 8% en todas las reservas online de 4 d\u0026iacute;as o m\u0026aacute;s.\u003c/p\u003e",
+            "minStay": 4,
+            "maxStay": -1,
+            "minNotice": -1,
+            "maxNotice": -1,
+            "lock": true,
+            "active": true,
+            "percentage": true,
+            "reduction": -8.0,
+            "startDate": "Jan 1, 2014 12:00:00 AM",
+            "endDate": "Dec 31, 2014 12:00:00 AM",
+            "media": [
+                {
+                    "path": "0001.jpg",
+                    "name": ""
+                }
+            ]
+        },
+        {
+            "ticker": "p1",
+            "name": "Early bird",
+            "description": "\u003cp\u003eSi reserva con un m\u0026iacute;nimo de 20 d\u0026iacute;as de antelaci\u0026oacute;n obtendr\u0026aacute; este descuento (excluidas tarifas no reembolsables).\u0026nbsp;\u003c/p\u003e",
+            "minStay": -1,
+            "maxStay": -1,
+            "minNotice": 20,
+            "maxNotice": -1,
+            "lock": true,
+            "active": true,
+            "percentage": true,
+            "reduction": -10.0,
+            "startDate": "Jan 1, 2014 12:00:00 AM",
+            "endDate": "Dec 31, 2014 12:00:00 AM",
+            "media": [
+                {
+                    "path": "0001.jpg",
+                    "name": ""
+                }
+            ]
+        },
+        {
+            "ticker": "p4",
+            "name": "Dto. por pago inmediato\u003cbr\u003e(no reembolsable)",
+            "description": "\u003cp\u003ePague su habitaci\u0026oacute;n por anticipado y disfrute de un 5% de descuento, su reserva ser\u0026aacute; cargada en su tarjeta de cr\u0026eacute;dito en las pr\u0026oacute;ximas horas y no ser\u0026aacute; cancelable.\u003c/p\u003e",
+            "minStay": -1,
+            "maxStay": -1,
+            "minNotice": -1,
+            "maxNotice": -1,
+            "lock": true,
+            "active": true,
+            "percentage": true,
+            "reduction": -5.0,
+            "startDate": "Jan 1, 2014 12:00:00 AM",
+            "endDate": "Dec 31, 2014 12:00:00 AM",
+            "media": []
+        }
+    ],
+    "currencies": [
+        {
+            "code": "EUR"
+        },
+        {
+            "code": "GBP"
+        },
+        {
+            "code": "USD"
+        }
+    ],
+    "messages": [
+        {
+            "code": 1,
+            "text": "\u003cp\u003eFor security reasons you will be asked to present the credit card at \u0026nbsp;check-in.\u0026nbsp;\u003c/p\u003e"
+        },
+        {
+            "code": 2,
+            "text": "\u003cp\u003eRates here shown do not include the turistic tax: 0,5 Eur per person per night.\u003c/p\u003e"
+        },
+        {
+            "code": 4,
+            "text": "\u003cp\u003eOnly booking save 25% on your breakfast!\u003c/p\u003e"
+        },
+        {
+            "code": 5,
+            "text": "\u003cp\u003eBooking your bike here you save 25%\u003c/p\u003e"
+        },
+        {
+            "code": 6,
+            "text": "\u003cp\u003eConsult our other hotel: www.hotel-alternative.com\u003c/p\u003e"
+        }
+    ],
+    "id": "1",
+    "ticker": "hoteldemo.com.v6",
+    "name": "Hotel Demo ",
+    "description": "Hotel Demo Witbooker es un motor de reservas en simulación. Disfruta con Witbooking de las mejores soluciones informáticas para la industria hotelera.",
+    "active": true,
+    "additionalProperties": {
+        "ocultarRestringuidas": "0",
+        "fltr_tipo_ocupacion": "3",
+        "defaultLanguage": "en"
+    },
+    "contactInfo": {
+        "phone": "666666666",
+        "email": "",
+        "latitude": 41.3879,
+        "longitude": 2.1699,
+        "address":"Address",
+        "city":"City",
+        "country":"Country"
+    },
+    "media": [
+        {
+            "path": "0000.jpg",
+            "name": "año y día",
+            "description": "asd"
+        },
+        {
+            "path": "0001.jpg",
+            "name": "",
+            "description": ""
+        }
+    ]
+}, "reservationInfo": {
+    "numberOfDays": 2
+}}

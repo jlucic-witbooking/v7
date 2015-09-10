@@ -1,0 +1,9 @@
+<div class="messagesContainer">
+    <div alert class="messages {{message.style}}"
+         ng-repeat="message in messages"
+         ng-show="message.show"
+         type="{{messageAlertClassDict[message.type]}}"
+         close="closeAlert($index)">
+	    <span ng-bind-html="message.descriptionHtml"></span>
+    </div>
+</div>

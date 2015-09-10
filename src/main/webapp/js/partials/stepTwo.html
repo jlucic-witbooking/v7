@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script>
+	ga('tgaown.send', 'pageview',document.location.pathname.replace("step1","step2"));
+	ga('tgaclient.send', 'pageview',document.location.pathname.replace("step1","step2"));
+</script>
+
+
+<custom-markup ng-if="currentState.indexOf('stepTwo')>=0"
+               markups="establishment.markups[constants.markups.phase.step2]"
+               position="constants.markups.position.afterbeginbody"
+               phase="constants.markups.phase.step2"></custom-markup>
+<custom-markup ng-if="currentState.indexOf('stepTwo')>=0"
+               markups="establishment.markups[constants.markups.phase.all]"
+               position="constants.markups.position.afterbeginbody"
+               phase="constants.markups.phase.all"></custom-markup>
+
+<div class="logoMobileContainer">
+	<div class="logoMobile">
+		<div class="logoContainerMobile" >
+			<a href="{{util.generateHotelUrl(witbookerParams.representation.hotelSiteUrl,witbookerParams.representation.hotelLogoHasLink)}}">
+				<img  ng-src='{{util.generateLogoUrl(establishment)}}' alt="" longdesc="">
+			</a>
+		</div>
+	</div>
+	<div class="isDemo">&nbsp;</div>
+</div>
+<div class="clearer"></div>
+<div class="row">
+    <!--If using same container on top, use pushs and pulls-->
+
+    <!--col-lg-pull-4-->
+    <!--    {{establishment.hasOwnProperty('discounts')? 'col-md-8' : 'col-md-12'  }}-->
+    <div class="col-md-8 mainStepContainer" >
+        <div witbooking-localization class="topRowContainer" witbooker-params="witbookerParams" languages="establishment.languages" currencies="establishment.currencies" ></div>
+
+        <!--<div witbooking-front-end-messages-->
+             <!--messages="establishment.sortedMessages[constants.messages.position.top_inventory_step_1]"-->
+             <!--establishment="establishment"-->
+             <!--class="messagesContainer"></div>-->
+        <div witbooking-cart size="constants.cart.largeSize"  establishment="establishment"></div>
+        <div class="clearer"></div>
+        <div id="wrapList">
+            <div ui-view></div>
+            <div id="disableClick"></div>
+        </div>
+	    <form method="post" name="form" role="form"  class="css-form" novalidate>
+		    <div witbooking-customer-data-form form="form" establishment="establishment" id="customerDataForm" customer-data="customerData" class="customerFormContainer"></div>
+		    <div witbooking-payment-data-form form="form" establishment="establishment" id="paymentDataForm" payment-data="paymentData" reservations="cart.reservations" class="paymentFormContainer"></div>
+	    </form>
+	    <!--
+			<div ng-include="'partials/step_one/establishment.html'" ></div>
+	-->
+    </div>
+    <!--col-lg-push-8-->
+    <div class="col-md-4 promotionSideContainer">
+	    <div class="logo_hotel">
+		    <style type="text/css">
+			    .logo_hotel{
+				    padding-top: 55px;
+				    padding-bottom: 55px;
+				    display: table;
+				    margin-right: auto;
+				    margin-left: auto;
+			    }
+		    </style>
+		    <div class="logoContainer" style="display: table-cell">
+			    <a href="{{util.generateHotelUrl(representation.hotelSiteUrl,representation.hotelLogoHasLink)}}">
+				    <img  ng-src='{{util.generateLogoUrl(establishment)}}' alt="" longdesc="">
+			    </a>
+		    </div>
+		    <div class="isDemo">&nbsp;</div>
+	    </div>
+	    <div class="clearer">&nbsp;</div>
+    </div>
+</div>
+
+
+<div witbooking-footer ng-if=" !witbookerParams.representation.iframeMode || (witbookerParams.representation.iframeMode  && witbookerParams.representation.showPromoCodeInputOnIframeMode )" witbookerParams="witbookerParams"></div>
+
+<custom-markup ng-if="currentState.indexOf('stepTwo')>=0"
+               markups="establishment.markups[constants.markups.phase.step2]"
+               position="constants.markups.position.beforeendbody"
+               phase="constants.markups.phase.step2"></custom-markup>
+<custom-markup ng-if="currentState.indexOf('stepTwo')>=0"
+               markups="establishment.markups[constants.markups.phase.all]"
+               position="constants.markups.position.beforeendbody"
+               phase="constants.markups.phase.all"></custom-markup>
+
+</body>
+</html>
+

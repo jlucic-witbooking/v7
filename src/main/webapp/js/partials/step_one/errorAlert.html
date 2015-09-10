@@ -1,0 +1,17 @@
+<div ng-if="alert.show">
+    <div alert
+         type="alert.alertType"
+         close="alert.close(show)"
+         class="messages">
+        <span ng-if="alert.errorType==constants.filters.occupationType ">
+
+            <strong><span
+                    translate>trans.step1.unavailable.{{constants.filters.occupationType}}.generalErrorMessage</span>
+                : {{alert.value.adults}}&nbsp; <span translate>trans.step1.occupant.adults</span> ,
+                {{alert.value.children}}&nbsp;<span translate>trans.step1.occupant.children</span>,
+                {{alert.value.babies}}&nbsp;<span translate>trans.step1.occupant.babies</span>.
+                <div translate>trans.step1.unavailable.tryAgain</div>
+            </strong>
+        </span>
+    </div>
+</div>

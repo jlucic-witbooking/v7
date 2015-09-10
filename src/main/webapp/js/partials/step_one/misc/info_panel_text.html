@@ -1,0 +1,8 @@
+<div ng-if=' !(establishment && establishment.hasOwnProperty("establishments") && establishment.establishments.length>0) && establishment.visualState.showPanel'  class="hotelExtraDesc" >
+    <div class="header">
+        <span class="title">{{title}}</span>
+        <span class="sprite closeW closeInfoH">&nbsp;</span></div>
+    <div class="content">
+        <span ng-bind-html="establishment.description"></span>
+    </div>
+</div>

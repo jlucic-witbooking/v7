@@ -1,0 +1,276 @@
+.promotionSideContainer .promoCodeLabelContainer,
+.promotionTopContainer .promoCodeLabelContainer {
+  margin: 5px 0px 0px 0px;
+}
+.promotionSideContainer .promoCodeLabel,
+.promotionTopContainer .promoCodeLabel {
+  font-size: 13px;
+  font-weight: bold;
+}
+.valid {
+  color: green !important;
+}
+.invalid {
+  color: red !important;
+}
+.description {
+  font-style: italic;
+}
+.discountsMobile .promotionHotelContainer {
+  background-color: #d9edf7 !important;
+  border-top: 1px solid #82b3cb;
+}
+.promotionHotelContainer {
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid #c4c4c4;
+}
+.promotionHotelContainer:last-child {
+  border-bottom: none;
+}
+.promotionHotelContainer .title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.promotionHotelContainer p,
+.promotionHotelContainer li {
+  line-height: 1.4em;
+  color: #777;
+  font-size: 12px;
+  padding: 0;
+  border: 0;
+}
+.promotionHotelContainer .labelText {
+  font-size: 12px;
+}
+.promotionHotelContainer .discount {
+  color: red;
+}
+.promotionSideContainer {
+  display: none;
+  width: 310px;
+}
+.promotionSideContainer .entry-title {
+  display: table;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.promotionSideContainer .panel-title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 280px;
+  max-width: 280px;
+  word-break: break-word;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+.promotionSideContainer .panel-heading:hover {
+  background-color: #f2f4f8 !important;
+}
+.promotionSideContainer .panel-heading {
+  background-color: transparent !important;
+}
+.promotionSideContainer .panel-body {
+  padding: 0px 0px 0px 0px;
+}
+.promotionSideContainer .entry-title {
+  display: table;
+  min-height: 40px;
+  height: 40px;
+  padding: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+.promotionSideContainer .entry-title .title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 240px;
+  max-width: 240px;
+  word-break: break-word;
+  display: table-cell;
+  vertical-align: middle;
+}
+.promotionSideContainer .entry-title .arrow-wrapper {
+  width: 29px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.promotionSideContainer .entry-content {
+  padding: 1em;
+  border: 1px #c4c4c4 solid;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.promotionSideContainer .entry-content p,
+.promotionSideContainer .entry-content li {
+  line-height: 1.4em;
+  color: #777;
+  font-size: 12px;
+  padding: 0;
+  border: 0;
+}
+.promotionSideContainer .entry-content .labelText {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  font-size: 12px;
+}
+.promotionSideContainer .entry-content .discount {
+  color: red;
+}
+.promotionSideContainer .panel-heading {
+  display: table;
+  min-height: 40px;
+  height: 40px;
+  padding: 5px;
+}
+.promotionSideContainer .panel-default {
+  display: none;
+  border: 0px;
+  border-top: 1px solid #cccccc;
+}
+.promotionSideContainer .logo_hotel {
+  width: 100%;
+  border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+}
+.promotionSideContainer .logo_hotel .isDemo {
+  background-image: url("../img/demo_tag.png");
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+}
+.promotionTopContainer {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.promotionTopContainer .mainFontColor1 {
+  color: black !important;
+}
+.promotionTopContainer .logo_hotel {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 96px;
+}
+.promotionTopContainer a {
+  text-decoration: none;
+}
+.promotionTopContainer .title {
+  display: inline;
+  cursor: pointer;
+}
+.promotionTopContainer .headerSpecials {
+  font-weight: bold;
+  color: #82B3CB;
+}
+.promotionTopContainer .open.headerSpecials {
+  color: #2b79a0;
+}
+.promotionTopContainer .panel-heading {
+  background-color: #d9edf7 !important;
+  color: #2b79a0;
+  border-radius: 4px 4px 4px 4px !important;
+  padding: 10px;
+}
+.promotionTopContainer .sprite.arrowPromotion {
+  margin-right: -22px;
+}
+.promotionTopContainer .entry-content {
+  padding: 0 1em 0 1em;
+  background-color: #d9edf7;
+  box-shadow: none;
+}
+.promotionTopContainer .panel-default {
+  border: 0px;
+}
+.promotionTopContainer .panel-body {
+  margin: 0px;
+  padding: 0px;
+  border-radius: 0px 0px 5px 5px !important;
+}
+.promotionTopContainer .promotionsList .panel-default {
+  background-color: #d9edf7;
+}
+.promotionTopContainer .promotionsList .panel-heading {
+  background-color: #d9edf7 !important;
+  border-top: 1px solid #82b3cb;
+  color: #2b79a0;
+  padding: 7px 10px 7px 10px;
+  border-radius: 0px !important;
+  margin-bottom: 0px;
+}
+.promotionTopContainer .promotionsAccordion .panel-collapse {
+  background-color: #d9edf7;
+}
+.promotionTopContainer .promotionsAccordion .panel-heading {
+  margin-bottom: 0px;
+}
+.promotionTopContainer .promotionsAccordion.inner .glyphicon {
+  margin-right: 0px;
+}
+.promotionTopContainer .entry-title {
+  display: table;
+  min-height: 40px;
+  height: 40px;
+  padding: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+.promotionTopContainer .entry-title .title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  word-break: break-word;
+  display: table-cell;
+  vertical-align: middle;
+}
+.promotionTopContainer .entry-title .arrow-wrapper {
+  width: 29px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.promotionTopContainer .panel-group .panel {
+  overflow: visible;
+}
+.promotionTopContainer .glyphicon {
+  float: right;
+  margin-right: 25px;
+}
+.alwaysShow {
+  display: block !important;
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .promotionSideContainer {
+    display: block;
+  }
+  .promotionSideContainer .panel-default {
+    display: block;
+  }
+  .promotionTopContainer {
+    display: none;
+  }
+  .logoMobile,
+  .logoMobileContainer {
+    display: none;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+/* Small devices (tablets, 768px and up) */

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+
+<script>
+    ga('tgaown.send', 'pageview',document.location.pathname);
+    ga('tgaclient.send', 'pageview',document.location.pathname);
+    console.log("page view step1 set");
+</script>
+
+<custom-markup ng-if="currentState.indexOf('stepOne')>=0"
+               markups="establishment.markups[constants.markups.phase.step1]"
+               position="constants.markups.position.afterbeginbody"
+               phase="constants.markups.phase.step1"></custom-markup>
+<custom-markup ng-if="currentState.indexOf('stepOne')>=0"
+               markups="establishment.markups[constants.markups.phase.all]"
+               position="constants.markups.position.afterbeginbody"
+               phase="constants.markups.phase.all"></custom-markup>
+
+<div witbooking-modal-messages messages="establishment.sortedMessages[constants.messages.position.modal_step_1]" establishment="establishment"></div>
+
+<div class="logoMobileContainer">
+    <div class="logoMobile">
+        <div class="logoContainerMobile" >
+            <a href="{{util.generateHotelUrl(witbookerParams.representation.hotelSiteUrl,witbookerParams.representation.hotelLogoHasLink)}}">
+                <img  ng-src='{{util.generateLogoUrl(establishment)}}' alt="" longdesc="">
+            </a>
+        </div>
+    </div>
+	<div class="isDemo">&nbsp;</div>
+</div>
+<div class="clearer"></div>
+<div class="row">
+    <!--If using same container on top, use pushs and pulls-->
+
+    <!--col-lg-pull-4-->
+<!--    {{establishment.hasOwnProperty('discounts')? 'col-md-8' : 'col-md-12'  }}-->
+    <div class="col-md-8">
+        <div witbooking-localization
+             ng-if="!witbookerParams.representation.iframeMode"
+             class="topRowContainer"
+             witbooker-params="witbookerParams"
+             languages="establishment.languages"
+             currencies="establishment.currencies" ></div>
+        <div class="promotionTopContainer"
+             ng-if="!witbookerParams.representation.hidePromos"
+             ng-show="util.countOwnProperties(establishment.discounts)-1>0">
+            <div accordion class="promotionsAccordion">
+                <div accordion-group>
+                    <div accordion-heading>
+                        <!--TODO: Add translation with angular translate-->
+                        <div class="headerSpecials"  ng-class='{"open":panelPromotionMobileOpen}' ng-click='panelPromotionMobileOpen=!panelPromotionMobileOpen'>
+                            <div >
+                                <div class="pull-left">
+                                    <span class="sprite specials"></span>
+                                    <!--TODO: We are substracting 1 from the total because of the special rackRateDiscount, is this the best way?-->
+                                    <span class="title"><span translate>trans.step1.discounts</span> ({{ util.countOwnProperties(establishment.discounts)!= 0 ? util.countOwnProperties(establishment.discounts) -1 : 0 }}) </span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="sprite arrowPromotionMobile">&nbsp;</span>
+                                </div>
+                                <div class="clearer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div witbooking-promotions discounts="establishment.discounts" class="promotionsList" toggle-accordion="toggleAccordion"></div>-->
+                    <div witbooking-discounts class="discountsMobile" discounts="establishment.discounts"></div>
+                </div>
+            </div>
+        </div>
+
+        <div witbooking-front-end-messages
+             messages="establishment.sortedMessages[constants.messages.position.top_inventory_step_1]"
+             establishment="establishment"
+             class="messagesContainer"></div>
+        <div witbooking-cart ></div>
+        <div witbooking-error-alert ng-repeat="errorMessage in establishment.errorMessages "  error-message="errorMessage" ></div>
+        <div id="booking-form" witbooking-booking-form  representation="representation" witbooker-params="witbookerParams"></div>
+
+
+        <div witbooking-availability  establishment="establishment" witbooker-params="witbookerParams"></div>
+        <div class="menuPortal " ng-if="showMapButton">
+            <span class="textoMenuPortal"><span translate>trans.view</span>:</span>
+            <div class="btn-group" ng-controller="viewButtoms">
+                <a ui-sref="stepOne.list" id="listStepOne" class="btn viewButton" ng-model="radioModel" btn-radio="'list'">
+                    <i class="sprite listPortal"></i>
+                </a>
+                <a ui-sref="stepOne.map" id="mapStepOne" class="btn viewButton"  ng-model="radioModel" btn-radio="'map'">
+                    <i class="sprite mapPortal"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="clearer"></div>
+        <div id="wrapList">
+            <div ui-view></div>
+            <div id="disableClick"></div>
+        </div>
+
+<!--
+        <div ng-include="'partials/step_one/establishment.html'" ></div>
+-->
+    </div>
+    <!--col-lg-push-8-->
+    <div class="col-md-4 promotionSideContainer">
+        <div class="logo_hotel">
+            <style type="text/css">
+                .logo_hotel{
+                    padding-top: 55px;
+                    padding-bottom: 55px;
+                    display: table;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+            </style>
+            <div class="logoContainer" style="display: table-cell">
+                <a href="{{util.generateHotelUrl(witbookerParams.representation.hotelSiteUrl,witbookerParams.representation.hotelLogoHasLink)}}">
+                    <img  ng-src='{{util.generateLogoUrl(establishment)}}' alt="" longdesc="">
+                </a>
+            </div>
+	        <div class="isDemo">&nbsp;</div>
+        </div>
+        <div class="clearer">&nbsp;</div>
+
+        <div witbooking-front-end-messages
+             messages="establishment.sortedMessages[constants.messages.position.below_logo_step_1]"
+             establishment="establishment"
+             class="messagesContainer"></div>
+        <div witbooking-promotions  ng-if="!witbookerParams.representation.hidePromos"
+             discounts="establishment.discounts" class="messagesContainer" toggle-accordion="toggleAccordion"></div>
+    </div>
+</div>
+<div witbooking-footer ng-if=" !witbookerParams.representation.iframeMode || (witbookerParams.representation.iframeMode  && witbookerParams.representation.showPromoCodeInputOnIframeMode )" witbookerParams="witbookerParams"></div>
+<div witbooking-tracking-pixels></div>
+
+<custom-markup ng-if="currentState.indexOf('stepOne')>=0"
+               markups="establishment.markups[constants.markups.phase.step1]"
+               position="constants.markups.position.beforeendbody"
+               phase="constants.markups.phase.step1"></custom-markup>
+
+<custom-markup ng-if="currentState.indexOf('stepOne')>=0"
+               markups="establishment.markups[constants.markups.phase.all]"
+               position="constants.markups.position.beforeendbody"
+               phase="constants.markups.phase.all"></custom-markup>
+
+
+</body>
+</html>

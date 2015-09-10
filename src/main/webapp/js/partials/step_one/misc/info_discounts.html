@@ -1,0 +1,44 @@
+<div>
+    <div class="promotionHotelContainer" ng-repeat="discount in discounts | orderObjectBy:'order' " ng-if="discount.active">
+        <div class="title">
+            <span ng-bind-html="discount.name"></span>
+        </div>
+        <span ng-bind-html="discount.description" class="description"></span>
+        <div class="promoCodeLabelContainer">
+            <span ng-if="discount.promoCode" class="label label-success promoCodeLabel">{{discount.promoCode}}</span>
+        </div>
+        <div>
+                <p ng-if="discount.reduction && (discount.reduction*-1)>0">
+                    <span class="labelText discount" translate>trans.step1.promotions.reduction</span>:
+                    <span class="discount">{{discount.reduction | number:2 }}{{discount.percentage? '%':''}}</span>
+                </p>
+
+                <p ng-if="discount.reduction && (discount.reduction*-1)>0">
+                    <span class="labelText" translate>trans.step1.conditions</span>:
+                </p>
+                <ul>
+                    <li ng-if="discount.minStay" class="valid" ng-class="{invalid: discount.failedMinStay}">
+                        <span translate>trans.minStay</span>:<span> {{discount.minStay}}</span>
+                    </li>
+                    <li ng-if="discount.maxStay" class="valid" ng-class="{invalid: discount.failedMaxStay}">
+                        <span translate>trans.maxStay</span>:<span>{{discount.maxStay}}</span>
+                    </li>
+                    <li ng-if="discount.minNotice" class="valid" ng-class="{invalid: discount.failedMinNotice}">
+                        <span translate>trans.minNotice</span>:<span> {{discount.minNotice}}</span>
+                    </li>
+                    <li ng-if="discount.maxNotice" class="valid" ng-class="{invalid: discount.failedMaxNotice}">
+                        <span translate>trans.maxNotice</span>:<span> {{discount.maxNotice}}</span>
+                    </li>
+                    <li ng-if="discount.validPeriod" class="valid" ng-class="{invalid: discount.failedValid}">
+                        <span translate>trans.validity</span>:<span> {{discount.validPeriod}}</span>
+                    </li>
+                    <li ng-if="discount.contractPeriod" class="valid" ng-class="{invalid: discount.failedContract}">
+                        <span translate>trans.contract</span>:<span> {{discount.contractPeriod}}</span>
+                    </li>
+                    <li ng-if="discount.reduction && (discount.reduction*-1)>0">
+                        <span translate>trans.accumulated</span>:<span translate>trans.no</span>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</div>

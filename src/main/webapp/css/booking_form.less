@@ -1,0 +1,300 @@
+.border-radius (@radius: 5px 5px 5px 5px) {
+  -webkit-border-radius: @radius !important;
+  -moz-border-radius: @radius !important;
+  border-radius: @radius !important;
+}
+.bookingFormContainer{
+  margin: 0px 0px 5px 0px;
+
+  .bookingForm{
+    color: #ffffff;
+    background: #343333;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 10px 10px 20px;
+    .border-radius(5px);
+    position: relative;
+
+    input, select{
+      margin: 0 0 5px 0;
+    }
+
+    input, select, button{
+      height: 34px;
+    }
+
+    input {
+      .border-radius(5px);
+      font-weight: bold;
+      text-align: center !important;
+      cursor: pointer;
+      width: 100px;
+      line-height: 22px;
+      border: 1px solid #cacaca;
+      color: #333;
+      font-size: 14px;
+      display: inline-block;
+      width: 100px;
+    }
+
+    select {
+      .border-radius(5px);
+      background-color: #ffffff;
+      border: 1px solid #cacaca;
+      font-weight: bold;
+      padding: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      text-align: center !important;
+      line-height: 22px;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .form-left{
+      float:left;
+      max-width: 300px;
+    }
+
+    .form-right{
+      float:right;
+      max-width: 350px;
+      text-align: right;
+
+      .advancedFilter, .promotionCode, .bookingFormButton{
+        display: block;
+      }
+
+      .bookingFormButton {
+        .sendBookingForm {
+          cursor: pointer;
+          text-transform: uppercase;
+          font-weight: bold;
+          background-color: rgb(82, 81, 82);
+          border-color: rgb(82, 81, 82);
+          color: rgb(255, 255, 255);
+          background-position: initial initial;
+          background-repeat: initial initial;
+
+          &.formChanged{
+            box-shadow:5px blue;
+            -webkit-box-shadow:5px white;
+            animation: parpadeo 1s;
+            -webkit-animation: parpadeo 1s;
+            -moz-animation: parpadeo 1s;
+            animation-iteration-count:infinite !important;
+            -webkit-animation-iteration-count:infinite !important;
+            -moz-animation-iteration-count:infinite !important;
+            &:hover{
+              animation: none;
+              -webkit-animation: none;
+              -moz-animation: none;
+            }
+          }
+
+          @keyframes parpadeo {
+            0%	{box-shadow: 0px 0px 5px white}
+            50%	{box-shadow: 0px 0px 20px white}
+            100%{box-shadow: 0px 0px 5px white}
+          }
+
+          @-webkit-keyframes parpadeo {
+            0%	{-webkit-box-shadow: 0px 0px 5px white}
+            50%	{-webkit-box-shadow: 0px 0px 20px white}
+            100%{-webkit-box-shadow: 0px 0px 5px white}
+
+          }
+
+          @keyframes parpadeoOpuesto {
+            0%	{box-shadow: 0px 0px 5px black}
+            50%	{box-shadow: 0px 0px 20px black}
+            100%{box-shadow: 0px 0px 5px black}
+          }
+
+          @-webkit-keyframes parpadeoOpuesto {
+            0%	{-webkit-box-shadow: 0px 0px 5px black}
+            50%	{-webkit-box-shadow: 0px 0px 20px black}
+            100%{-webkit-box-shadow: 0px 0px 5px black}
+
+          }
+        }
+        .sendBookingForm:hover{
+          color:#ffffff;
+          outline: 5px auto -webkit-focus-ring-color;
+          outline-offset: -2px;
+          text-decoration: none;
+          background-color: rgb(72, 73, 72);
+          background-position: 0 -15px;
+          -webkit-transition: background-position .1s linear;
+          -moz-transition: background-position .1s linear;
+          -o-transition: background-position .1s linear;
+          transition: background-position .1s linear;
+        }
+      }
+
+      .promotionCode{
+        margin: 8px 0px 8px 0px;
+        line-height: 36px;
+        height: 36px;
+        min-height: 36px;
+        .promoToggle {
+          margin-right: 5px;
+          font-size: 12px;
+          color: #AAA;
+          text-decoration: none;
+          display: inline-block;
+          cursor: pointer;
+          &:hover{
+            opacity: .5;
+          }
+        }
+        #promotionCode.open{
+          margin: 0 0 0 0;
+          float:right;
+        }
+      }
+
+      .advancedFilter{
+        font-size: 12px;
+        height: 18px;
+        min-height: 18px;
+        font-weight: bold;
+        .icon-deleteFilter{
+          cursor: pointer;
+          display: inline-block;
+          background-image: url(../img/theme1sprite.png);
+          height: 13px;
+          width: 12px;
+          background-position: -282px -109px;
+        }
+      }
+    }
+
+    .bookingFormDays {
+      margin: 10px 0 15px 0;
+      div {
+        display: inline-block;
+      }
+      .checkin{
+        margin-left: 5px;
+      }
+      span{
+        margin: 0px 5px;
+      }
+    }
+
+    .bookingFormPeople {
+      height: 40px;
+      .peopleSelect {
+        margin-right: 0px;
+        display: inline-block;
+      }
+    }
+
+    .bookingFormAgeOfChildren {
+      .peopleSelect {
+        margin-right: 15px;
+        display: inline-block;
+      }
+    }
+
+    .nights {
+      position: relative;
+      display: inline-block;
+      .icon-night{
+        position: absolute;
+        background-image: url(../img/theme1sprite.png);
+        height: 20px;
+        width: 15px;
+        background-position: -209px -45px;
+      }
+      span {
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 5px;
+        margin-left: 10px;
+      }
+    }
+    .icon-label {
+      float: left;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      text-align: center;
+      display: inline-block;
+
+      .widget-icon {
+        display: inline-block;
+        background-image: url(../img/theme1sprite.png);
+        height: 20px;
+        width: 20px;
+        float: left;
+        margin: 5px;
+
+        &.dayin {
+          background-position: -180px -105px;
+        }
+        &.dayout {
+          background-position: -200px -105px;
+        }
+        &.pers {
+          background-position: -220px -105px;
+        }
+        &.ninos {
+          background-position: -240px -105px;
+        }
+        &.bebes {
+          background-position: -260px -105px;
+        }
+        &.calendarForm {
+          background-position: -180px -40px;
+          height: 25px;
+          width: 25px;
+        }
+      }
+    }
+
+    .icon-label-text {
+      font-size: 9px;
+      line-height: 4px;
+      white-space: nowrap;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    .ageOfChildren{
+      font-size: 12px;
+    }
+  }
+
+  .bookingForm:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  @media only screen and (max-width: 760px) {
+    .bookingFormButton {
+//      height: 40px !important;
+
+    }
+//    .bookingForm {
+//      padding: 10px 10px 50px 10px !important;
+//    }
+  }
+
+  /* Small devices (tablets, 600px and low) */
+  @media (max-width: 600px) {
+
+  }
+
+  @media only screen and (max-width: 360px) {
+    .nights{
+      display: none !important;
+    }
+  }
+}

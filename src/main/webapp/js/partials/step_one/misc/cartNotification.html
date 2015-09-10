@@ -1,0 +1,32 @@
+<div class="modal-header">
+<!--
+    <h3 class="modal-title">Reservas Eliminadas</h3>
+-->
+</div>
+
+<div class="modal-body">
+    <span translate>trans.step1.cart.deletedReservations</span>
+    <ul>
+        <li ng-repeat="reservation in deletedReservations">
+            <span class="name">{{reservation.quantity}}</span>
+            <span class="por">x</span>
+            <span class="name" ng-bind-html="reservation.accommodation.name">&nbsp;</span>
+
+            <span class="config block">
+                {{ reservation.startDate| date : "dd MMM" | uppercase}}&nbsp;»
+                &nbsp;{{ reservation.endDate| date : "dd MMM" | uppercase}}&nbsp;»
+                &nbsp;{{(reservation.endDate-reservation.startDate)/(1000*60*60*24) | number:0  }} <span translate>trans.step1.inventoryline.nights</span>
+            </span>
+        </li>
+    </ul>
+    <div>
+<!--
+        <span>trans.step1.cart.allReservationsInvalid</span>
+-->
+    </div>
+
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">OK</button>
+</div>

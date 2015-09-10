@@ -1,0 +1,12 @@
+<div class="popoverContainer reservationPopover">
+
+
+<span class="nombreTooltip" ng-bind-html="accommodation.accommodation.name"></span>
+
+<span class="condicionesTooltip">{{ inventoryLine.configuration.name }} , {{ inventoryLine.mealPlan.name }} , {{ inventoryLine.condition.name  }}</span>
+
+<span class="fechaTooltip">→{{ witbookerParams.regularParams.startDate| date : "dd MMM yy, EEE" | uppercase}}</span>
+<span class="fechaTooltip">←{{ witbookerParams.regularParams.endDate  | date : "dd MMM yy, EEE" | uppercase}}</span>
+<span class="nocheTooltip">{{(witbookerParams.regularParams.endDate-witbookerParams.regularParams.startDate)/(1000*60*60*24) | number:0  }}&nbsp;<span translate>trans.step1.inventoryline.nights</span></span>
+
+</div>

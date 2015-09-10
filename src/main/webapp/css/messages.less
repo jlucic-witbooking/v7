@@ -1,0 +1,90 @@
+.alert {
+  margin-bottom: 5px;
+}
+  .messages, .messagesTwo {
+    padding: 8px 10px 8px 14px !important;
+    font-weight: bold !important;
+    margin-bottom: 5px !important;
+    text-align: left !important;
+    border: 1px solid #C4C4C4 !important;
+    font-size: 12px;
+
+    p{
+      font-size: 12px;
+      margin: 0px !important;
+    }
+    h1 {
+      font-size: 14px;
+      font-weight: bold;
+      text-align:center;
+      line-height: 1em;
+    }
+    h2 {
+      font-size: 12px;
+      font-weight: bold;
+      text-align:center;
+      line-height: 1em;
+    }
+    h3, h4, h5, h6, blockquote {
+      font-size: 10px;
+      font-weight: bold;
+      text-align:center;
+      line-height: 1em;
+    }
+    li, dd{
+      line-height: 1em;
+    }
+    .close {
+      margin-top: -3px;
+    }
+  }
+
+.messagesTwo {
+  border-radius: 0px !important;
+  margin-bottom: 0px !important;
+  &:first-child{
+    margin-top: -10px;
+  }
+}
+
+  .availabilityMessages {
+    padding: 5px 0px 3px 5px !important;
+    margin: 15px 0px;
+    text-align: left !important;
+    border: 1px solid #C4C4C4 !important;
+    .textDispo{
+      font-size: 14px;
+      line-height: 23px;
+      margin-left: 5px;
+      .str{
+        font-weight: bold;
+        font-size: 14px;
+        &.strmonth{
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .logoMessages{
+    font-weight: bold !important;
+    margin-bottom: 5px !important;
+    text-align: left !important;
+    .str{
+      font-weight: bold;
+      font-size: 14px;
+    }
+    p{
+      margin: 0px !important;
+    }
+  }
+
+/* Small devices (tablets, 600px and low) */
+@media (max-width: 600px) {
+  .availabilityMessages {
+    .firstDate, .textNights{
+      clear:both;
+      margin-left: 25px;
+    }
+  }
+}

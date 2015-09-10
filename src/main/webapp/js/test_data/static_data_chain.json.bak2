@@ -1,0 +1,3142 @@
+{
+    "establishment": {
+        "establishments": [
+            {
+                "locale": "spa",
+                "inventoryLinesGrouped": [
+                    {
+                        "accommodation": {
+                            "id": "15",
+                            "ticker": "dbl",
+                            "name": "Habitación Doble",
+                            "description": "<p>Nuestra habitaci&oacute;n doble ocupa 21 m&sup2; acondicionados para tu confort con la opci&oacute;n de dos camas individuales de 105 x 200 cm o una cama extra grande de 200 x 200 cm. De estilo moderno, acogedor y minimalista. Cuarto de ba&ntilde;o equipado y con ba&ntilde;era.</p>\r\n<p><strong>Servicios de la habitaci&oacute;n</strong></p>\r\n<ul>\r\n<li>Televisor LCD de pantalla plana</li>\r\n<li>Televisi&oacute;n Nacional e Internacional</li>\r\n<li>Aire Acondicionado con&nbsp;termostato</li>\r\n<li>Tel&eacute;fono</li>\r\n</ul>\r\n<div class=\"seccion\">\r\n<ul>\r\n<li>Secador de pelo</li>\r\n<li>Minibar</li>\r\n<li>Internet gratuito</li>\r\n<li>Caja de seguridad bajo petici&oacute;n</li>\r\n</ul>\r\n</div>",
+                            "media": [
+                                {
+                                    "path": "0001.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0002.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0003.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0004.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0005.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0006.jpg",
+                                    "name": "",
+                                    "description": ""
+                                }
+                            ],
+                            "cheapestRate": 115.16335
+                        },
+                        "inventoryLine": [
+                            {
+                                "ticker": "dbl_1a_SA_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 230.3267,
+                                "averageRate": 115.16335
+                            },
+                            {
+                                "ticker": "dbl_1a_SA_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 250.2178,
+                                "averageRate": 125.1089
+                            },
+                            {
+                                "ticker": "dbl_1a_HD_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 230.3267,
+                                "averageRate": 115.16335
+                            },
+                            {
+                                "ticker": "dbl_1a_HD_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 250.2178,
+                                "averageRate": 125.1089
+                            },
+                            {
+                                "ticker": "dbl_2a_SA_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 256.5363,
+                                "averageRate": 128.26814
+                            },
+                            {
+                                "ticker": "dbl_2a_SA_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 278.69086,
+                                "averageRate": 139.34543
+                            },
+                            {
+                                "ticker": "dbl_2a_HD_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 256.5363,
+                                "averageRate": 128.26814
+                            },
+                            {
+                                "ticker": "dbl_2a_HD_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 278.69086,
+                                "averageRate": 139.34543
+                            }
+                        ]
+                    },
+                    {
+                        "accommodation": {
+                            "id": "16",
+                            "ticker": "dblsup",
+                            "name": "Habitación Doble Superior",
+                            "description": "<p>Nuestra habitaci&oacute;n Doble Superior ocupa 22 m&sup2; acondicionados para tu confort con una cama extra grande de 200 x 200 cm. De estilo moderno, acogedor y minimalista. Cuarto de ba&ntilde;o equipado y con ba&ntilde;era.</p>\r\n<div><strong>Servicios de la habitaci&oacute;n</strong></div>\r\n<ul>\r\n<li>Televisor LCD de pantalla plana</li>\r\n<li>Televisi&oacute;n Nacional e Internacional</li>\r\n<li>Aire Acondicionado con&nbsp;termostato</li>\r\n<li>Tel&eacute;fono</li>\r\n<li>Secador de pelo</li>\r\n</ul>\r\n<div class=\"seccion\">\r\n<ul>\r\n<li>Minibar</li>\r\n<li>Internet gratuito</li>\r\n<li>Caja de Seguridad bajo petici&oacute;n</li>\r\n<li>Altavoces para Iphone gratuitos</li>\r\n</ul>\r\n</div>",
+                            "media": [
+                                {
+                                    "path": "0000.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0003.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0004.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0005.jpg",
+                                    "name": "",
+                                    "description": ""
+                                }
+                            ],
+                            "cheapestRate": 128.26814
+                        },
+                        "inventoryLine": [
+                            {
+                                "ticker": "dblsup_1a_SA_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 256.5363,
+                                "averageRate": 128.26814
+                            },
+                            {
+                                "ticker": "dblsup_1a_SA_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 278.69086,
+                                "averageRate": 139.34543
+                            },
+                            {
+                                "ticker": "dblsup_1a_HD_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 256.5363,
+                                "averageRate": 128.26814
+                            },
+                            {
+                                "ticker": "dblsup_1a_HD_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 278.69086,
+                                "averageRate": 139.34543
+                            },
+                            {
+                                "ticker": "dblsup_2a_SA_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 282.74588,
+                                "averageRate": 141.37294
+                            },
+                            {
+                                "ticker": "dblsup_2a_SA_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 307.1639,
+                                "averageRate": 153.58195
+                            },
+                            {
+                                "ticker": "dblsup_2a_HD_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 282.74588,
+                                "averageRate": 141.37294
+                            },
+                            {
+                                "ticker": "dblsup_2a_HD_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 307.1639,
+                                "averageRate": 153.58195
+                            }
+                        ]
+                    },
+                    {
+                        "accommodation": {
+                            "id": "17",
+                            "ticker": "tpl",
+                            "name": "Habitación Triple",
+                            "description": "<p>Nuestra habitaci&oacute;n Triple ocupa 23 m&sup2; acondicionados para tu confort con dos camas de 105 x 200 cm y una tercera de 90 x 190 cm. De estilo moderno, acogedor y minimalista. Cuarto de ba&ntilde;o equipado y con ba&ntilde;era.</p>\r\n<p><strong>Servicios de la habitaci&oacute;n</strong></p>\r\n<ul>\r\n<li>Televisor LCD de pantalla plana</li>\r\n<li>Televisi&oacute;n Nacional e Internacional</li>\r\n<li>Aire Acondicionado con&nbsp;termostato</li>\r\n<li>Tel&eacute;fono</li>\r\n</ul>\r\n<div class=\"seccion\">\r\n<ul>\r\n<li>Secador de pelo</li>\r\n<li>Minibar</li>\r\n<li>Internet gratuito</li>\r\n<li>Caja de Seguridad bajo petici&oacute;n</li>\r\n</ul>\r\n</div>",
+                            "media": [
+                                {
+                                    "path": "0000.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0001.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0002.jpg",
+                                    "name": "",
+                                    "description": ""
+                                }
+                            ],
+                            "cheapestRate": 154.47774
+                        },
+                        "inventoryLine": [
+                            {
+                                "ticker": "tpl_3a_SA_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "3a",
+                                    "name": "3 adultos",
+                                    "guests": {
+                                        "key": 3
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 308.95547,
+                                "averageRate": 154.47774
+                            },
+                            {
+                                "ticker": "tpl_3a_SA_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "3a",
+                                    "name": "3 adultos",
+                                    "guests": {
+                                        "key": 3
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 335.637,
+                                "averageRate": 167.8185
+                            },
+                            {
+                                "ticker": "tpl_3a_HD_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "3a",
+                                    "name": "3 adultos",
+                                    "guests": {
+                                        "key": 3
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 308.95547,
+                                "averageRate": 154.47774
+                            },
+                            {
+                                "ticker": "tpl_3a_HD_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "3a",
+                                    "name": "3 adultos",
+                                    "guests": {
+                                        "key": 3
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 335.637,
+                                "averageRate": 167.8185
+                            }
+                        ]
+                    },
+                    {
+                        "accommodation": {
+                            "id": "21",
+                            "ticker": "paq_erot",
+                            "name": "Paquete Romántico \"Secretos de Geisha\"",
+                            "description": "<div>\r\n<p>Vive una experiencia er&oacute;tica y recrea con este set de viaje sensaciones, aromas y sabores dignos de una Geisha.</p>\r\n<p>&nbsp;</p>\r\n<p>El paquete incluye:</p>\r\n</div>\r\n<div>\r\n<ul>\r\n<li>Habitaci&oacute;n doble est&aacute;ndar</li>\r\n<li>Desayuno buffet</li>\r\n<li>Set de viaje: Crema Org&aacute;smica 'jard&iacute;n secreto' (4 ml), aceite afrodis&iacute;aco (sabor uvas, 10 ml), aceite de masaje (frutas ex&oacute;ticas, 10 ml), gel de ba&ntilde;o (frutas ex&oacute;ticas, 10 ml), polvos de miel (4 g), un plumero suave.</li>\r\n<li>Botella de Cava.</li>\r\n</ul>\r\n</div>",
+                            "media": [
+                                {
+                                    "path": "0000.jpg",
+                                    "name": "",
+                                    "description": ""
+                                }
+                            ],
+                            "cheapestRate": 146.53146
+                        },
+                        "inventoryLine": [
+                            {
+                                "ticker": "paq_erot_2a_HD_cg_1",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 443,
+                                "averageRate": 221.5
+                            },
+                            {
+                                "ticker": "paq_erot_2a_HD_cg_2",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 383,
+                                "averageRate": 191.5
+                            },
+                            {
+                                "ticker": "paq_erot_2a_HD_cg_3",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 293.06293,
+                                "averageRate": 146.53146
+                            }
+                        ]
+                    }
+                ],
+                "discounts": [
+                    {
+                        "ticker": "earlybooking",
+                        "name": "Oferta de reserva anticipada",
+                        "description": "<ul>\r\n<li>Adel&aacute;ntate a los dem&aacute;s y consigue hasta un 10% de descuento reservando tu estancia 30 d&iacute;as de tu llegada</li>\r\n<li><em>No se admiten cambios ni cancelaciones. Prepago no reembolsable requerido para toda la estancia. Oferta sujeta a disponibilidad</em></li>\r\n</ul>",
+                        "minStay": -1,
+                        "maxStay": -1,
+                        "minNotice": -1,
+                        "maxNotice": -1,
+                        "lock": true,
+                        "active": true,
+                        "percentage": true,
+                        "reduction": -10,
+                        "startDate": "Mar 16, 2014 12:00:00 AM",
+                        "endDate": "Jan 1, 2015 12:00:00 AM",
+                        "media": [
+                            {
+                                "path": "0000.jpg",
+                                "name": "",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "ticker": "larga_est",
+                        "name": "Oferta larga estancia",
+                        "description": "<ul>\r\n<li>Qu&eacute;date m&aacute;s tiempo con nosotros y paga un 15% menos!</li>\r\n<li><em>Estancia m&iacute;nima de 3 noches</em></li>\r\n</ul>",
+                        "minStay": 3,
+                        "maxStay": -1,
+                        "minNotice": -1,
+                        "maxNotice": -1,
+                        "lock": true,
+                        "active": true,
+                        "percentage": true,
+                        "reduction": -15,
+                        "startDate": "Mar 1, 2014 12:00:00 AM",
+                        "endDate": "Jan 1, 2015 12:00:00 AM",
+                        "media": [
+                            {
+                                "path": "0000.jpg",
+                                "name": "",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "ticker": "ultima_hora",
+                        "name": "Última hora",
+                        "description": "<p><strong>Haz planes a &uacute;ltima hora y aprovechate de grandes descuentos!!!&nbsp;&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\r\n<p><em>Oferta no rembolsable. No admite cambios ni cancelaciones. Se requiere el prepago total de la estancia por adelantado.</em></p>",
+                        "minStay": -1,
+                        "maxStay": 2,
+                        "minNotice": -1,
+                        "maxNotice": -1,
+                        "lock": true,
+                        "active": true,
+                        "percentage": true,
+                        "reduction": -15,
+                        "startDate": "Feb 20, 2014 12:00:00 AM",
+                        "endDate": "Jan 1, 2015 12:00:00 AM",
+                        "media": []
+                    }
+                ],
+                "currencies": [
+                    {
+                        "code": "USD"
+                    },
+                    {
+                        "code": "EUR"
+                    },
+                    {
+                        "code": "GBP"
+                    }
+                ],
+                "messages": [
+                    {
+                        "code": 1,
+                        "text": "<p>La tassa di soggiorno non &egrave; inclusa 0,75&nbsp;euro a persona al giorno per applicano a decorrere dal 2012/11/01. Secondo il Parlamento catalano legge 5/2012 del 20 marzo.</p>"
+                    },
+                    {
+                        "code": 3,
+                        "text": "<p>Colazione gratuita fino al 31 Marzo!</p>"
+                    },
+                    {
+                        "code": 4,
+                        "text": "<p>Desayuno gratuito del 1 de Julio al 31 de Agosto!</p>"
+                    },
+                    {
+                        "code": 5,
+                        "text": "<p>Desayuno Gratuito ni&ntilde;os 0 a 5 a&ntilde;os y 50% descuento ni&ntilde;os de 6 a 12 a&ntilde;os</p>"
+                    }
+                ],
+                "id": "1",
+                "ticker": "onixfira",
+                "name": "Hotel Onix Fira",
+                "description": "El Hotel Onix Fira es un hotel 3* acogedor y confortable. Dispone de 80 habitaciones exteriores completamente equipadas, así como de una terraza con piscina y solárium. Gracias a su ubicación privilegiada en Plaça de Espanya, justo enfrente de la Fira de Barcelona y el Palacio de Congresos este hotel es ideal tanto para gente que visita Barcelona con un interés turístico (el Estadio Olímpico, el Poble Espanyol, las fuentes de Montjuïc o el Caixa Forum entre otros), como para aquellos que visitan la ciudad por motivos de negocios",
+                "active": true,
+                "additionalProperties": {
+                    "ocultarRestringuidas": "0",
+                    "fltr_tipo_ocupacion": "1",
+                    "ocultarBloqueadas": "1"
+                },
+                "contactInfo": {
+                    "phone": "(+34) 934 260 087",
+                    "email": "sales@onixhotels.com",
+                    "latitude": 41.3879,
+                    "longitude": 2.1699
+                },
+                "media": [
+                    {
+                        "path": "0000.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0001.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0002.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0003.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0004.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0005.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0006.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0007.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0008.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0009.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0010.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0011.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0012.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0013.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0014.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0015.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0016.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0017.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0018.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0019.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0020.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0021.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0022.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0023.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0024.jpg",
+                        "name": "",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "locale": "spa",
+                "inventoryLinesGrouped": [
+                    {
+                        "accommodation": {
+                            "id": "15",
+                            "ticker": "dbl",
+                            "name": "Habitación Doble",
+                            "description": "<p>Nuestra habitaci&oacute;n doble consta de 22 m&sup2; acondicionados para tu confort con dos camas de 100 x 200 cm. De estilo moderno, acogedor y minimalista. Cuarto de ba&ntilde;o equipado y con ducha.</p>\r\n<p><strong>Servicios de la habitaci&oacute;n</strong></p>\r\n<div class=\"columnsUnMedio\">\r\n<div class=\"seccion\">\r\n<ul>\r\n<li>Televisi&oacute;n LCD de pantalla plana</li>\r\n<li>Televisi&oacute;n nacional e internacional</li>\r\n<li>Aire acondicionado con regulador individual</li>\r\n<li>Tel&eacute;fono</li>\r\n<li>Secador</li>\r\n</ul>\r\n</div>\r\n<div class=\"seccion\">\r\n<ul>\r\n<li>Minibar</li>\r\n<li>Internet gratuito</li>\r\n<li>Canal Onix con gr&aacute;ficos animados</li>\r\n</ul>\r\n</div>\r\n</div>",
+                            "media": [
+                                {
+                                    "path": "0000.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0002.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0003.jpg",
+                                    "name": "",
+                                    "description": ""
+                                }
+                            ],
+                            "cheapestRate": 140.5787
+                        },
+                        "inventoryLine": [
+                            {
+                                "ticker": "dbl_1a_SA_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 281.1574,
+                                "averageRate": 140.5787
+                            },
+                            {
+                                "ticker": "dbl_1a_SA_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 305.4383,
+                                "averageRate": 152.71915
+                            },
+                            {
+                                "ticker": "dbl_1a_HD_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 281.1574,
+                                "averageRate": 140.5787
+                            },
+                            {
+                                "ticker": "dbl_1a_HD_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 305.4383,
+                                "averageRate": 152.71915
+                            },
+                            {
+                                "ticker": "dbl_2a_SA_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 307.367,
+                                "averageRate": 153.6835
+                            },
+                            {
+                                "ticker": "dbl_2a_SA_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 333.91135,
+                                "averageRate": 166.95567
+                            },
+                            {
+                                "ticker": "dbl_2a_HD_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 307.367,
+                                "averageRate": 153.6835
+                            },
+                            {
+                                "ticker": "dbl_2a_HD_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 333.91135,
+                                "averageRate": 166.95567
+                            }
+                        ]
+                    },
+                    {
+                        "accommodation": {
+                            "id": "16",
+                            "ticker": "dblsup",
+                            "name": "Habitación Doble Superior",
+                            "description": "<p>Nuestra habitaci&oacute;n Doble Superior consta de 30 m&sup2; acondicionados para tu confort con una cama extra grande de 200 x 200 cm. De estilo moderno, acogedor y minimalista. Cuarto de ba&ntilde;o equipado y con ducha.</p>\r\n<p><strong>Servicios en la habitaci&oacute;n</strong></p>\r\n<div class=\"columnsUnMedio\">\r\n<div class=\"seccion\">\r\n<ul>\r\n<li>Televisi&oacute;n LCD de pantalla plana</li>\r\n<li>Televisi&oacute;n nacional e internacional</li>\r\n<li>Aire Acondicionado con regulador individual</li>\r\n<li>Tel&eacute;fono</li>\r\n<li>Secador</li>\r\n<li>Minibar</li>\r\n<li>Internet gratuito</li>\r\n<li>Canal Onix con gr&aacute;ficos animados</li>\r\n<li>Altavoces para Iphone gratuitos bajo petici&oacute;n</li>\r\n</ul>\r\n</div>\r\n</div>",
+                            "media": [
+                                {
+                                    "path": "0000.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0001.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0002.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0003.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0004.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0005.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0006.jpg",
+                                    "name": "",
+                                    "description": ""
+                                }
+                            ],
+                            "cheapestRate": 153.6835
+                        },
+                        "inventoryLine": [
+                            {
+                                "ticker": "dblsup_1a_SA_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 307.367,
+                                "averageRate": 153.6835
+                            },
+                            {
+                                "ticker": "dblsup_1a_SA_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 333.91135,
+                                "averageRate": 166.95567
+                            },
+                            {
+                                "ticker": "dblsup_1a_HD_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 307.367,
+                                "averageRate": 153.6835
+                            },
+                            {
+                                "ticker": "dblsup_1a_HD_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 333.91135,
+                                "averageRate": 166.95567
+                            },
+                            {
+                                "ticker": "dblsup_2a_SA_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 333.5766,
+                                "averageRate": 166.7883
+                            },
+                            {
+                                "ticker": "dblsup_2a_SA_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 362.3844,
+                                "averageRate": 181.1922
+                            },
+                            {
+                                "ticker": "dblsup_2a_HD_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 333.5766,
+                                "averageRate": 166.7883
+                            },
+                            {
+                                "ticker": "dblsup_2a_HD_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 362.3844,
+                                "averageRate": 181.1922
+                            }
+                        ]
+                    },
+                    {
+                        "accommodation": {
+                            "id": "19",
+                            "ticker": "paq_erot",
+                            "name": "Paquete Romántico \"Secretos de Geisha\"",
+                            "description": "<div>\r\n<p>Vive una experiencia er&oacute;tica y recrea con este set de viaje sensaciones, aromas y sabores dignos de una Geisha.</p>\r\n<p>&nbsp;</p>\r\n<p>El paquete incluye:</p>\r\n</div>\r\n<div>\r\n<ul>\r\n<li>Habitaci&oacute;n doble est&aacute;ndar</li>\r\n<li>Desayuno buffet</li>\r\n<li>Set de viaje: Crema Org&aacute;smica 'jard&iacute;n secreto' (4 ml), aceite afrodis&iacute;aco (sabor uvas, 10 ml), aceite de masaje (frutas ex&oacute;ticas, 10 ml), gel de ba&ntilde;o (frutas ex&oacute;ticas, 10 ml), polvos de miel (4 g), un plumero suave.</li>\r\n<li>Botella de Cava.</li>\r\n</ul>\r\n</div>",
+                            "media": [
+                                {
+                                    "path": "0000.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0001.jpg",
+                                    "name": "",
+                                    "description": ""
+                                }
+                            ],
+                            "cheapestRate": 171.94684
+                        },
+                        "inventoryLine": [
+                            {
+                                "ticker": "paq_erot_2a_HD_cg_1",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 507,
+                                "averageRate": 253.5
+                            },
+                            {
+                                "ticker": "paq_erot_2a_HD_cg_2",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 447,
+                                "averageRate": 223.5
+                            },
+                            {
+                                "ticker": "paq_erot_2a_HD_cg_3",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 343.89368,
+                                "averageRate": 171.94684
+                            }
+                        ]
+                    }
+                ],
+                "discounts": [
+                    {
+                        "ticker": "earlybooking",
+                        "name": "Oferta de reserva anticipada",
+                        "description": "<ul>\r\n<li>Adel&aacute;ntate a los dem&aacute;s y consigue hasta un 10% de descuento reservando tu estancia 30 d&iacute;as de tu llegada</li>\r\n<li><em>No se admiten cambios ni cancelaciones. Prepago no reembolsable requerido para toda la estancia. Oferta sujeta a disponibilidad</em></li>\r\n</ul>",
+                        "minStay": -1,
+                        "maxStay": -1,
+                        "minNotice": -1,
+                        "maxNotice": -1,
+                        "lock": true,
+                        "active": true,
+                        "percentage": true,
+                        "reduction": -10,
+                        "startDate": "Mar 16, 2014 12:00:00 AM",
+                        "endDate": "Jan 1, 2015 12:00:00 AM",
+                        "media": []
+                    },
+                    {
+                        "ticker": "larga_est",
+                        "name": "Oferta larga estancia",
+                        "description": "<ul>\r\n<li>Qu&eacute;date m&aacute;s tiempo con nosotros y paga un 15% menos!</li>\r\n<li><em>Estancia m&iacute;nima de 3 noches</em></li>\r\n</ul>",
+                        "minStay": 3,
+                        "maxStay": -1,
+                        "minNotice": -1,
+                        "maxNotice": -1,
+                        "lock": true,
+                        "active": true,
+                        "percentage": true,
+                        "reduction": -15,
+                        "startDate": "Mar 1, 2014 12:00:00 AM",
+                        "endDate": "Jan 1, 2015 12:00:00 AM",
+                        "media": []
+                    },
+                    {
+                        "ticker": "ultima_hora",
+                        "name": "Ultima Hora",
+                        "description": "<p><strong>Haz planes a &uacute;ltima hora y aprovechate de grandes descuentos!!!</strong></p>\r\n<p><em>Oferta no rembolsable. No admite cambios ni cancelaciones. Se requiere el prepago total de la estancia por adelantado.</em></p>",
+                        "minStay": -1,
+                        "maxStay": 2,
+                        "minNotice": -1,
+                        "maxNotice": -1,
+                        "lock": true,
+                        "active": true,
+                        "percentage": true,
+                        "reduction": -10,
+                        "startDate": "Mar 13, 2014 12:00:00 AM",
+                        "endDate": "Jan 1, 2015 12:00:00 AM",
+                        "media": []
+                    }
+                ],
+                "currencies": [
+                    {
+                        "code": "USD"
+                    },
+                    {
+                        "code": "EUR"
+                    },
+                    {
+                        "code": "GBP"
+                    }
+                ],
+                "messages": [
+                    {
+                        "code": 2,
+                        "text": "<div>\r\n<p>La tassa di soggiorno non &egrave; inclusa 1,25 euro a persona al giorno per applicano a decorrere dal 2012/11/01. Secondo il Parlamento catalano legge 5/2012 del 20 marzo</p>\r\n</div>"
+                    }
+                ],
+                "id": "2",
+                "ticker": "onixliceo",
+                "name": "Hotel Onix Liceo",
+                "description": "El hotel Onix Liceo es un eco-friendly boutique hotel de 4* en el corazón del Casco Antiguo.\r\nEl hotel te sorprenderá con su decoración minimalista combinada con arte mozárabe, parte de su edificación clasificada. Los paneles solares de la azotea y su lounge H2O, hacen del Onix Liceo un hotel \"ecochic\" urbano único.El diseño vanguardista de sus 45 habitaciones y el arte digital expuesto en sus instalaciones no se deben dejar escapar!",
+                "active": true,
+                "additionalProperties": {
+                    "fltr_tipo_ocupacion": "3",
+                    "ocultarBloqueadas": "1"
+                },
+                "contactInfo": {
+                    "phone": "(+34)934816441",
+                    "email": "sales@onixhotels.com",
+                    "latitude": 41.3838,
+                    "longitude": 2.1744
+                },
+                "media": [
+                    {
+                        "path": "0000.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0001.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0002.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0003.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0004.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0005.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0006.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0007.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0008.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0009.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0010.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0011.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0012.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0013.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0014.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0015.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0016.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0017.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0018.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0019.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0020.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0021.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0022.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0023.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0024.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0025.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0026.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0027.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0028.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0029.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0030.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0031.jpg",
+                        "name": "",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "locale": "spa",
+                "inventoryLinesGrouped": [
+                    {
+                        "accommodation": {
+                            "id": "15",
+                            "ticker": "dbl",
+                            "name": "Habitación Doble",
+                            "description": "<p>Nuestra habitaci&oacute;n doble ocupa 24 m&sup2; acondicionados para tu confort con una cama extra grande de 200 x 200 cm. De estilo moderno, acogedor y minimalista. Cuarto de ba&ntilde;o equipado y con ba&ntilde;era.</p>\r\n<p><strong>Servicios de la habitaci&oacute;n</strong></p>\r\n<div class=\"columnsUnMedio\">\r\n<div class=\"seccion\">\r\n<ul>\r\n<li>Televisor LCD de pantalla plana</li>\r\n<li>Televisi&oacute;n Nacional e Internacional</li>\r\n<li>Aire Acondicionado con termostato individual</li>\r\n<li>Tel&eacute;fono</li>\r\n</ul>\r\n</div>\r\n<div class=\"seccion\">\r\n<ul>\r\n<li>Secador de pelo</li>\r\n<li>Minibar</li>\r\n<li>Internet Gratuito</li>\r\n<li>Caja Fuerte</li>\r\n</ul>\r\n</div>\r\n</div>",
+                            "media": [
+                                {
+                                    "path": "0000.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0001.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0002.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0003.jpg",
+                                    "name": "",
+                                    "description": ""
+                                }
+                            ],
+                            "cheapestRate": 152.49216
+                        },
+                        "inventoryLine": [
+                            {
+                                "ticker": "dbl_1a_SA_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 304.9843,
+                                "averageRate": 152.49216
+                            },
+                            {
+                                "ticker": "dbl_1a_SA_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 331.32288,
+                                "averageRate": 165.66144
+                            },
+                            {
+                                "ticker": "dbl_1a_HD_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 304.9843,
+                                "averageRate": 152.49216
+                            },
+                            {
+                                "ticker": "dbl_1a_HD_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 331.32288,
+                                "averageRate": 165.66144
+                            },
+                            {
+                                "ticker": "dbl_2a_SA_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 331.1939,
+                                "averageRate": 165.59695
+                            },
+                            {
+                                "ticker": "dbl_2a_SA_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 359.79596,
+                                "averageRate": 179.89798
+                            },
+                            {
+                                "ticker": "dbl_2a_HD_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 331.1939,
+                                "averageRate": 165.59695
+                            },
+                            {
+                                "ticker": "dbl_2a_HD_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 359.79596,
+                                "averageRate": 179.89798
+                            }
+                        ]
+                    },
+                    {
+                        "accommodation": {
+                            "id": "16",
+                            "ticker": "dblsup",
+                            "name": "Habitación Doble Superior",
+                            "description": "<p>Nuestra habitaci&oacute;n Doble Superior ocupa 26 m&sup2; acondicionados para tu confort con una cama extra grande de 200 x 200 cm. De estilo moderno, acogedor y minimalista. Cuarto de ba&ntilde;o equipado y con ba&ntilde;era.</p>\r\n<p><strong>Servicios de la habitaci&oacute;n</strong></p>\r\n<div class=\"columnsUnMedio\">\r\n<div class=\"seccion\">\r\n<ul>\r\n<li>Televisor LCD de pantalla plana</li>\r\n<li>Televisi&oacute;n Nacional e Internacional</li>\r\n<li>Aire Acondicionado con termostato individual</li>\r\n<li>Tel&eacute;fono</li>\r\n</ul>\r\n</div>\r\n<div class=\"seccion\">\r\n<ul>\r\n<li>Secador de pelo</li>\r\n<li>Minibar</li>\r\n<li>Internet Gratuito</li>\r\n<li>Caja Fuerte</li>\r\n<li>Altavoces para Iphone gratuitos bajo petici&oacute;n</li>\r\n</ul>\r\n</div>\r\n</div>",
+                            "media": [
+                                {
+                                    "path": "0000.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0001.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0002.jpg",
+                                    "name": "",
+                                    "description": ""
+                                }
+                            ],
+                            "cheapestRate": 165.59695
+                        },
+                        "inventoryLine": [
+                            {
+                                "ticker": "dblsup_1a_SA_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 331.1939,
+                                "averageRate": 165.59695
+                            },
+                            {
+                                "ticker": "dblsup_1a_SA_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 359.79596,
+                                "averageRate": 179.89798
+                            },
+                            {
+                                "ticker": "dblsup_1a_HD_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 331.1939,
+                                "averageRate": 165.59695
+                            },
+                            {
+                                "ticker": "dblsup_1a_HD_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 359.79596,
+                                "averageRate": 179.89798
+                            },
+                            {
+                                "ticker": "dblsup_2a_SA_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 357.4035,
+                                "averageRate": 178.70175
+                            },
+                            {
+                                "ticker": "dblsup_2a_SA_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 388.26898,
+                                "averageRate": 194.13449
+                            },
+                            {
+                                "ticker": "dblsup_2a_HD_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 357.4035,
+                                "averageRate": 178.70175
+                            },
+                            {
+                                "ticker": "dblsup_2a_HD_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 388.26898,
+                                "averageRate": 194.13449
+                            }
+                        ]
+                    },
+                    {
+                        "accommodation": {
+                            "id": "17",
+                            "ticker": "tpl",
+                            "name": "Habitación Triple",
+                            "description": "<p>Nuestra habitaci&oacute;n Triple ocupa 26 m&sup2; acondicionados para tu confort con dos camas de 105 x 200 cm y una tercera de 90 x 190 cm. De estilo moderno, acogedor y minimalista. Cuarto de ba&ntilde;o equipado y con ba&ntilde;era.</p>\r\n<p><strong>Servicios de la habitaci&oacute;n</strong></p>\r\n<div class=\"columnsUnMedio\">\r\n<div class=\"seccion\">\r\n<ul>\r\n<li>Televisor LCD de pantalla plana</li>\r\n<li>Televisi&oacute;n Nacional e Internacional</li>\r\n<li>Aire Acondicionado con termostato individual</li>\r\n<li>Tel&eacute;fono</li>\r\n</ul>\r\n</div>\r\n<div class=\"seccion\">\r\n<ul>\r\n<li>Secador de pelo</li>\r\n<li>Minibar</li>\r\n<li>Internet Gratuito</li>\r\n<li>Caja Fuerte</li>\r\n</ul>\r\n</div>\r\n</div>",
+                            "media": [
+                                {
+                                    "path": "0000.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0001.jpg",
+                                    "name": "",
+                                    "description": ""
+                                },
+                                {
+                                    "path": "0002.jpg",
+                                    "name": "",
+                                    "description": ""
+                                }
+                            ],
+                            "cheapestRate": 211.46375
+                        },
+                        "inventoryLine": [
+                            {
+                                "ticker": "tpl_3a_SA_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "3a",
+                                    "name": "3 adultos",
+                                    "guests": {
+                                        "key": 3
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 422.9275,
+                                "averageRate": 211.46375
+                            },
+                            {
+                                "ticker": "tpl_3a_SA_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "3a",
+                                    "name": "3 adultos",
+                                    "guests": {
+                                        "key": 3
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "SA",
+                                    "name": "Sólo alojamiento "
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 459.45166,
+                                "averageRate": 229.72583
+                            },
+                            {
+                                "ticker": "tpl_3a_HD_cg",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "3a",
+                                    "name": "3 adultos",
+                                    "guests": {
+                                        "key": 3
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 422.9275,
+                                "averageRate": 211.46375
+                            },
+                            {
+                                "ticker": "tpl_3a_HD_nr",
+                                "condition": {
+                                    "ticker": "nr",
+                                    "name": "No reembolsable",
+                                    "earlyCharge": 100,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "3a",
+                                    "name": "3 adultos",
+                                    "guests": {
+                                        "key": 3
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 459.45166,
+                                "averageRate": 229.72583
+                            }
+                        ]
+                    },
+                    {
+                        "accommodation": {
+                            "id": "20",
+                            "ticker": "paq_relaj",
+                            "name": "Paquete Relajante",
+                            "description": "<p>&nbsp;Disfruta de &eacute;ste masaje corporal realizado con el Aceite de Lavanda para inducir un estado de profunda relajaci&oacute;n.</p>\r\n<div>\r\n<p>Incluye:</p>\r\n</div>\r\n<div>\r\n<ul>\r\n<li>Habitaci&oacute;n doble est&aacute;ndar</li>\r\n<li>Desayuno buffet</li>\r\n<li>Masaje relajante de 60 minutos (Taller Alquimia)</li>\r\n</ul>\r\n</div>\r\n<div>\r\n<p><em>&nbsp;Horario:</em></p>\r\n<p><em>Mi&eacute;rcoles 14:00 - 20:00h</em></p>\r\n<p><em>Jueves 14:00 - 20:00h</em></p>\r\n<p><em>Viernes&nbsp;11:00 - 15:00h y 16:00 - 20:00h</em></p>\r\n<p><em>S&aacute;bados 10:00 - 15:00h</em></p>\r\n<p><em>(Horarios sujetos a disponibilidad)</em></p>\r\n</div>",
+                            "media": [
+                                {
+                                    "path": "0000.jpg",
+                                    "name": "",
+                                    "description": ""
+                                }
+                            ],
+                            "cheapestRate": 223.56781
+                        },
+                        "inventoryLine": [
+                            {
+                                "ticker": "paq_relaj_1a_HD_cg_1",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 455.0938,
+                                "averageRate": 227.5469
+                            },
+                            {
+                                "ticker": "paq_relaj_2a_HD_cg_1",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 795,
+                                "averageRate": 397.5
+                            },
+                            {
+                                "ticker": "paq_relaj_1a_HD_cg_2",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 478.5,
+                                "averageRate": 239.25
+                            },
+                            {
+                                "ticker": "paq_relaj_1a_HD_cg_3",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "1a",
+                                    "name": "1 adulto",
+                                    "guests": {
+                                        "key": 1
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 456.99,
+                                "averageRate": 228.495
+                            },
+                            {
+                                "ticker": "paq_relaj_2a_HD_cg_2",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 606,
+                                "averageRate": 303
+                            },
+                            {
+                                "ticker": "paq_relaj_2a_HD_cg_3",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 447.13562,
+                                "averageRate": 223.56781
+                            }
+                        ]
+                    },
+                    {
+                        "accommodation": {
+                            "id": "21",
+                            "ticker": "paq_erot",
+                            "name": "Paquete Romántico \"Secretos de Geisha\"",
+                            "description": "<div>\r\n<p>Vive una experiencia er&oacute;tica y recrea con este set de viaje sensaciones, aromas y sabores dignos de una Geisha.</p>\r\n<p>&nbsp;</p>\r\n<p>El paquete incluye:</p>\r\n</div>\r\n<div>\r\n<ul>\r\n<li>Habitaci&oacute;n doble est&aacute;ndar</li>\r\n<li>Desayuno buffet</li>\r\n<li>Set de viaje: Crema Org&aacute;smica 'jard&iacute;n secreto' (4 ml), aceite afrodis&iacute;aco (sabor uvas, 10 ml), aceite de masaje (frutas ex&oacute;ticas, 10 ml), gel de ba&ntilde;o (frutas ex&oacute;ticas, 10 ml), polvos de miel (4 g), un plumero suave.</li>\r\n<li>Botella de Cava.</li>\r\n</ul>\r\n</div>",
+                            "media": [
+                                {
+                                    "path": "0000.jpg",
+                                    "name": "",
+                                    "description": ""
+                                }
+                            ],
+                            "cheapestRate": 183.86028
+                        },
+                        "inventoryLine": [
+                            {
+                                "ticker": "paq_erot_2a_HD_cg_1",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 537,
+                                "averageRate": 268.5
+                            },
+                            {
+                                "ticker": "paq_erot_2a_HD_cg_2",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 477,
+                                "averageRate": 238.5
+                            },
+                            {
+                                "ticker": "paq_erot_2a_HD_cg_3",
+                                "condition": {
+                                    "ticker": "cg",
+                                    "name": "Cancelación gratuita",
+                                    "earlyCharge": 0,
+                                    "minimumCharge": 0,
+                                    "description": "<p>Array</p>"
+                                },
+                                "configuration": {
+                                    "ticker": "2a",
+                                    "name": "2 adultos",
+                                    "guests": {
+                                        "key": 2
+                                    }
+                                },
+                                "mealPlan": {
+                                    "ticker": "HD",
+                                    "name": "Con desayuno"
+                                },
+                                "errorMessage": [
+                                    {
+                                        "message": "Failed at maxNotice",
+                                        "failedFilter": "maxNotice"
+                                    }
+                                ],
+                                "totalRate": 367.72055,
+                                "averageRate": 183.86028
+                            }
+                        ]
+                    }
+                ],
+                "discounts": [
+                    {
+                        "ticker": "earlybooking",
+                        "name": "Oferta de reserva anticipada",
+                        "description": "<ul>\r\n<li>Adel&aacute;ntate a los dem&aacute;s y consigue hasta un 10% de descuento reservando tu estancia 30 d&iacute;as de tu llegada</li>\r\n<li><em>No se admiten cambios ni cancelaciones. Prepago no reembolsable requerido para toda la estancia. Oferta sujeta a disponibilidad</em></li>\r\n</ul>",
+                        "minStay": -1,
+                        "maxStay": -1,
+                        "minNotice": -1,
+                        "maxNotice": -1,
+                        "lock": true,
+                        "active": true,
+                        "percentage": true,
+                        "reduction": -10,
+                        "startDate": "Mar 1, 2013 12:00:00 AM",
+                        "endDate": "Jan 1, 2015 12:00:00 AM",
+                        "media": []
+                    },
+                    {
+                        "ticker": "larga_est",
+                        "name": "Oferta larga estancia",
+                        "description": "<ul>\r\n<li>Qu&eacute;date m&aacute;s tiempo con nosotros y paga un 15% menos!</li>\r\n<li><em>Estancia m&iacute;nima de 3 noches</em></li>\r\n</ul>",
+                        "minStay": 3,
+                        "maxStay": -1,
+                        "minNotice": -1,
+                        "maxNotice": -1,
+                        "lock": true,
+                        "active": true,
+                        "percentage": true,
+                        "reduction": -15,
+                        "startDate": "Sep 1, 2013 12:00:00 AM",
+                        "endDate": "Jan 1, 2015 12:00:00 AM",
+                        "media": []
+                    },
+                    {
+                        "ticker": "ultima_hora",
+                        "name": "Ultima Hora",
+                        "description": "<p><strong>Haz planes a &uacute;ltima hora y aprovechate de grandes descuentos!!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;&nbsp;</p>\r\n<p><em>Oferta no rembolsable. No admite cambios ni cancelaciones. Se requiere el prepago total de la estancia por adelantado.</em></p>\r\n<p>&nbsp;</p>",
+                        "minStay": -1,
+                        "maxStay": 2,
+                        "minNotice": -1,
+                        "maxNotice": -1,
+                        "lock": true,
+                        "active": true,
+                        "percentage": true,
+                        "reduction": -15,
+                        "startDate": "Feb 21, 2014 12:00:00 AM",
+                        "endDate": "Jan 1, 2015 12:00:00 AM",
+                        "media": [
+                            {
+                                "path": "0000.jpg",
+                                "name": "Kit",
+                                "description": ""
+                            }
+                        ]
+                    }
+                ],
+                "currencies": [
+                    {
+                        "code": "USD"
+                    },
+                    {
+                        "code": "EUR"
+                    },
+                    {
+                        "code": "GBP"
+                    }
+                ],
+                "messages": [
+                    {
+                        "code": 1,
+                        "text": "<p>Impuesto municipal no incluido 0,75 euros por persona y d&iacute;a a aplicar a partir del 01.11.2012. Seg&uacute;n la Ley del Parlamento de Catalu&ntilde;a 5/2012 del 20 de marzo</p>"
+                    }
+                ],
+                "id": "3",
+                "ticker": "onixrambla",
+                "name": "Hotel Onix Rambla",
+                "description": "El Hotel Onix Rambla es un hotel urbano muy confortable de 3* en la Barcelona modernista. Dispone de 40 espaciosas y modernas habitaciones con encantadoras vistas a la Rambla de Catalunya. Su situación es verdaderamente ideal. Podrás ir caminando hasta los emblemáticos edificios de Gaudí, diferentes museos y  disfrutar de la mejor zona de compras de la ciudad!",
+                "active": true,
+                "additionalProperties": {
+                    "fltr_tipo_ocupacion": "3",
+                    "ocultarBloqueadas": "1"
+                },
+                "contactInfo": {
+                    "phone": "(+34) 933 427 980",
+                    "email": "",
+                    "latitude": 41.3863,
+                    "longitude": 2.1480
+                },
+                "media": [
+                    {
+                        "path": "0000.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0001.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0002.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0003.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0004.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0005.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0006.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0007.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0008.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0009.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0010.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0011.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0012.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0013.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0014.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0015.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0016.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0017.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0018.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0019.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0020.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0021.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0022.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0023.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0024.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0025.jpg",
+                        "name": "",
+                        "description": ""
+                    },
+                    {
+                        "path": "0026.jpg",
+                        "name": "",
+                        "description": ""
+                    }
+                ]
+            }
+        ],
+        "id": "1",
+        "ticker": "onixhotels",
+        "name": "Hotel Demo ",
+        "description": "Hotel Demo Witbooker es un motor de reservas en simulación. Disfruta con Witbooking de las mejores soluciones informáticas para la industria hotelera.",
+        "active": true,
+        "additionalProperties": {},
+        "contactInfo": {
+            "phone": "666666666",
+            "email": ""
+        }
+    },
+    "reservationInfo": {
+        "numberOfDays": 2
+    }
+}

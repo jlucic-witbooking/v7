@@ -1,0 +1,11 @@
+<!doctype html> <html> <head> <meta charset="utf-8"> <title></title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.css"> <link rel="stylesheet" href="styles/main.css"> <script>var data = {"establishment":{"name":"Hotel Demo"},"cart":{"items":[{"name":"Room 0","quantity":1,"total":44.0}],"total":44.0,"currency":{"ticker":"EUR","symbol":"EUR"}}};
+      //var sipayData = {"sipayIframe":"http://localhost:9091/WitBooker/payment/sipayIframeSimulated","sipayStart":1437292813391};
+      var sipayData = {"sipayIframe":"http://localhost:9001","sipayStart":1437292813391};</script> </head> <body ng-app="sipayApp"> <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--> <!-- Add your site or application content here --> <div ng-view=""></div> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');</script> <script src="scripts/vendor.js"></script> <script src="scripts/scripts.js"></script> </body> </html>

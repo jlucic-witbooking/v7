@@ -1,0 +1,17 @@
+<div class="chartContainer" >
+    <div class="header">
+        <!--TODO:Translate title Calendario with angular-->
+        <div class="title">
+	        <span class="prevMonth" ng-if="!isLoading">◄</span>
+	        <span class="textMonth" translate>trans.step1.inventory.chart.title</span>
+	        <span class="nextMonth" ng-if="!isLoading">►</span>
+        </div>
+        <div class="sprite closeW closeInfoH" ng-click="close(inventoryLine,constants.panel.type.chart ,$event)">&nbsp;</div>
+    </div>
+    <div class="content" id="chart-canvas-{{chartid}}">
+        <div class="wraploader" ng-if="isLoading">
+            <!--TODO: DO NOT HARDCODE LOADER URL-->
+            <img class="loader" ng-src="/WitBooker/img/ajax-loader.gif">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<td class="col0 serviceImage" ng-class="{'serviceSelected':isSelected}">
+	<div ng-if="service.media.length>0" class="extraImg" ng-click="openInfo(service)">
+		<img ng-src='{{service.thumbnail}}' fallback-src>
+		<div class="extraImgHover"></div>
+    </div>
+</td>
+<!--TODO: HACER UNA DIRECTIVE QUE RECIBA UN SERVICIO Y SEGUN SU TIPO RENDERICE EL INPUT CORRESPONDIENTE-->
+<td class="col1 extraname extracontrol" ng-class="{'serviceSelected':isSelected}">
+
+    <input ng-if="service.type!=constants.serviceType.units && service.obligatory==false"
+           ng-model="inventoryLine.selectedServices[service.ticker].selected"
+           type="checkbox" >
+
+    <select ng-if="service.type==constants.serviceType.units"
+            ng-model="inventoryLine.selectedServices[service.ticker].units"
+            ng-options="option.availability for option in unitSelectorOptions"></select>
+
+</td>
+
+<td class="col2 extraname extranopadding" ng-class="{'serviceSelected':isSelected}">
+    <table class="table-no-bordered">
+        <tbody>
+        <tr>
+            <td><span class="extranametxt">{{service.name}}</span></td>
+            <td>
+                <span class="questioncontainer witbooker-tooltip-top">
+                    <span class="infoTooltip glyphicon glyphicon-info-sign" ng-click="openInfo(service)"></span>&nbsp;&nbsp;
+                </span>
+                <span class="precioUnitario" ng-if="service.rate>0">
+                    <span class="integer">{{(service.rate)  | currencyConverter : establishment | integerDigits }}</span>
+                    <span class="separator">,</span>
+                    <span class="decimal">{{(service.rate) | currencyConverter : establishment | fractionalDigits  | number:2 | limitTo:-2}}</span>
+                    <span>&nbsp;{{service.specification}}</span>
+                </span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</td>
+
+<td class="col3 extravalue" ng-class="{'serviceSelected':isSelected}">
+    <span class="importe-valor">
+        <span class="integer">{{(rate) | currencyConverter : establishment | integerDigits }}</span>
+        <span class="separator">,</span>
+        <span class="decimal">{{(rate) | currencyConverter : establishment | fractionalDigits  |  number:2 | limitTo:-2}}</span>
+    </span>
+</td>

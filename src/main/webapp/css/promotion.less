@@ -1,0 +1,321 @@
+@screen-sm-min: 768px;
+@screen-md-min: 992px;
+@screen-lg-min: 1200px;
+
+.promotionSideContainer, .promotionTopContainer {
+
+  .promoCodeLabelContainer {
+    margin: 5px 0px 0px 0px;
+  }
+  .promoCodeLabel {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+.valid {
+  color: green !important;
+}
+.invalid {
+  color: red !important;
+}
+
+.description {
+  font-style: italic;
+}
+
+.discountsMobile .promotionHotelContainer{
+  background-color: #d9edf7 !important;
+  border-top: 1px solid #82b3cb;
+}
+.promotionHotelContainer{
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid #c4c4c4;
+
+  &:last-child{
+    border-bottom:none;
+  }
+  .title{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+  p,li {
+    line-height: 1.4em;
+    color: #777;
+    font-size: 12px;
+    padding: 0;
+    border: 0;
+  }
+  .labelText {
+    font-size: 12px;
+  }
+
+  .discount {
+    color: red;
+  }
+}
+
+.promotionSideContainer {
+  display: none;
+  width: 310px;
+
+  .entry-title {
+    display: table;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .panel-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 280px;
+    max-width: 280px;
+    word-break: break-word;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+  }
+  .panel-heading:hover {
+    background-color: #f2f4f8 !important;
+  }
+  .panel-heading {
+    background-color: transparent !important;
+  }
+  .panel-body {
+    padding: 0px 0px 0px 0px;
+  }
+  .entry-title {
+    display: table;
+    min-height: 40px;
+    height: 40px;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+
+    .title {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      width: 240px;
+      max-width: 240px;
+      word-break: break-word;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .arrow-wrapper {
+      width: 29px;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  .entry-content {
+    padding: 1em;
+    border: 1px #c4c4c4 solid;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  .entry-content p, .entry-content li {
+    line-height: 1.4em;
+    color: #777;
+    font-size: 12px;
+    padding: 0;
+    border: 0;
+  }
+
+  .entry-content .labelText {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    font-size: 12px;
+  }
+
+  .entry-content .discount {
+    color: red;
+  }
+
+  .panel-heading {
+    display: table;
+    min-height: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  .panel-default {
+    display: none;
+    border: 0px;
+    border-top: 1px solid rgb(204, 204, 204);
+  }
+  .logo_hotel {
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    .isDemo {
+      background-image: url("../img/demo_tag.png");
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      margin: auto;
+      top: 0;
+      right: 0;
+      z-index: 1001;
+    }
+  }
+}
+
+.promotionTopContainer {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+
+  .mainFontColor1 {
+    color: black !important;
+  }
+
+  .logo_hotel {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 96px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .title {
+    display: inline;
+    cursor: pointer;
+  }
+
+  .headerSpecials {
+    font-weight: bold;
+    color: #82B3CB;
+  }
+
+  .open.headerSpecials {
+    color: #2b79a0;
+  }
+
+  .panel-heading {
+    background-color: #d9edf7 !important;
+    color: #2b79a0;
+    border-radius: 4px 4px 4px 4px !important;
+    padding: 10px;
+  }
+
+  .sprite.arrowPromotion {
+    margin-right: -22px;
+
+  }
+
+  .entry-content {
+    padding: 0 1em 0 1em;
+    background-color: #d9edf7;
+    box-shadow: none;
+  }
+
+  .panel-default {
+    border: 0px;
+
+  }
+  .panel-body {
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px 0px 5px 5px !important;
+  }
+  .promotionsList .panel-default {
+    background-color: #d9edf7;
+  }
+  .promotionsList .panel-heading {
+    background-color: #d9edf7 !important;
+    border-top: 1px solid #82b3cb;;
+    color: #2b79a0;
+    padding: 7px 10px 7px 10px;
+    border-radius: 0px !important;
+    margin-bottom: 0px;
+  }
+  .promotionsAccordion .panel-collapse {
+    background-color: #d9edf7;;
+  }
+
+  .promotionsAccordion .panel-heading {
+    margin-bottom: 0px;
+  }
+  .promotionsAccordion.inner {
+    .glyphicon {
+      margin-right: 0px;
+    }
+  }
+  .entry-title {
+    display: table;
+    min-height: 40px;
+    height: 40px;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+
+    .title {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      word-break: break-word;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .arrow-wrapper {
+      width: 29px;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  .panel-group .panel {
+    overflow: visible;
+  }
+  .glyphicon {
+    float: right;
+    margin-right: 25px;
+  }
+}
+
+.alwaysShow{
+  display: block !important;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+  .promotionSideContainer {
+    .panel-default {
+      display: block;
+    }
+    display: block;
+  }
+
+  .promotionTopContainer {
+    display: none;
+  }
+
+  .logoMobile,.logoMobileContainer {
+    display: none;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+
+}

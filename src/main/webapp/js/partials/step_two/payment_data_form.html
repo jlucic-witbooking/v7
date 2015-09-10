@@ -1,0 +1,76 @@
+<div class="headerDataForm letraColorOpuesto" translate>trans.step2.paymentMethod</div>
+<div class="clearer"></div>
+<div witbooking-front-end-messages
+     messages="establishment.sortedMessages[constants.messages.position.top_method_payment_step_2]"
+     establishment="establishment"
+     class="messagesContainer"></div>
+
+<div witbooking-payment-type-header type="type"></div>
+<div ng-repeat="availablePaymentType in availablePaymentTypes" >
+    <div class="radioPayment" ng-class="{ 'justOne' : availablePaymentTypes.length==1 }">
+
+        <label >
+            <input type="radio" ng-model="$parent.ptype" ng-value="availablePaymentType" />
+            <span ng-if="availablePaymentType!=constants.payment.type.paypal_ec && availablePaymentType!=constants.payment.type.paypal_std" translate>trans.step2.{{availablePaymentType}}</span>
+            <img  ng-if="availablePaymentType==constants.payment.type.paypal_ec"
+                  src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg"
+                  border="0" alt="PayPal Logo">
+        </label>
+
+    </div>
+    <div ng-if="availablePaymentType==$parent.ptype" witbooking-payment-type-form form="form" payment-data="paymentData" type="$parent.ptype"></div>
+</div>
+
+<div class="inputsForm">
+    <div class="form-group">
+        <div class="acceptConditions" ng-class="{'input-error': form.submitted  && form.acceptconditions.$error.required}" required>
+            <div class="checkbox">
+                <input type="checkbox" name="acceptconditions" value="" ng-model="paymentData.acceptconditions" required>
+                <span class="checkboxTxt">
+                    <strong>
+                        <span translate>trans.step2.acceptConditions</span>
+                        <a ng-click="openInfo()" class="legalTerm">
+                            <span translate>trans.step2.conditionsOfService</span>
+                        </a>
+                    </strong>
+                </span>
+            </div>
+        </div>
+	    <div class="checkFieldsRed" ng-class="{'input-error': form.submitted && !form.$valid}" ng-if="form.submitted && !form.$valid">
+		    <i class="glyphicon glyphicon-info-sign"></i>&nbsp;<span translate>trans.step2.checkFieldsRed</span>
+	    </div>
+        <div class="paymentDetails defaultCurrency" ng-if="witbookerParams.representation.currency!==witbookerParams.representation.defaultCurrency">
+            <div class="prePay"><span translate>trans.step2.deposit</span>&nbsp;(<span class="percentPrePay">{{cart.depositPercentage  | number:2}}</span>%):&nbsp;<span class="pricePrePay">{{cart.depositAmount | currencyConverter : establishment | number:2}}</span>&nbsp;<span class="coin">{{witbookerParams.representation.currency}}</span></div>
+            <div class="totalPay"><span translate>trans.step2.totalTaxesIncluded</span>:&nbsp;<span class="totelPrice">{{cart.total | currencyConverter : establishment | number:2}}</span>&nbsp;<span class="coin">{{witbookerParams.representation.currency}}</span></div>
+            <span class="message">*<span translate>trans.step2.merelyInformative</span>&nbsp;{{witbookerParams.representation.defaultCurrency}} </span>
+        </div>
+
+        <div class="paymentDetails">
+            <div class="prePay"><span translate>trans.step2.deposit</span>&nbsp;(<span class="percentPrePay">{{cart.depositPercentage  | number:2}}</span>%):&nbsp;<span class="pricePrePay">{{cart.depositAmount |  number:2}}</span>&nbsp;<span class="coin">{{witbookerParams.representation.defaultCurrency}}</span></div>
+            <div class="totalPay"><span translate>trans.step2.totalTaxesIncluded</span>:&nbsp;<span class="totelPrice">{{cart.total | number:2}}</span>&nbsp;<span class="coin">{{witbookerParams.representation.defaultCurrency}}</span></div>
+        </div>
+
+        <input type="hidden" name="data[Reservations][reservationType]" value="1" id="ReservationsReservationType"><input type="hidden" name="data[Reservations][ccCiCreditCard]" value="0" id="ReservationsCcCiCreditCard"><input type="hidden" name="data[Reservations][ccpin]" value="0" id="ReservationsCcpin"><input type="hidden" name="data[Reservations][confirmBooking]" value="1" id="ReservationsConfirmBooking"><input type="hidden" name="data[Reservations][stage]" value="3" id="ReservationsStage">
+        <div id="finalBookingBtns">
+            <div class="confirm">
+                <button id="confirmButton" class="btn btn-succes" type="submit" ng-click="form.submitted=true;submitPaymentDataForm()"><span translate="trans.step2.confirm" ></span></button>
+            </div>
+
+            <div class="addBooking">
+                <button class="btn btn-default" type="button" ng-click="goToStepOne()">
+                    <span class="glyphicon glyphicon-plus-sign"></span>
+                </button>
+                <span class="help-block" translate>trans.step2.addAnotherBooking</span>
+            </div>
+        </div>
+
+        <div class="clearer"></div>
+    </div>
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function() {
+            $('#button_confirm_booking').click(function(){
+                $('.formulario_datos form').submit();
+            });
+        });
+    </script>
+</div>

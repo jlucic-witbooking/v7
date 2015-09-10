@@ -1,0 +1,90 @@
+<!-- This template represents the hotel accordion header or Hotel Info -->
+<div class="row accordeonElem hotelRow" id="{{establishment.ticker}}"
+     ng-class="{panelActive:hover, panelOpen:establishment.isOpen}" ng-mouseenter="hover=true"
+     ng-mouseleave="hover=false"
+     ng-click="establishment.visualState.showPanel=false">
+    <div class="hotelInfo">
+        <div class="hotelImageContainer" ng-click="showExtraDesc(establishment,constants.panel.type.carousel,$event)"
+             ng-class="{hoverImage: hoverHotelImage}" ng-mouseenter="hoverHotelImage=true"
+             ng-mouseleave="hoverHotelImage=false">
+            <img class="hotelImage"
+                 ng-src='{{util.generateImgUrl(establishment,establishment,"hotel",establishment.media[0].path,{width:170,height:105}) }}'
+                 fallback-src>
+            <span class="icon-zoom-cont">&nbsp;</span>
+        </div>
+        <div class="hotelDesc">
+            <div class="">
+                <p class="hotelName">{{establishment.name | uppercase}} </p>
+
+                <p class="cityName">{{ establishment.contactInfo.city }}</p>
+            </div>
+            <div class="icons">
+                <span class="sprite pictures"
+                      ng-class="{selectedIcon:(establishment.visualState.showPanel && establishment.visualState.panelType==constants.panel.type.carousel)}"
+                      ng-click="showExtraDesc(establishment,constants.panel.type.carousel,$event)">&nbsp;</span>
+                <span class="sprite infoNew"
+                      ng-class="{selectedIcon:(establishment.visualState.showPanel && establishment.visualState.panelType==constants.panel.type.description)}"
+                      ng-click="showExtraDesc(establishment,constants.panel.type.description,$event)">&nbsp;</span>
+                <span class="sprite maps" ng-if="establishment.contactInfo.hasOwnProperty('latitude')"
+                      ng-class="{selectedIcon:(establishment.visualState.showPanel && establishment.visualState.panelType==constants.panel.type.map)}"
+                      ng-click="showExtraDesc(establishment,constants.panel.type.map,$event)">&nbsp;</span>
+                <span class="sprite discounts" ng-show="util.countOwnProperties(establishment.discounts)>0"
+                      ng-class="{selectedIcon:(establishment.visualState.showPanel && establishment.visualState.panelType==constants.panel.type.discounts)}"
+                      ng-click="showExtraDesc(establishment,constants.panel.type.discounts,$event)">&nbsp;</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="reservationInfo" ng-if="establishment.cheapestRate">
+
+        <div class="hotelPrice" ng-if="!isCollapsed">
+            <span class="priceContainer" ng-if="establishment.errorMessages.length==0">
+                <p class="fromText" translate>trans.step1.hotel.priceFrom</p>
+                <p class="amountContainer">
+                    <span class="integer">{{establishment.cheapestRate | currencyConverter : establishment | integerDigits}}</span>
+                    <i class="decimalSeparator">,</i>
+                    <span class="decimal">{{(establishment.cheapestRate) | currencyConverter : establishment | fractionalDigits   | number:2 | limitTo:-2}}</span>
+                </p>
+                <p class="priceOptionsContainer">
+                    <span class="currency">{{witbookerParams.representation.currency}}</span>
+                    <span class="perNightText">&nbsp;/<span translate>trans.step1.hotel.night</span></span>
+                </p>
+                <span class="reservationLink" style="text-decoration: underline;"
+                      translate>trans.step1.hotel.bookOnline</span>
+            </span>
+
+            <span class="priceContainer" ng-if="establishment.errorMessages.length>0">
+                <!--TODO: A message could be added to explain that no availability exists-->
+                <span class="reservationLink"
+                      style="text-decoration: underline;"
+                      translate>
+                    trans.checkAvailability
+                </span>
+            </span>
+        </div>
+
+
+        <div class="hotelArr">
+            <i class="sprite arrowHotel" ng-class="{ 'open': establishment.isOpen }">&nbsp;</i>
+        </div>
+
+
+    </div>
+
+
+    <div class="errorContainer" ng-if="!establishment.cheapestRate">
+        <div class="inventoryError">
+            <span class="locked" ng-if="errorType!=constants.filters.restricted">
+                    <span translate>trans.closed</span>
+            <br>
+            </span>
+            <span class="alternateAction" ng-if="errorType==constants.filters.closed" translate>trans.changeDates</span>
+            <span class="alternateAction" ng-if="errorType==constants.filters.restricted" translate>trans.step1.inventoryline.viewoptions</span>
+        </div>
+        <div class="hotelArr">
+            <i class="sprite arrowHotel" ng-class="{ 'open': establishment.isOpen }">&nbsp;</i>
+        </div>
+    </div>
+
+
+</div>

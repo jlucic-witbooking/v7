@@ -1,0 +1,116 @@
+<div ng-if=' !(establishment && establishment.hasOwnProperty("establishments") && establishment.establishments.length>0) && establishment.visualState.showPanel && establishment.visualState.panelType==constants.panel.type.description '
+     class="hotelExtraDesc">
+    <div class="header">
+        <span class="title" translate>trans.step1.description</span>
+        <span class="sprite closeW closeInfoH" ng-click="close(elementType,constants.panel.type.description,$event)">&nbsp;</span>
+    </div>
+    <div class="content">
+        <span ng-bind-html="establishment.description"></span>
+    </div>
+</div>
+
+
+<div ng-if=' !(establishment && establishment.hasOwnProperty("establishments") && establishment.establishments.length>0) && establishment.visualState.showPanel && establishment.visualState.panelType==constants.panel.type.conditions '
+     class="hotelExtraDesc">
+    <div class="header">
+        <span class="title" translate>trans.step1.conditions</span>
+        <span class="sprite closeW closeInfoH" ng-click="close(establishment,constants.panel.type.conditions,$event)">&nbsp;</span>
+    </div>
+    <div class="content">
+        <span ng-bind-html="establishment.description"></span>
+        <span style="color: #894400; font-weight: bold" class="mealPlan">
+            {{ establishment.mealPlan.name | uppercase}}
+        </span>
+        <br>
+        <br>
+        <span class="condition"
+              style="text-decoration: none; font-weight: bold{{establishment.condition.color!=''?';color:#'+establishment.condition.color:''}}">
+            {{ establishment.condition.name | uppercase }}
+        </span>
+        <br>
+        <br>
+
+        <!--<div ng-if="establishment.condition.description" >
+            <span translate>trans.step1.inventoryline.condition.description:</span>
+            <div class="textCond" ng-bind-html="establishment.condition.description"></div>
+            <br/>
+        </div>-->
+
+        <div ng-if="establishment.condition.cancellation">
+            <!--          <span class="titleCond" translate>trans.step1.inventoryline.condition.cancellation</span>: -->
+
+            <div class="textCond" ng-bind-html="establishment.condition.cancellation"></div>
+        </div>
+
+        <div ng-if="establishment.condition.entry || establishment.condition.exit">
+            <span class="titleCond" translate>trans.step1.inventoryline.condition.timetable</span>
+            <table>
+                <tbody>
+                <tr>
+                    <td ng-if="establishment.condition.entry" style="padding-right:10px;vertical-align: top"><span class="title" translate>trans.step1.inventoryline.condition.entry</span>:&nbsp;<p ng-bind-html="establishment.condition.entry"></p></td>
+                    <td ng-if="establishment.condition.exit" style="vertical-align: top"><span class="title" translate>trans.step1.inventoryline.condition.exit</span>:&nbsp;<p ng-bind-html="establishment.condition.exit"></p></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div ng-if="establishment.condition.children">
+            <span class="titleCond" translate>trans.step1.inventoryline.condition.children</span>
+
+            <div class="textCond" ng-bind-html="establishment.condition.children"></div>
+        </div>
+
+        <div ng-if="establishment.condition.pets">
+            <span class="titleCond" translate>trans.step1.inventoryline.condition.pets</span>
+            <div class="textCond" ng-bind-html="establishment.condition.pets"></div>
+        </div>
+
+        <div ng-if="establishment.condition.groups">
+            <span class="titleCond" translate>trans.step1.inventoryline.condition.groups</span>
+            <div class="textCond" ng-bind-html="establishment.condition.groups"></div>
+        </div>
+
+        <div ng-if="establishment.condition.additionalInfo">
+            <div alert class="messages  alert-info"
+                 ng-click="toggleAdditionalInfo()" type=" 'info' ">
+                <span class="moreInfo" ng-if="isAdditionalInfoVisible" class="pointer " > [-]&nbsp;<span class="titleCond" translate>trans.step2.info</span></span>
+                <span class="moreInfo" ng-if="!isAdditionalInfoVisible" class="pointer "> [+]&nbsp;<span class="titleCond" translate>trans.step2.info</span></span>
+            </div>
+            <br/>
+            <br/>
+            <div class="textCond" ng-if="isAdditionalInfoVisible" ng-bind-html="establishment.condition.additionalInfo"></div>
+        </div>
+
+    </div>
+</div>
+
+<div ng-if=' !(establishment && establishment.hasOwnProperty("establishments") && establishment.establishments.length>0) && establishment.visualState.showPanel && establishment.visualState.panelType==constants.panel.type.chart '>
+    <div witbooking-chart establishment="rootEstablishment" inventory-line="establishment"
+         chartid="establishment.ticker | lowercase"></div>
+</div>
+
+<div ng-if=' !(establishment && establishment.hasOwnProperty("establishments") && establishment.establishments.length>0) && establishment.visualState.showPanel && establishment.visualState.panelType==constants.panel.type.carousel '
+     class="hotelExtraDesc box">
+    <div class='caruContent' witbooking-carousel></div>
+
+</div>
+
+<div ng-if=' !(establishment && establishment.hasOwnProperty("establishments") && establishment.establishments.length>0) && establishment.visualState.showPanel && establishment.visualState.panelType==constants.panel.type.map '
+     class="hotelExtraDesc mapBox">
+    <div class="header">
+        <span class="title" translate>trans.step1.location</span>
+        <span class="sprite closeW closeInfoH"
+              ng-click="close(elementType,constants.panel.type.map ,$event)">&nbsp;</span>
+    </div>
+    <div class='boxContent' witbooking-map establishment="establishment" mapid="establishment.name | lowercase"></div>
+</div>
+
+<div ng-if=' !(establishment && establishment.hasOwnProperty("establishments") && establishment.establishments.length>0) && establishment.visualState.showPanel && establishment.visualState.panelType==constants.panel.type.discounts '
+     class="hotelExtraDesc">
+    <div class="header">
+        <span class="title" translate>trans.step1.discounts</span>
+        <span class="sprite closeW closeInfoH"
+              ng-click="close(elementType,constants.panel.type.discounts ,$event)">&nbsp;</span>
+    </div>
+    <div witbooking-discounts discounts="establishment.discounts"></div>
+</div>

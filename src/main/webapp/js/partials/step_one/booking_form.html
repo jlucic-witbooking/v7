@@ -1,0 +1,103 @@
+<div class="bookingFormContainer">
+    <form class="bookingForm"  method="post">
+        <div class="form-left">
+            <div class="bookingFormDays input-daterange" id="datepicker">
+                <div class="icon-label">
+                    <span class="widget-icon calendarForm"></span>
+                </div>
+	            <div class="checkin">
+                    <input type="text" class="form-control" id="datepickerEntryDate" readonly="true"  ng-change="formChanged()" ng-model="entryDate" name="start">
+                </div>
+                <span>&nbsp;-&nbsp;</span>
+                <div class="checkout">
+                    <input type="text" class="form-control" id="datepickerExitDate" readonly="true" ng-change="formChanged()" ng-model="exitDate" name="end">
+                </div>
+                <div class="nights"><span>{{(util.parseDate(exitDate)-util.parseDate(entryDate))/(1000*60*60*24)  | number:0 }}</span><i class="icon-night"></i></div>
+            </div>
+            <div class="bookingFormPeople">
+
+                <div class="bookAdults peopleSelect" ng-show="!hideSeniorSelector">
+                    <div class="icon-label">
+                        <span class="widget-icon pers" ></span>
+                        <span class="icon-label-text">+{{witbookerParams.representation.adultMaxAge+1}}}</span>
+                    </div>
+                    <select class="bookAdultsSelector" name="seniors" ng-model="seniors"  ng-change="formChanged()" ng-options="option.availability for option in seniorSelectorOptions"></select>
+                </div>
+
+                <div class="bookAdults peopleSelect" ng-show="!hideAdultSelector">
+
+                    <div class="icon-label">
+                        <span class="widget-icon pers "></span>
+                        <span ng-if="!hideSeniorSelector && !hideAgeIndicator" class="icon-label-text">{{adultMinAge}}-{{witbookerParams.representation.adultMaxAge}}</span>
+                        <span ng-if="hideSeniorSelector  && !hideAgeIndicator"  class="icon-label-text">+{{adultMinAge}}</span>
+                    </div>
+
+                    <select class="bookAdultsSelector" name="adults" ng-model="adults"  ng-change="formChanged()" ng-options="option.availability for option in adultSelectorOptions"></select>
+                </div>
+
+                <div class="bookKids peopleSelect" ng-show="!hideTeenagerSelector">
+                    <div class="icon-label">
+                        <span class="widget-icon ninos" ></span>
+                        <span class="icon-label-text">{{witbookerParams.representation.childrenMaxAge+1}}-{{witbookerParams.representation.teenagerMaxAge}}</span>
+                    </div>
+                    <select class="bookAdultsSelector" name="teenagers" ng-model="teenagers"  ng-change="formChanged()" ng-options="option.availability for option in teenagerSelectorOptions"></select>
+                </div>
+
+                <div class="bookKids peopleSelect" ng-show="!hideChildSelector">
+                    <div class="icon-label">
+                        <span class="widget-icon ninos"></span>
+                        <span ng-if="!witbookerParams.representation.filterGuestsByAge" class="icon-label-text">{{witbookerParams.representation.childrenMinAge}}-{{witbookerParams.representation.childrenMaxAge}}</span>
+                        <span ng-if="witbookerParams.representation.filterGuestsByAge" class="icon-label-text">{{childrenFilterMinAge}}-{{childrenFilterMaxAge}}</span>
+                    </div>
+                    <select class="bookKidsSelector" name="children" ng-model="children"  ng-change="formChanged();formKidsChanged();" ng-options="option.availability for option in childSelectorOptions"></select>
+                </div>
+                <div class="bookBaby peopleSelect" ng-show="!hideBabySelector">
+                    <div class="icon-label">
+                        <span class="widget-icon bebes" ng-class="{'ninos': witbookerParams.representation.occupancyWithJunior, 'bebes': !witbookerParams.representation.occupancyWithJunior}"></span>
+                        <span class="icon-label-text">{{witbookerParams.representation.babyMinAge}}-{{witbookerParams.representation.childrenMinAge-1}}</span>
+                    </div>
+                    <select class="bookBabySelector" name="babies" ng-model="babies"  ng-change="formChanged()" ng-options="option.availability for option in babySelectorOptions"></select>
+                </div>
+
+
+
+
+            </div>
+	        <div class="bookingFormAgeOfChildren" ng-if="witbookerParams.representation.filterGuestsByAge && witbookerParams.regularParams.occupants.guestAges.length>0">
+		        <span class="ageOfChildren" translate>trans.step1.ageofchildren</span><br />
+		        <span ng-repeat="guest in witbookerParams.regularParams.occupants.guestAges track by $index">
+			        <select class="" ng-model="witbookerParams.regularParams.occupants.guestAges[$index]"  ng-change="formChanged()">
+				        <option value="{{option.id}}" ng-repeat="option in guestAgesSelectorOptions" ng-selected="{{guest == option.id}}">{{option.text}}</option>
+			        </select>
+		        </span>
+	        </div>
+        </div>
+        <div class="form-right">
+			<div class="container-right">
+		        <div class="advancedFilter">
+		            <div ng-show="util.countOwnProperties(witbookerParams.representation.activeExtraFilters)>0">
+		                <span translate>trans.step1.bookingform.advancedfilter</span>:
+		                <span class="filter" ng-repeat="filter in witbookerParams.representation.activeExtraFilters.il_equal">
+		                    "{{filter}}"{{$last ? '' : ','}}
+		                </span>
+		                <span class="filter" ng-repeat="filter in witbookerParams.representation.activeExtraFilters.il_like">
+		                    "{{filter}}"{{$last ? '' : ','}}
+		                </span>
+		                <i class="icon-deleteFilter" ng-click="cleanFilters()"></i>
+		            </div>
+		        </div>
+		        <div class="promotionCode">
+		            <div ng-show="witbookerParams.representation.showPromoCode">
+		                <a class="promoToggle" ng-model="promoToggle" ng-click="promotionCodeOpen=!promotionCodeOpen;$('#promotionCode').focus();alert('H');">
+		                    <span translate>trans.step1.form.promotionalcode</span>
+		                </a>
+		                <input type="text" ng-show="promotionCodeOpen" id="promotionCode" ng-model="promoCode" name="prom" >
+		            </div>
+		        </div>
+		        <div class="bookingFormButton" >
+		            <button type="submit" class="btn sendBookingForm" ng-click="getAvailability();"><span translate>trans.step1.bookingform.getavailability</span>&nbsp;<span class="forwardIcon">»</span></button>
+		        </div>
+			</div>
+        </div>
+    </form>
+</div>

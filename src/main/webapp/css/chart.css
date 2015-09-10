@@ -1,0 +1,50 @@
+.wraploader {
+  text-align: center;
+}
+.chartContainer {
+  /*display: none;*/
+  border: 1px solid #c4c4c4;
+  margin: -1px 0 5px 0;
+}
+.chartContainer .header {
+  background: url(../img/shade.png) repeat-x;
+  background-color: #343333;
+  text-align: center;
+  height: 30px;
+  position: relative;
+}
+.chartContainer .header .title {
+  line-height: 30px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+.chartContainer .header .closeW {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+}
+.chartContainer .header .textMonth {
+  line-height: 30px;
+  width: 160px;
+  min-width: 160px;
+  display: inline-block;
+}
+.chartContainer .header .prevMonth,
+.chartContainer .header .nextMonth {
+  font-size: 30px;
+  line-height: 20px;
+  display: inline-block;
+  margin-top: 2px;
+}
+.chartContainer .content {
+  background-color: white;
+  padding: 20px;
+  color: #3e3d3d;
+  font-size: 12px;
+}
+.chartContainer svg g g g g rect {
+  stroke-width: 0px;
+  fill: blue;
+}

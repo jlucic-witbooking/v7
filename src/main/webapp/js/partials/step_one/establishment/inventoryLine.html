@@ -1,0 +1,302 @@
+<div class="inventoryLine" data-ticker="{{inventoryLine.ticker}}">
+    <div class="infoContainer" >
+        <div class="infoDetails">
+            <div class="configuration">{{ inventoryLine.configuration.name }} </div>
+            <div>
+                <span class="mealPlan">
+                    <i class="sprite breakfast"></i>
+                    {{ inventoryLine.mealPlan.name | uppercase}}
+                </span> -
+                <span   title="{{'trans.step1.condition.title'|translate}}"
+                        class="condition"
+	                    style="{{inventoryLine.condition.color!=''?'color:#'+inventoryLine.condition.color :'' }}"
+                        ng-click="showExtraDesc(inventoryLine,constants.panel.type.conditions,$event)">
+                    {{ inventoryLine.condition.name | uppercase }}
+                </span>
+            </div>
+            <div class="displayChart">
+                <span class="sprite calendar">&nbsp;</span>
+                <!--TODO: Add translations with angular translate-->
+                <span class="toggle_comparison" ng-click="showExtraDesc(inventoryLine,constants.panel.type.chart,$event)">
+                    <!--TODO: Create a better way to change text using a variable-->
+                    <span ng-show="!(inventoryLine.visualState.showPanel && inventoryLine.visualState.panelType==constants.panel.type.chart)" translate>trans.step1.inventoryline.showPriceCalendar</span>
+                    <span ng-show="(inventoryLine.visualState.showPanel && inventoryLine.visualState.panelType==constants.panel.type.chart)" translate>trans.step1.inventoryline.hidePriceCalendar</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="errorContainer" ng-if="inventoryLine.errorMessage.length>0">
+        <div class="inventoryError">
+
+            <div  ng-repeat="errorMessage in inventoryLine.displayErrorMessages">
+
+                <span ng-if="(errorMessage.errorType==constants.filters.closed || errorMessage.errorType==constants.filters.availability)"
+                      class="locked">
+                    <span class="lockedOrRestrict" translate>trans.{{errorMessage.errorType}}</span>
+                </span>
+
+                <span class="lockedOrRestrict" ng-if="(errorMessage.errorType==constants.filters.checkIn || errorMessage.errorType==constants.filters.checkOut)">
+                    <span translate>trans.{{errorMessage.errorType}}</span>:
+                    <span ng-repeat="day in errorMessage.value" > {{ day| date : "EEE" | uppercase}}{{$last ? '' : ','}}</span>
+                </span>
+
+                <span class="lockedOrRestrict" ng-if="(errorMessage.otherError)">
+                    <span translate>trans.{{errorMessage.errorType}}</span>
+                    <span>
+
+                        <span  class="lockedOrRestrict" ng-if="errorMessage.errorType==constants.filters.minNotice || errorMessage.errorType==constants.filters.maxNotice" >:
+
+                            <span ng-if="errorMessage.value>=24" >{{errorMessage.value/24 | number:0}}</span>
+
+                            <span ng-if="errorMessage.value<24" >{{errorMessage.value}}</span>
+
+                            <span ng-if="errorMessage.value>=24" translate>trans.step1.inventoryline.unavailable.value.days</span>
+                            <span ng-if="errorMessage.value<24" translate>trans.step1.inventoryline.unavailable.value.hours</span>
+
+                        </span>
+
+                        <span class="lockedOrRestrict" ng-if="errorMessage.errorType!=constants.filters.minNotice && errorMessage.errorType!=constants.filters.maxNotice" >
+                            : {{errorMessage.value}}
+                            <span translate>trans.step1.inventoryline.unavailable.value.days</span>
+                        </span>
+
+
+                    </span>
+                </span>
+            </div>
+
+            <span class="alternateAction" ng-if="isLocked"
+                  ng-click="showExtraDesc(inventoryLine,constants.panel.type.chart,$event)" translate>trans.checkAvailability</span>
+            <span class="alternateAction"
+                  ng-if="!isLocked"
+                  ng-click="showExtraDesc(inventoryLine,constants.panel.type.chart,$event)"
+                  title="{{'trans.step1.changeDates.title'|translate}}"
+                  translate>trans.changeDates</span>
+        </div>
+    </div>
+    <div class="inventoryLineRight">
+        <div class="reservationFormContainer" ng-if="!inventoryLine.errorMessage.length>0">
+            <div class="reservationForm" >
+                <!--TODO: Associate with inventoryLine Model -->
+                <div class="unitQuanitySelectContainer">
+                    <select title="{{'trans.step1.availabilitySelect.title'|translate}}&nbsp;{{'trans.step1.'+witbookerParams.representation.roomDenomination | translate}}"
+                            ng-model="inventoryLine.reservation.units"
+                            ng-change="updatePrice()"
+                            class="form-control  unitQuantitySelection"
+                            ng-options="option.availability for option in unitSelectorOptions" >
+                    </select>
+                    <!--TODO: Add conection with database-->
+                    <div class="unitText" translate>trans.step1.{{witbookerParams.representation.roomDenomination}}</div>
+                </div>
+                <!--popover-template='{{constants.assetsDir+"partials/step_one/misc/reservation_button_popover.html"}}'-->
+
+                <button class="btn btn-success reservationButton"  type="button" ng-click="redirectToStep2()"
+                        popover-template='constants.assetsDir+"partials/step_one/misc/reservation_button_popover.html"'
+                        popover-placement="bottom"
+                        popover-append-to-body="true"
+                        popover-trigger="mouseenter">
+
+                    <div class="bookText" translate>trans.step1.inventoryline.booking</div>
+                    <div class="nightsText">{{(witbookerParams.regularParams.endDate-witbookerParams.regularParams.startDate)/(1000*60*60*24) | number:0  }}&nbsp;<span translate>trans.step1.inventoryline.nights</span></div>
+                    <!--TODO: Show or hide According to properties -->
+                    <div ng-if="showRoomsLeftMessage" class="reservationLimitAlertText">
+                        <span ng-if="inventoryLine.availability!=1">{{ 'trans.step1.inventoryline.reservationLimitAlertText' | translate:'{ value: '+inventoryLine.availability+' }' }}</span>
+                        <span translate ng-if="inventoryLine.availability==1">trans.step1.inventoryline.reservationLimitAlertLastText</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="rateContainer" ng-if="!inventoryLine.errorMessage.length>0">
+            <div class="rate" >
+                <div class="amount">
+                    <!--TODO: The comma used depends on localization?????-->
+                    <span class="integerInventoryLine">{{(inventoryLine.totalRate*inventoryLine.reservation.units.availability) | currencyConverter : establishment | integerDigits  }}</span>
+                    <span class="decimalSeparator">,</span>
+                    <span class="decimalInventoryLine">{{(inventoryLine.totalRate*inventoryLine.reservation.units.availability) | currencyConverter : establishment | fractionalDigits  | number:2 | limitTo:-2}}</span>
+                    <span class="currencyInventoryLine">{{witbookerParams.representation.currency}}</span>
+                </div>
+                <div class="amountPerNight" ng-if="(witbookerParams.regularParams.endDate-witbookerParams.regularParams.startDate)/(1000*60*60*24) >1">
+                    <!--TODO: The comma used depends on localization?????-->
+                    <span class="integerInventoryLine">{{(inventoryLine.averageRate*inventoryLine.reservation.units.availability) | currencyConverter : establishment | integerDigits  }}</span>
+                    <span class="decimalSeparator">,</span>
+                    <span class="decimalInventoryLine">{{(inventoryLine.averageRate*inventoryLine.reservation.units.availability) | currencyConverter : establishment | fractionalDigits   | number:2 | limitTo:-2}}</span>
+                    <span class="perNightText" translate>trans.step1.inventory.perNight</span>
+                </div>
+
+                <!--TODO: Do not hardcode, replace variable hasDiscount with proper method-->
+                <div class="discount" ng-if="inventoryLine.discountPercentage>0">
+                    <span class="fullAmount">
+                        <span>
+                            {{(inventoryLine.originalRate) | currencyConverter : establishment | integerDigits}},
+                            {{(inventoryLine.originalRate) | currencyConverter : establishment | fractionalDigits | number:2 | limitTo:-2}}
+                        </span>
+                    </span>
+                    &nbsp;
+                    <span popover-append-to-body="true"
+                          popover-template='constants.assetsDir+"partials/step_one/misc/discount_popover.html"'
+                          popover-trigger="mouseenter"
+                          popover-placement="bottom"
+                          popover-placement="bottom"
+                          class="discountPercentage info label label-important">
+                        {{inventoryLine.discountPercentage*100 | number:0}}%
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="clearer"></div>
+
+</div>
+
+<div class="inventoryLineMobile" data-ticker="{{inventoryLine.ticker}}"  >
+	<div class="infoContainer" >
+		<div class="infoDetails">
+			<div class="configuration">{{ inventoryLine.configuration.name }} </div>
+			<div class="mealPlan">
+                {{ inventoryLine.mealPlan.name | uppercase}}
+            </div>
+            <div title="{{'trans.step1.condition.title'|translate}}"
+                        class="condition"
+                        style="{{inventoryLine.condition.color!=''?'color:#'+inventoryLine.condition.color :'' }}"
+                        ng-click="showExtraDesc(inventoryLine,constants.panel.type.conditions,$event)">
+                    {{ inventoryLine.condition.name | uppercase }}
+            </div>
+		</div>
+		<div class="rateContainer" ng-if="!inventoryLine.errorMessage.length>0">
+			<div class="rate" >
+				<div class="amount">
+					<!--TODO: The comma used depends on localization?????-->
+					<span class="integerInventoryLine">{{(inventoryLine.totalRate*inventoryLine.reservation.units.availability) | currencyConverter : establishment | integerDigits  }}</span>
+					<span class="decimalSeparator">,</span>
+					<span class="decimalInventoryLine">{{(inventoryLine.totalRate*inventoryLine.reservation.units.availability) | currencyConverter : establishment | fractionalDigits  | number:2 | limitTo:-2}}</span>
+					<span class="currencyInventoryLine">{{witbookerParams.representation.currency}}</span>
+				</div>
+				<div class="amountPerNight" ng-if="(witbookerParams.regularParams.endDate-witbookerParams.regularParams.startDate)/(1000*60*60*24) >1">
+					<!--TODO: The comma used depends on localization?????-->
+					<span class="integerInventoryLine">{{(inventoryLine.averageRate*inventoryLine.reservation.units.availability) | currencyConverter : establishment | integerDigits  }}</span>
+					<span class="decimalSeparator">,</span>
+					<span class="decimalInventoryLine">{{(inventoryLine.averageRate*inventoryLine.reservation.units.availability) | currencyConverter : establishment | fractionalDigits   | number:2 | limitTo:-2}}</span>
+					<span class="perNightText" translate>trans.step1.inventory.perNight</span>
+				</div>
+
+				<!--TODO: Do not hardcode, replace variable hasDiscount with proper method-->
+				<div class="discount" ng-if="inventoryLine.discountPercentage>0">
+                    <span class="fullAmount">
+                        <span>
+                            {{(inventoryLine.originalRate) | currencyConverter : establishment | integerDigits}},
+                            {{(inventoryLine.originalRate) | currencyConverter : establishment | fractionalDigits | number:2 | limitTo:-2}}
+                        </span>
+                    </span>
+					&nbsp;
+					<span popover-append-to-body="true"
+                          popover-template='constants.assetsDir+"partials/step_one/misc/discount_popover.html"'
+                          popover-trigger="mouseenter"
+                          popover-placement="bottom"
+                          class="discountPercentage info label label-important">
+                        {{inventoryLine.discountPercentage*100 | number:0}}%
+                    </span>
+				</div>
+
+			</div>
+		</div>
+		<div class="errorContainer" ng-if="inventoryLine.errorMessage.length>0">
+			<div class="inventoryError">
+				<div  ng-repeat="errorMessage in inventoryLine.displayErrorMessages">
+
+                <span ng-if="(errorMessage.errorType==constants.filters.closed || errorMessage.errorType==constants.filters.availability)"
+                      class="locked">
+                    <span class="lockedOrRestrict" translate>trans.{{errorMessage.errorType}}</span>
+                </span>
+
+                <span class="lockedOrRestrict" ng-if="(errorMessage.errorType==constants.filters.checkIn || errorMessage.errorType==constants.filters.checkOut)">
+                    <span translate>trans.{{errorMessage.errorType}}</span>:
+                    <span ng-repeat="day in errorMessage.value" > {{ day| date : "EEE" | uppercase}}{{$last ? '' : ','}}</span>
+                </span>
+
+                <span class="lockedOrRestrict" ng-if="(errorMessage.otherError)">
+                    <span translate>trans.{{errorMessage.errorType}}</span>
+                    <span>
+
+                        <span  class="lockedOrRestrict" ng-if="errorMessage.errorType==constants.filters.minNotice || errorMessage.errorType==constants.filters.maxNotice" >:
+
+                            <span ng-if="errorMessage.value>=24" >{{errorMessage.value/24 | number:0}}</span>
+
+                            <span ng-if="errorMessage.value<24" >{{errorMessage.value}}</span>
+
+                            <span ng-if="errorMessage.value>=24" translate>trans.step1.inventoryline.unavailable.value.days</span>
+                            <span ng-if="errorMessage.value<24" translate>trans.step1.inventoryline.unavailable.value.hours</span>
+
+                        </span>
+
+                        <span class="lockedOrRestrict" ng-if="errorMessage.errorType!=constants.filters.minNotice && errorMessage.errorType!=constants.filters.maxNotice" >
+                            : {{errorMessage.value}}
+                            <span translate>trans.step1.inventoryline.unavailable.value.days</span>
+                        </span>
+
+
+                    </span>
+                </span>
+				</div>
+
+            <span class="alternateAction" ng-if="isLocked"
+                  ng-click="showExtraDesc(inventoryLine,constants.panel.type.chart,$event)" translate>trans.checkAvailability</span>
+            <span class="alternateAction"
+                  ng-if="!isLocked"
+                  ng-click="showExtraDesc(inventoryLine,constants.panel.type.chart,$event)"
+                  title="{{'trans.step1.changeDates.title'|translate}}"
+                  translate>trans.changeDates</span>
+			</div>
+		</div>
+	</div>
+	<div class="reservationFormContainer" ng-if="!inventoryLine.errorMessage.length>0">
+		<!--TODO: Associate with inventoryLine Model -->
+		<div class="buttomsInfoMobile">
+			<span class="sprite infoMobile" ng-click="showExtraDesc(inventoryLine,constants.panel.type.conditions,$event)">&nbsp;</span>
+			<span class="sprite calendarMobile" ng-click="showExtraDesc(inventoryLine,constants.panel.type.chart,$event)">&nbsp;</span>
+		</div>
+		<div class="buttomsBookingMobile">
+			<div class="selectUnityContainer">
+				<!--TODO: Add conection with database-->
+				<div class="unitText" translate>trans.step1.{{witbookerParams.representation.roomDenomination}}</div>
+				<select title="{{'trans.step1.availabilitySelect.title'|translate}}&nbsp;{{'trans.step1.'+witbookerParams.representation.roomDenomination | translate}}"
+				        ng-model="inventoryLine.reservation.units"
+				        ng-change="updatePrice()"
+				        class="form-control  unitQuantitySelection"
+				        ng-options="option.availability for option in unitSelectorOptions" >
+				</select>
+			</div>
+			<button class="btn btn-success reservationButton"  type="button" ng-click="redirectToStep2()"
+                    popover-template='constants.assetsDir+"partials/step_one/misc/reservation_button_popover.html"'
+                    popover-trigger="mouseenter"
+                    popover-placement="bottom"
+			        popover-append-to-body="true"
+					>
+
+				<div class="bookText" translate>trans.step1.inventoryline.booking</div>
+				<div class="nightsText">{{(witbookerParams.regularParams.endDate-witbookerParams.regularParams.startDate)/(1000*60*60*24) | number:0  }}&nbsp;<span translate>trans.step1.inventoryline.nights</span></div>
+				<!--TODO: Show or hide According to properties -->
+				<div ng-if="showRoomsLeftMessage" class="reservationLimitAlertText">
+					<span ng-if="inventoryLine.availability!=1">{{ 'trans.step1.inventoryline.reservationLimitAlertText' | translate:'{ value: '+inventoryLine.availability+' }' }}</span>
+					<span translate ng-if="inventoryLine.availability==1">trans.step1.inventoryline.reservationLimitAlertLastText</span>
+				</div>
+			</button>
+			<div class="clearer"></div>
+		</div>
+		<div class="clearer"></div>
+	</div>
+	<div class="clearer"></div>
+</div>
+
+
+
+
+</div>
+
+<div witbooking-info-panel-static ng-click="interceptClick($event)"
+                              establishment="inventoryLine"
+                              root-establishment="establishment"
+                              type="inventoryLine.visualState.panelType" >
+</div>

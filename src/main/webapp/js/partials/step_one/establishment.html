@@ -1,0 +1,25 @@
+<div ng-repeat="establishment in establishment.establishments" ng-include="'partials/step_one/establishment.html'"> </div>
+
+<div accordion class="hotelAccordion" ng-if='!(establishment && establishment.hasOwnProperty("establishments") && establishment.establishments.length>0)' >
+    <div accordion-group is-open="true">
+        <div accordion-heading >
+            <div witbooking-establishment show-extra-desc="showExtraDesc"  util="util"  establishment="establishment" ng-click="toggleAccordion(establishment)"> </div>
+
+<!--
+            TODO: Decide what is the best option for rendering optional templates
+            <info-panel establishment="establishment" type="establishment.visualState.panelType" > </info-panel>
+-->
+            <div witbooking-info-panel-static ng-click="interceptClick($event)" establishment="establishment" title="'description'" type="establishment.visualState.panelType" > </div>
+        </div>
+        <div class="accommodation_list" ng-include="constants.assetsDir+'partials/step_one/establishment/accommodation_list.html'"></div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+

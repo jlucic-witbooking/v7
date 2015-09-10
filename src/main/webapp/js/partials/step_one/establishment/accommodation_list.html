@@ -1,0 +1,20 @@
+
+<div accordion class="accommodationAccordion" ng-repeat="accommodation in establishment.inventoryLinesGrouped | orderBy:'accommodation.order':false" >
+    <div accordion-group is-open="accommodation.isOpen" >
+        <div accordion-heading>
+            <div witbooking-accommodation
+                 show-extra-desc="showExtraDesc"
+                 accommodation="accommodation"
+                 establishment="establishment"
+                 witbooker-params="witbookerParams"
+                 representation="representation">
+            </div>
+            <div witbooking-info-panel-static
+                 ng-click="interceptClick($event)"
+                 establishment="accommodation.accommodation"
+                 type="accommodation.accommodation.visualState.panelType" >
+            </div>
+        </div>
+	    <div class="configuration_list" ng-include="constants.assetsDir+'partials/step_one/establishment/inventoryLine_list.html'" ></div>
+    </div>
+</div>

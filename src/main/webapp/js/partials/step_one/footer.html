@@ -1,0 +1,21 @@
+<div class="col-md-8">
+    <div class="footer">
+        <div class="footerContainer" >
+            <div ng-class="{footerText: showPromoCodeInputOnIframeMode && iframeMode}" >
+                <span class="footerSpanText" >
+                    <a href="http://www.witbooking.es" target="_blank">
+                        Witbooking
+                    </a>
+                    <span>&#40;v.</span>
+                    <span class="releaseVersion">{{releaseVersion}}</span>
+                    <span>&#41; &copy;</span>
+                    <span>2015</span>
+
+                </span>
+            </div>
+            <div ng-if="showPromoCodeInputOnIframeMode && iframeMode"
+                 witbooking-iframe-promo-code ></div>
+
+        </div>
+    </div>
+</div>
